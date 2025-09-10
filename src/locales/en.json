@@ -1,0 +1,3429 @@
+{
+  "nav": {
+    "home": "Home",
+    "home1": "Home 1",
+    "home2": "Home 2",
+    "about": "About Us",
+    "services": "Services",
+    "allServices": "All Services",
+    "weddingPlanning": "Wedding Planning",
+    "corporateEvents": "Corporate Events",
+    "birthdayPrivateParties": "Birthday & Private Parties",
+    "concertsEntertainmentShows": "Concerts & Entertainment Shows",
+    "sportsOutdoorEvents": "Sports & Outdoor Events",
+    "exhibitionsTradeShows": "Exhibitions & Trade Shows",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "logout": "Log Out"
+  },
+  "common": {
+    "language": "Language",
+    "english": "English",
+    "arabic": "Arabic",
+    "hebrew": "Hebrew",
+    "videoNotSupported": "Your browser does not support the video tag.",
+    "viewDetails": "View Details"
+  },
+  "footer": {
+    "companyDescription": "Connecting businesses with top talent worldwide to get projects done efficiently and effectively.",
+    "quickLinks": "Quick Links",
+    "forFreelancers": "For Freelancers",
+    "contactUs": "Contact Us",
+    "home1": "Home1",
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "weddingPlanning": "Wedding Planning",
+    "corporateEvents": "Corporate Events",
+    "birthdayPrivateParties": "Birthday & Private Parties",
+    "concertsEntertainmentShows": "Concerts & Entertainment Shows",
+    "sportsOutdoorEvents": "Sports & Outdoor Events",
+    "exhibitionsTradeShows": "Exhibitions & Trade Shows",
+    "phone": "+192 123 4567",
+    "email": "info@enkonix.in",
+    "address": "123 Enkonix Street, City, Country",
+    "copyright": "© 2025 FreelancerHub. All rights reserved."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our event planning services",
+    "stillHaveQuestions": "Still have questions? We're here to help!",
+    "contactUsToday": "Contact Us Today",
+    "questions": [
+      {
+        "question": "How far in advance should I book your services?",
+        "answer": "We recommend booking our services at least 3-6 months in advance for large events like weddings and corporate functions. For smaller events, 1-2 months notice is usually sufficient. However, we can accommodate last-minute requests depending on availability."
+      },
+      {
+        "question": "What types of events do you plan?",
+        "answer": "We specialize in weddings, corporate events, birthday parties, concerts, exhibitions, trade shows, sports events, and private celebrations. Our team has experience with events ranging from intimate gatherings of 20 people to large-scale events with 1000+ attendees."
+      },
+      {
+        "question": "Do you provide full-service event planning or partial planning?",
+        "answer": "We offer both full-service and partial planning options. Full-service includes complete event management from concept to execution. Partial planning allows you to handle some aspects while we manage specific areas like vendor coordination, timeline management, or day-of coordination."
+      },
+      {
+        "question": "What is included in your event planning packages?",
+        "answer": "Our packages typically include venue selection, vendor coordination, timeline creation, budget management, design consultation, day-of coordination, and post-event follow-up. Specific inclusions vary based on the package selected and event requirements."
+      },
+      {
+        "question": "How do you handle event budgets?",
+        "answer": "We work within your specified budget and provide detailed cost breakdowns for all services. We have established relationships with vendors that often allow us to secure better rates. We also provide budget tracking throughout the planning process and can suggest cost-saving alternatives when appropriate."
+      },
+      {
+        "question": "What happens if I need to cancel or reschedule my event?",
+        "answer": "We understand that circumstances can change. Our cancellation policy varies by package and timing. We work with you to minimize costs and can often help reschedule rather than cancel. Specific terms are outlined in our service agreement."
+      },
+      {
+        "question": "Do you work with specific vendors or can I choose my own?",
+        "answer": "We have a network of trusted vendors we work with regularly, but we're happy to work with your preferred vendors as well. We can also help you find new vendors that match your style and budget requirements."
+      },
+      {
+        "question": "How do you ensure my event runs smoothly on the day?",
+        "answer": "We have a detailed timeline and contingency plans in place. Our team arrives early to oversee setup, coordinates with all vendors, manages the timeline, and handles any issues that arise. We also provide you with a dedicated point of contact throughout the event."
+      },
+      {
+        "question": "Can you help with destination events or events outside your local area?",
+        "answer": "Yes, we can assist with destination events. While we're based locally, we have experience coordinating events in various locations and can work with local vendors or travel to the event location as needed. Additional travel costs may apply."
+      },
+      {
+        "question": "What makes your event planning services different?",
+        "answer": "We combine years of experience with personalized attention to detail. Our team is passionate about creating unique, memorable experiences tailored to your vision. We also offer comprehensive support throughout the entire process and maintain strong relationships with quality vendors."
+      }
+    ]
+  },
+  "login": {
+    "welcomeBack": "Welcome back",
+    "loginToContinue": "Login to continue",
+    "email": "Email",
+    "password": "Password",
+    "emailPlaceholder": "you@example.com",
+    "passwordPlaceholder": "Enter your password",
+    "signIn": "Sign in",
+    "forgotPassword": "Forgot your password?",
+    "noAccount": "Don't have an account?",
+    "register": "Register",
+    "errorEmailPassword": "Please enter email and password"
+  },
+  "forgotPassword": {
+    "resetPassword": "Reset Password",
+    "setNewPassword": "Set New Password",
+    "enterEmailToContinue": "Enter your email to continue",
+    "createNewPassword": "Create a new password",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "newPasswordPlaceholder": "Enter new password",
+    "confirmPasswordPlaceholder": "Confirm new password",
+    "continue": "Continue",
+    "back": "Back",
+    "resetPasswordButton": "Reset Password",
+    "rememberPassword": "Remember your password?",
+    "signIn": "Sign in",
+    "errorEmailRequired": "Please enter your email address",
+    "errorEmailNotFound": "Email address not found",
+    "errorPasswordLength": "Password must be at least 6 characters",
+    "errorPasswordsMismatch": "Passwords do not match",
+    "successEmailVerified": "Email verified! Please enter your new password.",
+    "successPasswordReset": "Password reset successfully! Redirecting to login..."
+  },
+  "home": {
+    "showcase": {
+      "title": "Find the Right Freelancer",
+      "subtitle": "Connect with top talent, get work done faster, and grow your business seamlessly.",
+      "exploreButton": "Explore",
+      "reachOutButton": "Reach out"
+    },
+    "hero": {
+      "tagline": "FREELANCING MADE SIMPLE",
+      "title": "Connect with Clients & Grow",
+      "description": "A platform built for freelancers to showcase skills, land high-paying projects, and collaborate with clients worldwide.",
+      "exploreBlogsButton": "Explore Blogs",
+      "getStartedButton": "Get Started"
+    },
+    "about": {
+      "title": "About Us",
+      "subtitle": "Empowering Your Digital Success",
+      "description": "We are a global freelancing platform built to connect businesses with skilled professionals across every industry. Our mission is to simplify collaboration by offering secure payments, milestone protection, and real-time communication. With experts in design, development, writing, marketing, and more, we make it easy to find the right talent for every project. By combining transparency, accessibility, and innovation, we ensure that both clients and freelancers can thrive. Together, we are shaping the future of work through trust, opportunity, and growth.",
+      "stats": {
+        "projectsCompleted": "Projects Completed",
+        "happyClients": "Happy Clients"
+      },
+      "features": {
+        "fastDelivery": {
+          "title": "Fast Delivery",
+          "description": "Quick turnaround times without compromising quality"
+        },
+        "qualityAssurance": {
+          "title": "Quality Assurance",
+          "description": "Rigorous testing and quality control processes"
+        },
+        "support24": {
+          "title": "24/7 Support",
+          "description": "Round-the-clock assistance for all your needs"
+        }
+      },
+      "ctaButton": "Learn More About Us"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Discover what freelancers can do for you",
+      "webDevelopment": "Web Development",
+      "webDevelopmentDesc": "Custom websites, apps, and responsive solutions.",
+      "graphicUIDesign": "Graphic & UI Design",
+      "graphicUIDesignDesc": "Logos, branding, and modern user experiences.",
+      "contentWriting": "Content Writing",
+      "contentWritingDesc": "Blogs, articles, SEO-friendly copy, and more.",
+      "digitalMarketing": "Digital Marketing",
+      "digitalMarketingDesc": "SEO, social media, and performance campaigns.",
+      "videoAnimation": "Video & Animation",
+      "videoAnimationDesc": "Explainers, motion graphics, and product videos.",
+      "businessSupport": "Business Support",
+      "businessSupportDesc": "Virtual assistants, project management, and admin help."
+    },
+    "blog": {
+      "title": "Latest Blog",
+      "subtitle": "Insights, tips, and freelancing stories",
+      "showLess": "Show Less",
+      "seeAllPosts": "See All Posts",
+      "posts": {
+        "gettingStarted": {
+          "title": "Getting Started as a Freelancer",
+          "excerpt": "A step-by-step guide to landing your first project online."
+        },
+        "highPayingClients": {
+          "title": "Attract High-Paying Clients",
+          "excerpt": "Proven strategies to build trust and grow your income."
+        },
+        "multipleProjects": {
+          "title": "Balancing Multiple Projects",
+          "excerpt": "Time management hacks every freelancer should know."
+        },
+        "topSkills": {
+          "title": "Top Skills in Demand 2025",
+          "excerpt": "Discover what clients are hiring for the most this year."
+        },
+        "successStories": {
+          "title": "Freelancer Success Stories",
+          "excerpt": "Inspiring journeys of freelancers who scaled their careers."
+        },
+        "clientExpectations": {
+          "title": "Managing Client Expectations",
+          "excerpt": "Tips to communicate clearly and deliver exceptional results."
+        }
+      }
+    },
+    "categories": {
+      "title": "Categories",
+      "subtitle": "Explore the areas freelancers specialize in",
+      "developmentIT": "Development & IT",
+      "designCreative": "Design & Creative",
+      "writingTranslation": "Writing & Translation",
+      "marketingSales": "Marketing & Sales",
+      "videoAnimation": "Video & Animation",
+      "adminSupport": "Admin & Support"
+    }
+  },
+  "home2": {
+    "showcase": {
+      "title": "Event Management Excellence",
+      "subtitle": "Transform your events with our comprehensive platform designed for seamless planning and execution",
+      "exploreButton": "Explore Platform",
+      "learnMoreButton": "Learn More",
+      "features": {
+        "comprehensive": {
+          "title": "Comprehensive Event Solutions",
+          "description": "From small gatherings to large-scale conferences, our platform handles every aspect of event management with precision and efficiency."
+        },
+        "integration": {
+          "title": "Seamless Integrations",
+          "description": "Connect with your favorite tools and services through our extensive API and integration ecosystem for a unified workflow."
+        },
+        "scalability": {
+          "title": "Scalable Architecture",
+          "description": "Our platform grows with your business, supporting events of any size while maintaining performance and reliability."
+        }
+      },
+      "highlights": {
+        "title": "Platform Highlights",
+        "precision": "Precision Planning Tools",
+        "speed": "Lightning-Fast Performance",
+        "security": "Enterprise-Grade Security",
+        "analytics": "Advanced Analytics",
+        "global": "Global Reach & Support",
+        "innovation": "Continuous Innovation"
+      }
+    },
+    "hero": {
+      "title": "Event Management Platform",
+      "subtitle": "Discover, create, and manage extraordinary events with our comprehensive platform",
+      "createEvent": "Create Event",
+      "browseEvents": "Browse Events"
+    },
+    "search": {
+      "title": "Find Your Perfect Event",
+      "subtitle": "Search through thousands of events and discover something amazing",
+      "placeholder": "Search events, topics, or locations..."
+    },
+    "categories": {
+      "all": "All Events",
+      "conferences": "Conferences",
+      "workshops": "Workshops",
+      "networking": "Networking",
+      "seminars": "Seminars",
+      "exhibitions": "Exhibitions",
+      "concerts": "Concerts",
+      "sports": "Sports"
+    },
+    "events": {
+      "title": "Upcoming Events",
+      "subtitle": "Discover amazing events happening around you",
+      "viewDetails": "View Details",
+      "upcoming": "Upcoming",
+      "attendees": "attendees"
+    },
+    "features": {
+      "title": "Why Choose Our Platform?",
+      "subtitle": "Powerful features designed to make event management effortless",
+      "smartDiscovery": {
+        "title": "Smart Event Discovery",
+        "description": "AI-powered recommendations help you find events that match your interests and schedule."
+      },
+      "mobileFirst": {
+        "title": "Mobile-First Design",
+        "description": "Access and manage events on any device with our responsive, mobile-optimized platform."
+      },
+      "secureTicketing": {
+        "title": "Secure Ticketing",
+        "description": "Advanced security features ensure safe and reliable ticket purchases and management."
+      },
+      "analytics": {
+        "title": "Analytics Dashboard",
+        "description": "Track event performance, attendee engagement, and revenue with detailed analytics."
+      },
+      "globalReach": {
+        "title": "Global Reach",
+        "description": "Connect with events worldwide and expand your network across different time zones."
+      },
+      "realTimeUpdates": {
+        "title": "Real-time Updates",
+        "description": "Get instant notifications about event changes, new opportunities, and important updates."
+      }
+    },
+    "statistics": {
+      "title": "Platform Statistics",
+      "subtitle": "Numbers that speak for themselves",
+      "eventsCreated": "Events Created",
+      "ticketsSold": "Tickets Sold",
+      "activeUsers": "Active Users",
+      "uptime": "Uptime"
+    },
+    "platform": {
+      "title": "Comprehensive Event Management Platform",
+      "subtitle": "Everything you need to create, manage, and scale your events in one powerful platform",
+      "comprehensive": {
+        "title": "All-in-One Event Solution",
+        "description": "Our platform provides everything you need to manage events from start to finish, with powerful tools and seamless integrations.",
+        "features": {
+          "eventPlanning": "Complete event planning and management tools",
+          "analytics": "Advanced analytics and reporting dashboard",
+          "security": "Enterprise-grade security and data protection",
+          "integration": "Seamless third-party integrations and APIs"
+        }
+      },
+      "features": {
+        "mobile": {
+          "title": "Mobile-First",
+          "desc": "Access anywhere, anytime"
+        },
+        "speed": {
+          "title": "Lightning Fast",
+          "desc": "Optimized performance"
+        },
+        "reliability": {
+          "title": "99.9% Uptime",
+          "desc": "Always available"
+        },
+        "customization": {
+          "title": "Fully Customizable",
+          "desc": "Tailored to your needs"
+        }
+      },
+      "benefits": {
+        "title": "Why Choose Our Platform?",
+        "growth": {
+          "title": "Scale Your Events",
+          "description": "From intimate gatherings to large conferences, our platform grows with your needs."
+        },
+        "cost": {
+          "title": "Reduce Costs",
+          "description": "Streamline operations and reduce manual work with automated processes."
+        },
+        "time": {
+          "title": "Save Time",
+          "description": "Efficient workflows and automation help you focus on what matters most."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Create Amazing Events?",
+      "subtitle": "Join thousands of event organizers who trust our platform to deliver exceptional experiences.",
+      "getStarted": "Get Started Free",
+      "scheduleDemo": "Schedule Demo"
+    }
+  },
+  "about": {
+    "showcase": {
+      "title": "Modern web experiences",
+      "subtitle": "Creative projects that blend technology and strategy for meaningful results",
+      "connectButton": "connect"
+    },
+    "mission": {
+      "title": "Mission & Vision",
+      "subtitle": "Empowering event organizers through innovative event management solutions",
+      "missionStatement": "Our mission is to revolutionize the way events are created, managed, and experienced by providing a comprehensive platform that connects event organizers with attendees, streamlines event planning processes, and delivers exceptional event experiences that bring people together.",
+      "visionStatement": "We envision a future where every event, from intimate gatherings to large-scale conferences, can be seamlessly organized and enjoyed through our platform, creating meaningful connections and memorable experiences that transcend geographical boundaries and time zones.",
+      "values": {
+        "innovation": {
+          "title": "Innovation",
+          "description": "Continuously evolving our platform with cutting-edge technology to enhance event experiences and streamline event management processes."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "Maintaining the highest standards in every event, from planning to execution, ensuring memorable experiences for all attendees."
+        },
+        "integrity": {
+          "title": "Integrity",
+          "description": "Building trust through transparent processes, honest communication, and ethical business practices in all event operations."
+        },
+        "collaboration": {
+          "title": "Collaboration",
+          "description": "Fostering meaningful connections between event organizers and attendees to create successful and impactful events."
+        }
+      },
+      "values": {
+        "title": "Our Core Values",
+        "subtitle": "The principles that guide everything we do and shape our culture"
+      },
+      "stats": {
+        "projectsCompleted": "5,000+",
+        "projectsCompletedLabel": "Events Created",
+        "happyClients": "15,000+",
+        "happyClientsLabel": "Happy Attendees",
+        "freelancers": "2,500+",
+        "freelancersLabel": "Event Organizers",
+        "countries": "75+",
+        "countriesLabel": "Countries Served"
+      }
+    },
+    "timeline": {
+      "title": "Journey Timeline",
+      "subtitle": "Our company growth story and milestones that shaped our journey",
+      "milestones": {
+        "2020": {
+          "title": "Company Founded",
+          "description": "Started as a small team with a vision to revolutionize the freelancing industry."
+        },
+        "2021": {
+          "title": "First Major Client",
+          "description": "Secured our first enterprise client, marking a turning point in our growth."
+        },
+        "2022": {
+          "title": "Platform Expansion",
+          "description": "Launched mobile app and introduced AI-powered matching system."
+        },
+        "2023": {
+          "title": "Series A Funding",
+          "description": "Raised $5M in Series A funding to accelerate growth."
+        },
+        "2024": {
+          "title": "Global Expansion",
+          "description": "Launched in 15+ countries with localized features."
+        },
+        "2025": {
+          "title": "Future Vision",
+          "description": "Planning blockchain-based payments and advanced AI features."
+        }
+      }
+    },
+    "team": {
+      "title": "EVENT MANAGEMENT TEAM",
+      "subtitle": "This section showcases our dedicated event management professionals who bring your vision to life.",
+      "members": {
+        "coordinator": {
+          "role": "Event Coordinator",
+          "name": "Sarah Johnson",
+          "description": "Sarah specializes in coordinating corporate events, weddings, and conferences. With 8+ years of experience, she ensures every detail is perfectly executed from planning to execution, delivering memorable experiences for all clients."
+        },
+        "venue": {
+          "role": "Venue Specialist",
+          "name": "Michael Chen",
+          "description": "Michael manages venue selection and logistics for events of all sizes. He has established partnerships with 200+ premium venues and handles all contract negotiations and setup requirements with precision and expertise."
+        },
+        "catering": {
+          "role": "Catering Manager",
+          "name": "David Rodriguez",
+          "description": "David oversees all catering operations and menu planning. He works with top chefs to create custom menus for dietary restrictions and cultural preferences, ensuring exceptional dining experiences for every occasion."
+        },
+        "technical": {
+          "role": "Technical Director",
+          "name": "Emily Watson",
+          "description": "Emily handles all technical aspects including sound, lighting, AV equipment, and live streaming. She ensures flawless technical execution for both in-person and hybrid events, creating seamless experiences for all attendees."
+        },
+        "marketing": {
+          "role": "Marketing Specialist",
+          "name": "Alex Thompson",
+          "description": "Alex develops comprehensive marketing strategies for events, managing social media campaigns, email marketing, and promotional materials. He increases event attendance by 40% on average through innovative marketing tactics."
+        }
+      }
+    },
+    "aboutSection": {
+      "title": "About Us",
+      "description1": "We are an event management platform that connects event organizers with attendees worldwide. From conferences to workshops, networking events to exhibitions — our mission is to make event creation, management, and attendance simple, seamless, and memorable.",
+      "description2": "Whether you're an event organizer looking to create amazing experiences or an attendee searching for your next great event, we provide the tools, technology, and community to help you succeed.",
+      "highlights": {
+        "verifiedFreelancers": "Verified Organizers",
+        "securePayments": "Secure Ticketing",
+        "globalTalentPool": "Global Event Network",
+        "support": "24/7 Support"
+      }
+    },
+    "cta": {
+      "title": "Ready to Create Your Perfect Event?",
+      "subtitle": "Join hundreds of satisfied clients who trust us to bring their vision to life",
+      "getStarted": "Get Started Today",
+      "viewServices": "View Our Services"
+    },
+    "journey": {
+      "title": "Our Journey",
+      "subtitle": "From a small idea to a thriving event management community",
+      "timeline": {
+        "2018": {
+          "year": "2018",
+          "title": "The Idea",
+          "description": "Started as a simple vision to connect event organizers with attendees locally."
+        },
+        "2020": {
+          "year": "2020",
+          "title": "Expanding Globally",
+          "description": "Opened doors for international events and virtual event capabilities."
+        },
+        "2022": {
+          "year": "2022",
+          "title": "Building Trust",
+          "description": "Launched secure ticketing, event verification, and attendee reviews for reliability."
+        },
+        "2024": {
+          "year": "2024",
+          "title": "Scaling the Platform",
+          "description": "Empowering thousands of event organizers and attendees to create memorable experiences together."
+        }
+      },
+      "exploreButton": "Explore",
+      "whatMeansTitle": "What This Means for You",
+      "benefits": [
+        "Access to a global network of verified event organizers",
+        "Hassle-free and secure ticketing system",
+        "Verified events with proven track records",
+        "Collaboration tools for seamless event planning",
+        "Scalable support for both small gatherings and large conferences",
+        "Dedicated 24/7 platform support",
+        "Long-term partnerships for sustainable event growth"
+      ],
+      "getInTouchButton": "Get in touch"
+    },
+    "engagement": {
+      "title": "Event Management Services",
+      "subtitle": "Choose an event management model that fits your needs",
+      "remoteBadge": "100% Flexible & Scalable",
+      "models": {
+        "projectBased": {
+          "badge": "Best for Events",
+          "title": "Event Planning",
+          "description": "Complete end-to-end event planning and management with a clear timeline.",
+          "features": [
+            "One-time events",
+            "Transparent pricing"
+          ],
+          "button": "Plan Event"
+        },
+        "hourlyWork": {
+          "badge": "Quick & Flexible",
+          "title": "Event Support",
+          "description": "Pay only for the hours you need—perfect for event troubleshooting, consultations, or small tasks.",
+          "features": [
+            "No long-term contracts",
+            "On-demand expertise"
+          ],
+          "button": "Get Support"
+        },
+        "monthlyRetainer": {
+          "badge": "Most Popular",
+          "title": "Monthly Events",
+          "description": "Get ongoing event management support every month with priority assistance.",
+          "features": [
+            "Guaranteed availability",
+            "Lower hourly rates"
+          ],
+          "button": "Book Retainer"
+        },
+        "weeklySprints": {
+          "badge": "Fast Delivery",
+          "title": "Event Sprints",
+          "description": "Work in 1–2 week cycles to rapidly plan and execute events quickly.",
+          "features": [
+            "Fast iterations",
+            "Demo-based progress"
+          ],
+          "button": "Try a Sprint"
+        }
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "subtitle": "Answers to questions event organizers often ask",
+      "cta": {
+        "text": "Still have questions? We're here to help!",
+        "button": "Get in Touch"
+      },
+      "questions": [
+        {
+          "question": "What types of events can I create?",
+          "answer": "I specialize in all types of events including conferences, workshops, networking events, exhibitions, and virtual events for businesses, organizations, and communities."
+        },
+        {
+          "question": "How does the ticketing process work?",
+          "answer": "Ticketing is secure and transparent. You only pay after each milestone is delivered and approved, ensuring full transparency throughout the event planning process."
+        },
+        {
+          "question": "Can you handle urgent events?",
+          "answer": "Yes, I can take on fast-track events depending on availability. Timelines are always discussed upfront to avoid surprises and ensure successful execution."
+        },
+        {
+          "question": "How do we communicate?",
+          "answer": "I'm flexible with tools—Zoom, Google Meet, Slack, or email. I provide regular updates and weekly check-ins to keep you informed throughout the event planning process."
+        },
+        {
+          "question": "Do you provide event revisions?",
+          "answer": "Absolutely. Each event includes a set number of revisions to make sure you're 100% satisfied with the final event experience."
+        },
+        {
+          "question": "What if I need ongoing event support?",
+          "answer": "I offer retainer packages and long-term collaboration for ongoing events, maintenance, and scaling as your event portfolio grows."
+        }
+      ]
+    }
+  },
+  "services": {
+    "showcase": {
+      "tagline": "Our Services",
+      "title": "Empowering Businesses with Freelance Expertise",
+      "subtitle": "Showcasing projects that blend creativity, technology, and strategy to deliver meaningful results.",
+      "exploreButton": "Explore",
+      "reachOutButton": "Reach out"
+    },
+    "video": {
+      "notSupported": "Your browser does not support the video tag."
+    },
+    "offerings": {
+      "title": "What I Offer",
+      "subtitle": "Freelance services designed to help your business grow",
+      "startProjectButton": "Start a project",
+      "cards": {
+        "websiteDevelopment": {
+          "title": "Website Development",
+          "description": "Custom business websites and landing pages that convert visitors into clients."
+        },
+        "ecommerceSolutions": {
+          "title": "E-Commerce Solutions",
+          "description": "Online stores with secure checkout,<br/>product management, and seamless."
+        },
+        "brandingDesign": {
+          "title": "Branding & Design",
+          "description": "Logos, color palettes, and visual systems that make your brand unforgettable."
+        },
+        "contentCopywriting": {
+          "title": "Content & Copywriting",
+          "description": "Engaging blog posts and SEO content that drive traffic."
+        },
+        "digitalMarketing": {
+          "title": "Digital Marketing",
+          "description": "Social media campaigns, ads, and email funnels that grow your audience."
+        },
+        "ongoingSupport": {
+          "title": "Ongoing Support",
+          "description": "Website maintenance, updates, and long-term collaboration to keep you ahead."
+        },
+        "backDescription": "Deliverables tailored to your goals with clear milestones and transparent pricing.",
+        "learnMoreButton": "Learn more"
+      }
+    },
+    "capabilities": {
+      "title": "Our Capabilities",
+      "subtitle": "Explore what we excel at",
+      "uiux": {
+        "title": "UI/UX Design",
+        "points": [
+          "Flows, wireframes, and high-fidelity prototypes",
+          "Design systems with accessibility baked in",
+          "Motion and micro-interactions with purpose"
+        ]
+      },
+      "frontend": {
+        "title": "Frontend Engineering",
+        "points": [
+          "Typed, composable components",
+          "State, routing, and data-fetching patterns",
+          "Clean architecture and DX"
+        ]
+      },
+      "integration": {
+        "title": "Backend Integration",
+        "points": [
+          "Auth flows, error boundaries, retries",
+          "REST/GraphQL data wiring and caching",
+          "Robust forms and validations"
+        ]
+      },
+      "performance": {
+        "title": "Performance",
+        "points": [
+          "Core Web Vitals and Lighthouse improvements",
+          "Code splitting, image strategy, caching",
+          "Perf budgets and monitoring"
+        ]
+      },
+      "testing": {
+        "title": "Testing & QA",
+        "points": [
+          "Unit, integration, and E2E coverage",
+          "A11y checks and visual testing",
+          "CI-friendly suites and reports"
+        ]
+      },
+      "dx": {
+        "title": "Developer Experience",
+        "points": [
+          "Tooling, linting, and code quality gates",
+          "Docs and handoff practices",
+          "Onboarding with confidence"
+        ]
+      }
+    },
+    "packages": {
+      "title": "Freelance Packages",
+      "subtitle": "Flexible plans for projects big or small",
+      "choosePlanButton": "Choose plan",
+      "basic": {
+        "title": "Basic Gig",
+        "description": "Quick turnaround for small tasks and fixes.",
+        "badge": "Best for one-time jobs",
+        "features": {
+          "bugFixing": "Bug fixing",
+          "uiChanges": "Small UI changes",
+          "landingPage": "Simple landing page"
+        }
+      },
+      "pro": {
+        "title": "Pro Project",
+        "description": "Full project support with regular updates.",
+        "badge": "Best for startups",
+        "features": {
+          "development": "End-to-end development",
+          "design": "Responsive design",
+          "progressCalls": "Weekly progress calls"
+        }
+      },
+      "dedicated": {
+        "title": "Dedicated Freelancer",
+        "description": "Your on-demand developer/designer for longer collaboration.",
+        "badge": "Best for ongoing work",
+        "features": {
+          "prioritySupport": "Priority support",
+          "retainer": "Monthly retainer model",
+          "flexibleScope": "Flexible scope & revisions"
+        }
+      }
+    },
+    "caseStudies": {
+      "title": "Freelance Projects",
+      "subtitle": "Showcasing client work across industries",
+      "workWithMeButton": "Work with me",
+      "projects": {
+        "mobileApp": "Mobile App Development",
+        "contentWriting": "Content Writing Project",
+        "digitalMarketing": "Digital Marketing Campaign",
+        "uiuxDesign": "UI/UX Design for Startup",
+        "seo": "SEO & Growth Strategy",
+        "branding": "Branding & Visual Identity"
+      }
+    },
+    "cta": {
+      "title": "Hire Top Freelancers Today",
+      "description": "Whether you need a developer, designer, writer, or marketer — get your project done by trusted freelancers worldwide.",
+      "postProjectButton": "Post Your Project",
+      "benefits": {
+        "verifiedProfessionals": "Verified professionals",
+        "onTimeDelivery": "On-time project delivery",
+        "affordablePricing": "Affordable pricing",
+        "flexibleCollaboration": "Flexible collaboration"
+      }
+    }
+  },
+  "websiteDevelopment": {
+    "showcase": {
+      "title": "Website Development",
+      "subtitle": "Custom business websites that convert visitors into clients.",
+      "connectButton": "connect"
+    },
+    "hero": {
+      "tagline": "WEBSITE DEVELOPMENT SERVICES",
+      "title": "Build Powerful Freelancing Platforms",
+      "description": "We specialize in developing modern, high-performance websites tailored for freelancers and businesses. From portfolio platforms to full-featured freelance marketplaces, our solutions are designed to be secure, scalable, and user-friendly — helping you connect talent with opportunities seamlessly."
+    },
+    "serviceOverview": {
+      "title": "Professional Website Solutions",
+      "description": "I specialize in creating custom websites that not only look stunning but also drive results. From simple landing pages to complex business websites, every project is built with your business goals in mind.",
+      "features": {
+        "responsiveDesign": "Responsive design for all devices",
+        "seoOptimized": "SEO optimized for better visibility",
+        "fastLoading": "Fast loading and performance optimized"
+      },
+      "websiteFeatures": {
+        "title": "What You Get",
+        "customDesign": "Custom design tailored to your brand",
+        "mobileFirst": "Mobile-first responsive design",
+        "cms": "Content management system",
+        "seoAnalytics": "SEO optimization and analytics",
+        "ongoingSupport": "Ongoing support and maintenance"
+      }
+    },
+    "process": {
+      "title": "Development Process",
+      "subtitle": "A streamlined approach to deliver your website on time and within budget",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "description": "Understanding your business, goals, and target audience"
+        },
+        "design": {
+          "title": "Design",
+          "description": "Creating wireframes and visual designs for approval"
+        },
+        "development": {
+          "title": "Development",
+          "description": "Building your website with clean, optimized code"
+        },
+        "launch": {
+          "title": "Launch",
+          "description": "Testing, deployment, and post-launch support"
+        }
+      }
+    },
+    "technologies": {
+      "title": "Technologies I Use",
+      "subtitle": "Modern, reliable technologies to build fast and scalable websites",
+      "services": {
+        "react": "React",
+        "nextjs": "Next.js",
+        "tailwind": "Tailwind CSS",
+        "nodejs": "Node.js",
+        "typescript": "TypeScript",
+        "mongodb": "MongoDB",
+        "postgresql": "PostgreSQL",
+        "aws": "AWS"
+      }
+    },
+    "cta": {
+      "title": "Let's Build Something Extraordinary",
+      "subtitle": "From concept to launch, we craft digital experiences that inspire action.",
+      "startProjectButton": "Start Your Project",
+      "viewServicesButton": "View Services"
+    }
+  },
+  "ecommerceSolutions": {
+    "showcase": {
+      "title": "E-Commerce Solutions",
+      "subtitle": "Online stores with secure checkout and seamless user experience.",
+      "connectButton": "connect"
+    },
+    "hero": {
+      "tagline": "E-COMMERCE SOLUTIONS",
+      "title": "Drive Online Sales",
+      "description": "We build secure, high-performance e-commerce solutions that help businesses grow online. From sleek storefronts to fully integrated marketplaces, our platforms are optimized for speed, scalability, and seamless user experience — ensuring your customers enjoy effortless shopping across all devices."
+    },
+    "serviceOverview": {
+      "title": "Complete E-Commerce Platform",
+      "description": "I build comprehensive e-commerce solutions that handle everything from product catalog management to secure payment processing. Your online store will be optimized for conversions and user experience.",
+      "features": {
+        "securePayment": "Secure payment gateway integration",
+        "inventoryManagement": "Inventory and order management",
+        "mobileOptimized": "Mobile-optimized shopping experience"
+      },
+      "ecommerceFeatures": {
+        "title": "E-Commerce Features",
+        "productCatalog": "Product catalog with categories",
+        "shoppingCart": "Shopping cart and wishlist",
+        "secureCheckout": "Secure checkout process",
+        "orderTracking": "Order tracking and notifications",
+        "adminDashboard": "Admin dashboard for management"
+      }
+    },
+    "process": {
+      "title": "E-Commerce Development Process",
+      "subtitle": "A clear, step-by-step approach to build your online store and drive sales",
+      "steps": {
+        "strategy": {
+          "title": "Strategy",
+          "description": "Analyzing your business goals, target customers, and product catalog"
+        },
+        "storeDesign": {
+          "title": "Store Design",
+          "description": "Creating a modern, user-friendly storefront that matches your brand"
+        },
+        "development": {
+          "title": "Development",
+          "description": "Setting up products, payment gateways, and secure checkout systems"
+        },
+        "launchSupport": {
+          "title": "Launch & Support",
+          "description": "Testing, going live, and providing continuous support for growth"
+        }
+      }
+    },
+    "solutions": {
+      "title": "E-Commerce Solutions",
+      "subtitle": "End-to-end e-commerce services to help you launch and grow your online store",
+      "services": {
+        "customStorefronts": "Custom Storefronts",
+        "paymentIntegration": "Payment Integration",
+        "shoppingCart": "Shopping Cart",
+        "inventoryManagement": "Inventory Management",
+        "orderTracking": "Order Tracking",
+        "customerAccounts": "Customer Accounts",
+        "analyticsReports": "Analytics & Reports",
+        "marketingTools": "Marketing Tools"
+      }
+    },
+    "cta": {
+      "title": "Let's Build Something Extraordinary",
+      "subtitle": "From concept to launch, we craft digital experiences that inspire action.",
+      "startProjectButton": "Start Your Project",
+      "viewServicesButton": "View Services"
+    }
+  },
+  "contentCopywriting": {
+    "showcase": {
+      "title": "Content & Copywriting",
+      "subtitle": "Engaging blog posts and SEO content that drive traffic",
+      "connectButton": "connect"
+    },
+    "hero": {
+      "tagline": "CONTENT COPYWRITING SERVICES",
+      "title": "Engage Audiences with Persuasive Copy",
+      "description": "Our expert copywriting services help businesses communicate clearly, build trust, and drive action. From website content and blogs to product descriptions and ad copy, we craft words that connect with your audience, strengthen your brand voice, and inspire results."
+    },
+    "serviceOverview": {
+      "title": "Content That Converts",
+      "description": "I create compelling content that engages your audience, improves your search rankings, and drives meaningful results. From blog posts to product descriptions, every piece is crafted to achieve your business goals.",
+      "features": {
+        "seoOptimized": "SEO-optimized content for better rankings",
+        "engagingCopy": "Engaging copy that converts visitors",
+        "consistentBrand": "Consistent brand voice and messaging"
+      },
+      "contentFeatures": {
+        "title": "Content Services",
+        "blogPosts": "Blog posts and articles",
+        "productDescriptions": "Product descriptions",
+        "websiteCopy": "Website copy",
+        "emailMarketing": "Email marketing content",
+        "socialMedia": "Social media content"
+      }
+    },
+    "process": {
+      "title": "Copywriting Process",
+      "subtitle": "A clear and collaborative approach to deliver impactful, brand-aligned content",
+      "steps": {
+        "research": {
+          "title": "Research",
+          "description": "Understanding your brand, audience, and content goals"
+        },
+        "strategy": {
+          "title": "Strategy",
+          "description": "Defining tone, messaging style, and content structure"
+        },
+        "writing": {
+          "title": "Writing",
+          "description": "Crafting persuasive, engaging, and SEO-friendly copy"
+        },
+        "refinement": {
+          "title": "Refinement",
+          "description": "Editing, proofreading, and finalizing content for publishing"
+        }
+      }
+    },
+    "tools": {
+      "title": "Tools & Skills I Use",
+      "subtitle": "Professional tools and skills to craft engaging, persuasive, and impactful content",
+      "skills": {
+        "seoWriting": "SEO Writing",
+        "contentStrategy": "Content Strategy",
+        "storytelling": "Storytelling",
+        "brandVoice": "Brand Voice",
+        "marketResearch": "Market Research",
+        "editingProofreading": "Editing & Proofreading",
+        "socialMediaCopy": "Social Media Copy",
+        "emailMarketing": "Email Marketing"
+      }
+    },
+    "cta": {
+      "title": "Let's Build Something Extraordinary",
+      "subtitle": "From concept to launch, we craft digital experiences that inspire action.",
+      "startProjectButton": "Start Your Project",
+      "viewServicesButton": "View Services"
+    }
+  },
+  "brandingDesign": {
+    "showcase": {
+      "title": "Branding & Design",
+      "subtitle": "Logos and color palettes that make your brand unforgettable.",
+      "connectButton": "connect",
+      "exploreServicesButton": "Explore Services"
+    },
+    "hero": {
+      "tagline": "BRANDING & DESIGN SERVICES",
+      "title": "Craft Memorable Brands",
+      "description": "We help businesses stand out with impactful branding and visually stunning designs. From logo creation and brand identity to complete design systems, our solutions ensure your brand communicates trust, creativity, and consistency — leaving a lasting impression on your audience.",
+      "getStartedButton": "Get Started",
+      "viewServicesButton": "View Services"
+    },
+    "serviceOverview": {
+      "title": "Visual Identity Design",
+      "description": "I create comprehensive branding solutions that capture your brand's essence and communicate your values to your audience. From logos to complete brand guidelines, every element is designed to build recognition and trust.",
+      "features": {
+        "uniqueLogo": "Unique and memorable logo design",
+        "colorPalette": "Strategic color palette selection",
+        "brandGuidelines": "Comprehensive brand guidelines"
+      },
+      "brandingFeatures": {
+        "title": "Branding Deliverables",
+        "primaryLogos": "Primary and secondary logos",
+        "colorPalette": "Color palette with hex codes",
+        "typography": "Typography selection",
+        "brandStyleGuide": "Brand style guide",
+        "socialTemplates": "Social media templates"
+      }
+    },
+    "process": {
+      "title": "Our Branding & Design Process",
+      "subtitle": "A creative and collaborative journey to shape your brand identity and visuals",
+      "steps": {
+        "brandDiscovery": {
+          "title": "Brand Discovery",
+          "description": "Understanding your vision, audience, and market positioning"
+        },
+        "creativeStrategy": {
+          "title": "Creative Strategy",
+          "description": "Defining brand tone, color palettes, and design direction"
+        },
+        "designExecution": {
+          "title": "Design Execution",
+          "description": "Crafting logos, brand assets, and visual designs that stand out"
+        },
+        "brandLaunch": {
+          "title": "Brand Launch",
+          "description": "Delivering final assets and ensuring consistent brand application"
+        }
+      }
+    },
+    "solutions": {
+      "title": "Branding & Design Solutions",
+      "subtitle": "Creative and strategic design services to shape a strong, memorable brand identity",
+      "services": {
+        "logoDesign": "Logo Design",
+        "brandIdentity": "Brand Identity",
+        "uiuxDesign": "UI/UX Design",
+        "printDigitalMedia": "Print & Digital Media",
+        "socialMediaCreatives": "Social Media Creatives",
+        "packagingDesign": "Packaging Design",
+        "websiteDesign": "Website Design",
+        "marketingCollaterals": "Marketing Collaterals"
+      }
+    },
+    "cta": {
+      "title": "Let's Build Something Extraordinary",
+      "subtitle": "From concept to launch, we craft digital experiences that inspire action.",
+      "startProjectButton": "Start Your Project",
+      "viewServicesButton": "View Services"
+    }
+  },
+  "blogPage": {
+    "showcase": {
+      "tagline": "Your Dream Events, Our Expertise",
+      "title": "Create Unforgettable Events",
+      "subtitle": "From intimate celebrations to grand corporate gatherings, we bring your vision to life with professional event management.",
+      "subscribeButton": "Plan Your Event"
+    },
+    "featuredArticles": {
+      "title": "Featured Articles",
+      "subtitle": "Our most popular and insightful posts"
+    },
+    "blogPosts": {
+      "birthdayEvent": {
+        "title": "Best Kids' Birthday Party Ideas",
+        "excerpt": "Creative and fun birthday party ideas that will make your child's special day unforgettable.",
+        "category": "Birthday Events",
+        "author": "By Admin",
+        "date": "19 February",
+        "readTime": "5 min read"
+      },
+      "corporateEvent": {
+        "title": "Top 10 Afterparty Golden Rules",
+        "excerpt": "Essential guidelines for hosting successful corporate afterparties and networking events.",
+        "category": "Corporate Events",
+        "author": "By Admin",
+        "date": "18 February",
+        "readTime": "7 min read"
+      },
+      "weddingEvent": {
+        "title": "Wedding Venue Selection Guide",
+        "excerpt": "Your complete guide to choosing the perfect wedding venue that matches your vision, budget, and creates unforgettable memories.",
+        "category": "Wedding Planning",
+        "author": "By Admin",
+        "date": "17 February",
+        "readTime": "12 min read"
+      }
+    },
+    "categories": {
+      "all": "All Posts",
+      "freelancing": "Freelancing",
+      "clientAcquisition": "Client Acquisition",
+      "productivity": "Productivity"
+    },
+    "latestPosts": {
+      "title": "Latest Posts",
+      "subtitle": "Stay updated with our latest event management insights and tips",
+      "viewToggle": {
+        "grid": "Grid View",
+        "list": "List View"
+      },
+      "readMore": "Read More",
+      "posts": {
+        "eventPlanning": {
+          "title": "10 Essential Tips for Perfect Event Planning",
+          "excerpt": "Master the art of event planning with these proven strategies that will ensure your events run smoothly from start to finish.",
+          "category": "Event Planning",
+          "author": "Sarah Johnson",
+          "date": "20 Feb 2024",
+          "readTime": "8 min read",
+          "image": "/images/event-planning.jpg"
+        },
+        "corporateEvents": {
+          "title": "Corporate Event Trends for 2024",
+          "excerpt": "Discover the latest trends shaping corporate events this year and how to implement them in your next gathering.",
+          "category": "Corporate Events",
+          "author": "Mike Chen",
+          "date": "18 Feb 2024",
+          "readTime": "6 min read",
+          "image": "/images/corporate-trends.jpg"
+        },
+        "weddingPlanning": {
+          "title": "Wedding Venue Selection Guide",
+          "excerpt": "Everything you need to know about choosing the perfect wedding venue that matches your vision and budget.",
+          "category": "Wedding Planning",
+          "author": "Emma Davis",
+          "date": "16 Feb 2024",
+          "readTime": "10 min read",
+          "image": "/images/wedding-venue.jpg"
+        },
+        "eventTechnology": {
+          "title": "Technology Trends in Event Management",
+          "excerpt": "Explore how modern technology is revolutionizing event management and enhancing guest experiences.",
+          "category": "Event Technology",
+          "author": "Alex Rodriguez",
+          "date": "14 Feb 2024",
+          "readTime": "7 min read",
+          "image": "/images/event-tech.jpg"
+        },
+        "budgetPlanning": {
+          "title": "Event Budget Planning Made Simple",
+          "excerpt": "Learn how to create and manage event budgets effectively without compromising on quality or guest experience.",
+          "category": "Budget Planning",
+          "author": "Lisa Wang",
+          "date": "12 Feb 2024",
+          "readTime": "9 min read",
+          "image": "/images/budget-planning.jpg"
+        },
+        "vendorManagement": {
+          "title": "Working with Event Vendors",
+          "excerpt": "Best practices for selecting, negotiating with, and managing vendors to ensure successful event execution.",
+          "category": "Vendor Management",
+          "author": "David Kim",
+          "date": "10 Feb 2024",
+          "readTime": "5 min read",
+          "image": "/images/vendor-management.jpg"
+        }
+      }
+    },
+    "whyChoosePlatform": {
+      "title": "Why Choose Our Freelancing Platform?",
+      "subtitle": "Designed for freelancers & clients to connect, collaborate, and grow",
+      "features": {
+        "globalTalent": {
+          "title": "Global Talent",
+          "description": "Access top freelancers from around the world for any project."
+        },
+        "securePayments": {
+          "title": "Secure Payments",
+          "description": "Safe & transparent payment system for both clients and freelancers."
+        },
+        "verifiedClients": {
+          "title": "Verified Clients",
+          "description": "Work only with trusted and verified clients to avoid scams."
+        },
+        "support24x7": {
+          "title": "24/7 Support",
+          "description": "Our team is available around the clock to help you succeed."
+        },
+        "skillMatching": {
+          "title": "Skill Matching",
+          "description": "Smart matching system to connect freelancers with the right projects."
+        },
+        "portfolioShowcase": {
+          "title": "Portfolio Showcase",
+          "description": "Easily display your work to attract high-paying clients."
+        }
+      }
+    },
+    "trendingTopics": {
+      "title": "Trending Topics",
+      "subtitle": "What the freelancing community is talking about",
+      "topics": [
+        "Remote Work Trends 2025",
+        "AI in Freelancing",
+        "Building Personal Brand",
+        "Financial Planning for Freelancers",
+        "Networking Strategies"
+      ]
+    },
+    "authors": {
+      "title": "Meet Our Authors",
+      "subtitle": "Expert freelancers sharing their knowledge",
+      "sarah": {
+        "name": "Sarah Johnson",
+        "role": "Freelance Writer & Consultant",
+        "bio": "10+ years helping freelancers build successful careers",
+        "expertise": ["Content Strategy", "Personal Branding", "Client Relations"]
+      },
+      "mike": {
+        "name": "Mike Chen",
+        "role": "Digital Marketing Expert",
+        "bio": "Specialized in helping freelancers scale their businesses",
+        "expertise": ["Marketing", "Growth Strategy", "Analytics"]
+      },
+      "emma": {
+        "name": "Emma Davis",
+        "role": "Productivity Coach",
+        "bio": "Teaching freelancers to work smarter, not harder",
+        "expertise": ["Time Management", "Workflow Optimization", "Mindset"]
+      }
+    },
+    "organizeTheBestEvent": {
+      "tagline": "Organize the best event",
+      "title": "We organize the best seminars and events",
+      "description": "Event management is no longer just about planning—it's about creating unforgettable experiences. As technology evolves and audience expectations rise, the way we organize events is transforming faster than ever. This dynamic field demands innovation, adaptability, and a keen understanding of attendee engagement to deliver truly impactful gatherings.",
+      "quote": "Events are no longer just attended, they're experienced.",
+      "finalThoughtsTitle": "Final Thoughts",
+      "finalThoughtsDescription": "The future of event management is exciting, innovative, and deeply people-centered. Whether it's a wedding, corporate summit, or global expo, the key is to blend creativity, technology, and personalization to craft unforgettable moments.",
+      "discoverButton": "Discover Now"
+    },
+    "awesomeAuthors": {
+      "title": "Awesome Authors.",
+      "subtitle": "Who bring years of experience and creativity to every project.",
+      "authors": {
+        "brandon": {
+          "name": "Brandon",
+          "role": "Event Coordinator",
+          "bio": "Specializes in corporate events and conferences, ensuring seamless execution and exceptional attendee experiences."
+        },
+        "christina": {
+          "name": "Christina",
+          "role": "Event Designer",
+          "bio": "Creates stunning visual experiences and innovative event concepts that leave lasting impressions on guests."
+        },
+        "martinDave": {
+          "name": "Martin Dave",
+          "role": "Event Marketing",
+          "bio": "Drives event promotion and audience engagement strategies to maximize attendance and brand visibility."
+        },
+        "juliaSmith": {
+          "name": "Julia Smith",
+          "role": "Wedding Planner",
+          "bio": "Expert in crafting magical wedding experiences with attention to every detail and personal touch."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Create Your Next Unforgettable Event?",
+      "description": "Join thousands of event organizers who trust our platform to bring their vision to life with professional planning, seamless execution, and exceptional experiences.",
+      "startFreelancingButton": "Start Planning Now",
+      "learnMoreButton": "View Our Services"
+    }
+  },
+  "digitalMarketing": {
+    "title": "Digital Marketing",
+    "description": "Social media campaigns, ads, and email funnels that grow your audience.",
+    "connectButton": "connect",
+    "servicesTitle": "DIGITAL MARKETING SERVICES",
+    "strategiesTitle": "Drive Growth with Data-Driven",
+    "strategiesDescription": "We help brands boost their online presence with customized digital marketing campaigns. From SEO and content marketing to social media and paid ads, our strategies are designed to attract, engage, and convert your audience — delivering measurable results and sustainable growth.",
+    "strategicTitle": "Strategic Digital Marketing",
+    "strategicDescription": "I develop comprehensive digital marketing strategies that increase your online presence, engage your target audience, and drive measurable business growth. From social media management to paid advertising, every campaign is optimized for results.",
+    "dataDriven": "Data-driven marketing strategies",
+    "multiChannel": "Multi-channel campaign management",
+    "roiFocused": "ROI-focused campaign optimization",
+    "marketingServicesTitle": "Marketing Services",
+    "socialMediaManagement": "Social media management",
+    "ppcGoogleAds": "PPC and Google Ads",
+    "emailMarketing": "Email marketing campaigns",
+    "contentMarketing": "Content marketing strategy",
+    "analyticsReporting": "Analytics and reporting",
+    "marketingProcessTitle": "Our Marketing Process",
+    "marketingProcessDescription": "A proven step-by-step approach to help your brand grow",
+    "researchStrategyTitle": "Research & Strategy",
+    "researchStrategyDescription": "Analyzing your market, audience, and competitors to craft a winning strategy",
+    "contentCreationTitle": "Content Creation",
+    "contentCreationDescription": "Producing engaging content, ads, and creatives that attract and convert",
+    "campaignExecutionTitle": "Campaign Execution",
+    "campaignExecutionDescription": "Running data-driven ads and campaigns across the right digital channels",
+    "optimizeScaleTitle": "Optimize & Scale",
+    "optimizeScaleDescription": "Tracking results and scaling your campaigns for growth",
+    "digitalMarketingSolutionsTitle": "Digital Marketing Solutions",
+    "digitalMarketingSolutionsDescription": "Data-driven strategies and tools to grow your online presence, reach the right audience, and maximize ROI",
+    "seoOptimization": "SEO Optimization",
+    "socialMediaMarketing": "Social Media Marketing",
+    "emailCampaigns": "Email Campaigns",
+    "payPerClick": "Pay-Per-Click (PPC)",
+    "brandStrategy": "Brand Strategy",
+    "influencerMarketing": "Influencer Marketing",
+    "ctaTitle": "Let's Build Something Extraordinary",
+    "ctaDescription": "From concept to launch, we craft digital experiences that inspire action.",
+    "startProjectButton": "Start Your Project",
+    "viewServicesButton": "View Services"
+  },
+  "ongoingSupport": {
+    "showcase": {
+      "title": "Ongoing Support",
+      "subtitle": "Website maintenance, updates, and long-term collaboration.",
+      "connectButton": "connect"
+    },
+    "hero": {
+      "tagline": "ONGOING SUPPORT SERVICES",
+      "title": "Reliable Business Support",
+      "description": "We don't just deliver and disappear—we stay with you every step of the way. Our ongoing support services ensure your systems, websites, and digital tools continue to perform at their best. From regular updates and troubleshooting to proactive monitoring and quick assistance, we've got you covered so you can focus on growing your business with confidence."
+    },
+    "serviceOverview": {
+      "title": "Long-Term Partnership",
+      "description": "I provide ongoing support and maintenance to ensure your website continues to perform at its best. From regular updates to emergency fixes, you can count on reliable support that keeps your business running smoothly.",
+      "features": {
+        "emergencySupport": "24/7 emergency support",
+        "securityUpdates": "Regular security updates",
+        "performanceMonitoring": "Performance monitoring and optimization"
+      },
+      "supportServices": {
+        "title": "Support Services",
+        "websiteMaintenance": "Website maintenance",
+        "securityUpdates": "Security updates",
+        "contentUpdates": "Content updates",
+        "performanceOptimization": "Performance optimization",
+        "technicalSupport": "Technical support"
+      }
+    },
+    "process": {
+      "title": "Development Process",
+      "subtitle": "A streamlined approach to deliver your website and keep it running smoothly",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "description": "Understanding your business, goals, and target audience"
+        },
+        "design": {
+          "title": "Design",
+          "description": "Creating wireframes and visual designs for approval"
+        },
+        "development": {
+          "title": "Development",
+          "description": "Building your website with clean, optimized, and scalable code"
+        },
+        "ongoingSupport": {
+          "title": "Ongoing Support",
+          "description": "Continuous updates, security monitoring, and technical assistance to keep your website running smoothly"
+        }
+      }
+    },
+    "solutions": {
+      "title": "Ongoing Support",
+      "subtitle": "Beyond launch, we ensure your website stays secure, updated, and optimized for growth.",
+      "services": {
+        "regularUpdates": "Regular Updates",
+        "securityMonitoring": "Security Monitoring",
+        "performanceOptimization": "Performance Optimization",
+        "technicalSupport": "Technical Support"
+      },
+      "serviceDescriptions": {
+        "regularUpdatesDesc": "Keep your website updated with the latest features and fixes.",
+        "securityMonitoringDesc": "Continuous monitoring to protect your site from threats.",
+        "performanceOptimizationDesc": "Ensure your website runs smoothly and loads fast.",
+        "technicalSupportDesc": "Quick assistance whenever you face technical challenges."
+      }
+    },
+    "cta": {
+      "title": "Let's Build Something Extraordinary",
+      "subtitle": "From concept to launch, we craft digital experiences that inspire action.",
+      "startProjectButton": "Start Your Project",
+      "viewServicesButton": "View Services"
+    }
+  },
+  "blogPost1": {
+    "hero": {
+      "category": "Freelancing",
+      "readTime": "8 min read",
+      "date": "Dec 15, 2024",
+      "title": "Getting Started as a Freelancer: A Complete Guide",
+      "author": "Sarah Johnson",
+      "authorRole": "Freelance Writer & Consultant"
+    },
+    "content": {
+      "intro": "Embarking on a freelancing journey can be both exciting and overwhelming. With the right approach, you can build a successful career that offers flexibility, financial freedom, and personal fulfillment. This comprehensive guide will walk you through every step of the process.",
+      "section1": {
+        "title": "Understanding the Freelancing Landscape",
+        "description": "Freelancing has evolved significantly over the past decade. What once was considered a side hustle has now become a legitimate career path for millions of professionals worldwide. The gig economy continues to grow, offering opportunities across virtually every industry."
+      },
+      "section2": {
+        "title": "Key Benefits of Freelancing",
+        "benefits": [
+          "Flexible work hours and location independence",
+          "Unlimited earning potential based on your skills",
+          "Ability to choose projects that align with your interests",
+          "Professional growth through diverse client experiences"
+        ]
+      },
+      "section3": {
+        "title": "Step 1: Assess Your Skills and Market Demand",
+        "description": "Before diving into freelancing, it's crucial to evaluate your current skill set and understand what the market demands. This self-assessment will help you position yourself effectively and identify areas for improvement.",
+        "checklistTitle": "Skills Assessment Checklist",
+        "checklistItems": [
+          "Technical skills relevant to your field",
+          "Communication and client management abilities",
+          "Time management and organizational skills",
+          "Problem-solving and critical thinking",
+          "Marketing and self-promotion capabilities"
+        ]
+      },
+      "section4": {
+        "title": "Step 2: Choose Your Freelancing Platform",
+        "description": "There are numerous platforms where you can find freelance work. Each has its own advantages and target audience. Research and choose the ones that best align with your skills and goals.",
+        "subtitle": "Popular Freelancing Platforms",
+        "platforms": [
+          {
+            "name": "Upwork",
+            "nameTranslated": "Upwork",
+            "description": "Great for beginners, wide variety of projects"
+          },
+          {
+            "name": "Fiverr",
+            "nameTranslated": "Fiverr",
+            "description": "Service-based marketplace, good for creative work"
+          },
+          {
+            "name": "Freelancer.com",
+            "nameTranslated": "Freelancer.com",
+            "description": "Competitive bidding system, various project types"
+          },
+          {
+            "name": "Toptal",
+            "nameTranslated": "Toptal",
+            "description": "Premium platform for top-tier professionals"
+          }
+        ]
+      },
+      "section5": {
+        "title": "Step 3: Create a Compelling Profile",
+        "description": "Your profile is your digital business card. It's often the first impression potential clients have of you, so make it count. A well-crafted profile can significantly increase your chances of landing projects.",
+        "subtitle": "Profile Optimization Tips",
+        "tips": [
+          {
+            "title": "Professional Headshot:",
+            "description": "Use a high-quality, professional photo that conveys trust and competence."
+          },
+          {
+            "title": "Compelling Headline:",
+            "description": "Create a headline that clearly states what you do and your unique value proposition."
+          },
+          {
+            "title": "Detailed Overview:",
+            "description": "Write a comprehensive overview that highlights your expertise, experience, and achievements."
+          },
+          {
+            "title": "Portfolio Showcase:",
+            "description": "Include your best work samples to demonstrate your capabilities."
+          },
+          {
+            "title": "Skills and Certifications:",
+            "description": "List relevant skills and any certifications that add credibility."
+          }
+        ]
+      },
+      "section6": {
+        "title": "Step 4: Set Your Pricing Strategy",
+        "description": "Pricing is one of the most challenging aspects of freelancing. Set your rates too low, and you might struggle to make ends meet. Set them too high, and you might price yourself out of the market.",
+        "subtitle": "Pricing Strategy Considerations",
+        "considerations": [
+          "Research market rates for your skills and experience level",
+          "Consider your living expenses and financial goals",
+          "Factor in taxes, healthcare, and other business expenses",
+          "Start with competitive rates and increase as you gain experience",
+          "Offer different pricing tiers for different service levels"
+        ]
+      },
+      "section7": {
+        "title": "Step 5: Land Your First Client",
+        "description": "Getting your first client can be the most challenging part of your freelancing journey. However, with persistence and the right approach, you can overcome this hurdle and start building your client base.",
+        "subtitle": "Strategies for Landing Your First Client",
+        "strategies": [
+          {
+            "title": "Start with Small Projects:",
+            "description": "Offer to do smaller, simpler projects to build your portfolio and gain reviews."
+          },
+          {
+            "title": "Leverage Your Network:",
+            "description": "Reach out to friends, family, and professional contacts who might need your services."
+          },
+          {
+            "title": "Cold Outreach:",
+            "description": "Identify potential clients and reach out with personalized proposals."
+          },
+          {
+            "title": "Social Media Marketing:",
+            "description": "Use platforms like LinkedIn, Twitter, and Instagram to showcase your expertise."
+          }
+        ]
+      },
+      "section8": {
+        "title": "Building Long-term Success",
+        "description": "Freelancing is not just about landing individual projects; it's about building a sustainable business. Focus on delivering exceptional value, building strong client relationships, and continuously improving your skills.",
+        "subtitle": "Success Principles for Freelancers",
+        "principles": [
+          "Always exceed client expectations",
+          "Communicate clearly and regularly",
+          "Meet deadlines consistently",
+          "Ask for feedback and testimonials",
+          "Continuously learn and adapt",
+          "Build a strong personal brand"
+        ]
+      },
+      "conclusion": {
+        "title": "Conclusion",
+        "mainText": "Starting your freelancing journey requires preparation, patience, and persistence. By following these steps and maintaining a professional approach, you can build a successful freelancing career that offers the freedom and flexibility you're looking for.",
+        "finalText": "Remember, every successful freelancer started exactly where you are now. The key is to take action, learn from your experiences, and never stop improving. Your freelancing success story is waiting to be written."
+      }
+    },
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Freelance Writer & Consultant",
+      "bio": "Sarah is a freelance writer and consultant with over 10 years of experience helping freelancers build successful careers. She specializes in content strategy, personal branding, and client relations.",
+      "expertise": [
+        "Content Strategy",
+        "Personal Branding",
+        "Client Relations"
+      ]
+    },
+    "sidebar": {
+      "relatedPosts": "Related Posts",
+      "post1": {
+        "title": "How to Attract High-Paying Clients",
+        "description": "Proven strategies to build trust and grow your income."
+      },
+      "post2": {
+        "title": "Balancing Multiple Projects",
+        "description": "Time management hacks every freelancer should know."
+      }
+    }
+  },
+  "blogPost2": {
+    "hero": {
+      "category": "Client Acquisition",
+      "readTime": "12 min read",
+      "date": "Dec 12, 2024",
+      "title": "How to Attract High-Paying Clients: Proven Strategies",
+      "author": "Mike Chen",
+      "authorRole": "Digital Marketing Expert"
+    },
+    "content": {
+      "intro": "Attracting high-paying clients is the holy grail of freelancing. While it may seem challenging, it's entirely achievable with the right mindset, strategies, and execution. This comprehensive guide will show you exactly how to position yourself as a premium service provider.",
+      "section1": {
+        "title": "Understanding High-Paying Clients",
+        "description": "High-paying clients are not just clients who can afford premium rates; they're clients who understand the value of quality work and are willing to invest in it. These clients typically have larger budgets, more complex projects, and higher expectations."
+      },
+      "section2": {
+        "title": "Characteristics of High-Paying Clients",
+        "benefits": [
+          "They value quality over price",
+          "They have larger, more complex projects",
+          "They understand the ROI of professional services",
+          "They're willing to pay for expertise and experience"
+        ]
+      },
+      "section3": {
+        "title": "Strategy 1: Build a Strong Personal Brand",
+        "description": "Your personal brand is how you present yourself to the world. It's what makes you memorable and differentiates you from your competition. A strong personal brand can command premium rates because it builds trust and credibility.",
+        "checklistTitle": "Personal Branding Elements",
+        "checklistItems": [
+          "Professional website and portfolio",
+          "Consistent social media presence",
+          "Thought leadership content",
+          "Professional headshots and branding",
+          "Clear value proposition"
+        ]
+      },
+      "section4": {
+        "title": "Strategy 2: Position Yourself as an Expert",
+        "description": "High-paying clients want to work with experts, not generalists. They're looking for someone who deeply understands their industry, challenges, and needs. Positioning yourself as an expert in a specific niche can significantly increase your earning potential.",
+        "subtitle": "Establish Expertise Tips",
+        "tips": [
+          "Specialize in a niche",
+          "Create educational content",
+          "Speak at events",
+          "Get published in respected outlets",
+          "Obtain relevant certifications"
+        ]
+      },
+      "section5": {
+        "title": "Strategy 3: Deliver Exceptional Results",
+        "description": "The best way to attract high-paying clients is to consistently deliver exceptional results for your current clients. Happy clients become repeat clients and refer you to others, creating a virtuous cycle of growth.",
+        "subtitle": "Keys to Exceptional Delivery",
+        "strategies": [
+          "Over-deliver on client expectations",
+          "Communicate proactively",
+          "Meet deadlines consistently",
+          "Provide value-added insights"
+        ]
+      },
+      "section6": {
+        "title": "Strategy 4: Network Strategically",
+        "description": "Networking is crucial for attracting high-paying clients. The people you know and the relationships you build can open doors to opportunities that might not be available through traditional channels.",
+        "subtitle": "Networking Strategies",
+        "strategies": [
+          "Attend industry conferences and events",
+          "Join professional groups",
+          "Participate in online communities",
+          "Connect with professionals in your field",
+          "Build relationships before clients need you"
+        ]
+      },
+      "conclusion": {
+        "title": "Conclusion",
+        "mainText": "Attracting high-paying clients is about implementing the right strategies consistently. By building a strong personal brand, positioning yourself as an expert, delivering exceptional results, networking strategically, and leveraging social proof, you can attract the clients you deserve."
+      }
+    },
+    "author": {
+      "name": "Mike Chen",
+      "role": "Digital Marketing Expert",
+      "bio": "Mike is a digital marketing expert who helps freelancers scale their businesses and attract premium clients.",
+      "expertise": [
+        "Marketing",
+        "Growth Strategy",
+        "Analytics"
+      ]
+    },
+    "sidebar": {
+      "relatedPosts": "Related Posts",
+      "post1": {
+        "title": "Getting Started as a Freelancer",
+        "description": "A step-by-step guide to landing your first project online."
+      },
+      "post2": {
+        "title": "Balancing Multiple Projects",
+        "description": "Time management hacks every freelancer should know."
+      }
+    }
+  },
+  "contact": {
+    "showcase": {
+      "title": "Let's Create Your Dream Event",
+      "subtitle": "Get in touch with our expert event planners and let us bring your vision to life",
+      "getFreeQuote": "Get Free Quote",
+      "callNow": "Call Now"
+    },
+    "form": {
+      "title": "Tell Us About Your Event",
+      "subtitle": "Fill out the form below and our team will get back to you within 24 hours",
+      "fullName": "Full Name",
+      "emailAddress": "Email Address",
+      "phoneNumber": "Phone Number",
+      "eventType": "Event Type",
+      "eventDate": "Event Date",
+      "budgetRange": "Budget Range",
+      "tellUsAboutEvent": "Tell us about your event",
+      "sendInquiry": "Send Inquiry",
+      "placeholders": {
+        "fullName": "Your full name",
+        "email": "your@email.com",
+        "phone": "+1 (555) 123-4567",
+        "selectEventType": "Select event type",
+        "selectBudgetRange": "Select budget range",
+        "eventDescription": "Describe your event vision, special requirements, number of guests, etc."
+      },
+      "eventTypes": {
+        "weddingPlanning": "Wedding Planning",
+        "corporateEvents": "Corporate Events",
+        "birthdayPrivateParties": "Birthday & Private Parties",
+        "concerts": "Concerts",
+        "exhibitionsTradeShows": "Exhibitions & Trade Shows",
+        "sportsOutdoorEvents": "Sports & Outdoor Events",
+        "other": "Other"
+      },
+      "budgetRanges": {
+        "under5k": "Under $5,000",
+        "5k10k": "$5,000 - $10,000",
+        "10k25k": "$10,000 - $25,000",
+        "25k50k": "$25,000 - $50,000",
+        "50kPlus": "$50,000+"
+      }
+    },
+    "map": {
+      "title": "Find Us",
+      "subtitle": "Visit our office or get directions to our location",
+      "officeHours": "Office Hours",
+      "parkingTransportation": "Parking & Transportation",
+      "hours": {
+        "mondayFriday": "Monday - Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "closed": "Closed"
+      },
+      "times": {
+        "weekday": "9:00 AM - 6:00 PM",
+        "saturday": "10:00 AM - 4:00 PM"
+      },
+      "parking": {
+        "title": "Free Parking Available",
+        "description": "On-site parking for clients"
+      },
+      "transport": {
+        "title": "Public Transport",
+        "description": "5 min walk from Melbourne Central Station"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find answers to common questions about our event planning services"
+    },
+    "successMessage": "Thank you for your inquiry! We will get back to you soon."
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "welcome": "Welcome to Admin Dashboard",
+    "overview": "System Overview",
+    "users": "All Users",
+    "userManagement": "User Management",
+    "statistics": "Statistics",
+    "recentActivity": "Recent Activity",
+    "totalUsers": "Total Users",
+    "activeUsers": "Active Users",
+    "newRegistrations": "New Registrations",
+    "userDetails": {
+      "id": "ID",
+      "name": "Name",
+      "email": "Email",
+      "loginTime": "Login Time",
+      "logoutTime": "Logout Time",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "actions": {
+      "view": "View",
+      "edit": "Edit",
+      "delete": "Delete",
+      "export": "Export Data"
+    },
+    "filters": {
+      "all": "All Users",
+      "active": "Active",
+      "inactive": "Inactive",
+      "search": "Search users..."
+    }
+  },
+  "weddingPlanning": {
+    "hero": {
+      "title": "Dream Wedding Planning",
+      "description": "Create your perfect wedding day with our comprehensive planning services. From intimate ceremonies to grand celebrations, we bring your vision to life with elegance and precision.",
+      "getQuote": "Get Quote",
+      "viewServices": "View Services"
+    },
+    "about": {
+      "title": "Your Perfect Wedding Awaits",
+      "description": "We specialize in creating unforgettable wedding experiences tailored to your unique love story. Our team of experienced wedding planners works closely with you to design and execute every detail of your special day, ensuring everything runs smoothly while you focus on celebrating your love.",
+      "services": {
+        "venue": {
+          "title": "Venue Selection & Coordination",
+          "description": "We help you find the perfect venue that matches your vision and budget, handling all negotiations and coordination."
+        },
+        "vendors": {
+          "title": "Vendor Management",
+          "description": "Our trusted network of photographers, florists, caterers, and other vendors ensures quality and reliability."
+        },
+        "coordination": {
+          "title": "Day-of Coordination",
+          "description": "Professional on-site management ensures your wedding day runs flawlessly from ceremony to reception."
+        }
+      }
+    },
+    "services": {
+      "title": "Wedding Planning Services",
+      "subtitle": "Comprehensive wedding planning packages designed to make your special day perfect",
+      "keyFeatures": "Key Features",
+      "bookNow": "Book Now",
+      "fullPlanning": {
+        "title": "Full Wedding Planning",
+        "description": "Complete wedding planning from start to finish, including design, vendor management, and day-of coordination.",
+        "features": [
+          "Complete wedding design and styling",
+          "Venue selection and booking",
+          "Vendor coordination and management",
+          "Timeline creation and management",
+          "Day-of coordination",
+          "Budget planning and tracking"
+        ],
+        "price": "From $3,999"
+      },
+      "dayCoordination": {
+        "title": "Day-of Coordination",
+        "description": "Professional coordination services for your wedding day to ensure everything runs smoothly.",
+        "features": [
+          "Pre-wedding venue walkthrough",
+          "Vendor coordination on wedding day",
+          "Timeline management",
+          "Emergency problem solving",
+          "Setup and breakdown coordination",
+          "Bridal party assistance"
+        ],
+        "price": "From $1,499"
+      },
+      "destinationWedding": {
+        "title": "Destination Wedding Planning",
+        "description": "Specialized planning for destination weddings, handling travel, accommodation, and local vendor coordination.",
+        "features": [
+          "Destination research and selection",
+          "Travel and accommodation coordination",
+          "Local vendor sourcing and management",
+          "Guest travel assistance",
+          "Cultural and legal requirements",
+          "Remote planning and coordination"
+        ],
+        "price": "From $4,999"
+      },
+      "intimateWedding": {
+        "title": "Intimate Wedding Planning",
+        "description": "Perfect for smaller, more personal celebrations with close family and friends.",
+        "features": [
+          "Personalized intimate ceremony design",
+          "Small venue selection",
+          "Customized vendor packages",
+          "Personalized timeline",
+          "Family involvement coordination",
+          "Memorable detail planning"
+        ],
+        "price": "From $2,499"
+      },
+      "culturalWedding": {
+        "title": "Cultural Wedding Planning",
+        "description": "Expertise in planning weddings that honor cultural traditions and customs.",
+        "features": [
+          "Cultural tradition integration",
+          "Traditional vendor sourcing",
+          "Custom ceremony planning",
+          "Cultural attire coordination",
+          "Traditional food and music",
+          "Multi-cultural celebration support"
+        ],
+        "price": "From $3,499"
+      },
+      "elopement": {
+        "title": "Elopement Planning",
+        "description": "Romantic and intimate elopement packages for couples who want a private celebration.",
+        "features": [
+          "Private ceremony planning",
+          "Romantic location selection",
+          "Minimal vendor coordination",
+          "Documentation assistance",
+          "Photography coordination",
+          "Surprise element planning"
+        ],
+        "price": "From $999"
+      }
+    },
+    "process": {
+      "title": "Our Wedding Planning Process",
+      "subtitle": "A structured approach to creating your perfect wedding day",
+      "consultation": {
+        "title": "Initial Consultation",
+        "description": "We discuss your vision, preferences, budget, and timeline to understand your dream wedding."
+      },
+      "design": {
+        "title": "Design & Planning",
+        "description": "We create detailed wedding designs, select venues, and coordinate with vendors to bring your vision to life."
+      },
+      "coordination": {
+        "title": "Vendor Coordination",
+        "description": "Our team manages all vendor relationships, contracts, and logistics to ensure seamless execution."
+      },
+      "execution": {
+        "title": "Wedding Day Execution",
+        "description": "We oversee every detail on your wedding day, ensuring everything runs perfectly while you enjoy your celebration."
+      }
+    },
+    "testimonials": {
+      "title": "Happy Couples",
+      "subtitle": "Real stories from couples who trusted us with their special day",
+      "sarah": {
+        "name": "Sarah & Michael",
+        "company": "Married 2024",
+        "role": "Couple",
+        "content": "Our wedding was absolutely perfect! The team handled every detail flawlessly, allowing us to truly enjoy our special day. The attention to detail and professionalism exceeded our expectations."
+      },
+      "michael": {
+        "name": "Jessica & David",
+        "company": "Married 2024",
+        "role": "Couple",
+        "content": "Planning our destination wedding seemed overwhelming, but the team made it effortless. They coordinated everything from travel to local vendors, creating the perfect celebration."
+      },
+      "emily": {
+        "name": "Emily & James",
+        "company": "Married 2024",
+        "role": "Couple",
+        "content": "The intimate wedding package was perfect for us. They understood our vision and created a beautiful, personal celebration that reflected our love story perfectly."
+      }
+    },
+    "gallery": {
+      "title": "Wedding Gallery",
+      "subtitle": "Beautiful moments from weddings we've had the honor to plan",
+      "guests": "guests",
+      "gardenWedding": "Garden Wedding",
+      "beachWedding": "Beach Wedding",
+      "ballroomWedding": "Ballroom Wedding",
+      "intimateWedding": "Intimate Wedding",
+      "destinationWedding": "Destination Wedding",
+      "culturalWedding": "Cultural Wedding"
+    },
+    "pricing": {
+      "title": "Wedding Planning Packages",
+      "subtitle": "Choose the perfect package for your wedding planning needs",
+      "essential": {
+        "name": "Essential",
+        "price": "$2,999",
+        "duration": "3-6 months",
+        "guests": "Up to 100",
+        "features": [
+          "Basic wedding planning",
+          "Venue selection assistance",
+          "Vendor recommendations",
+          "Timeline creation",
+          "Day-of coordination",
+          "Basic design consultation"
+        ]
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "$4,999",
+        "duration": "6-12 months",
+        "guests": "Up to 200",
+        "features": [
+          "Full wedding planning",
+          "Complete design and styling",
+          "Vendor management",
+          "Budget planning and tracking",
+          "Monthly planning meetings",
+          "Day-of coordination",
+          "Emergency support"
+        ],
+        "popular": "Most Popular"
+      },
+      "luxury": {
+        "name": "Luxury",
+        "price": "$7,999",
+        "duration": "12+ months",
+        "guests": "200+",
+        "features": [
+          "Luxury wedding planning",
+          "Custom design and styling",
+          "Premium vendor network",
+          "Dedicated wedding planner",
+          "Weekly planning meetings",
+          "Full day-of coordination",
+          "24/7 support",
+          "Post-wedding follow-up"
+        ]
+      },
+      "getStarted": "Get Started"
+    },
+    "cta": {
+      "title": "Ready to Plan Your Dream Wedding?",
+      "description": "Let us transform your wedding vision into an unforgettable celebration. From intimate ceremonies to grand affairs, we create magical moments that last a lifetime.",
+      "features": [
+        "Personalized wedding planning",
+        "Expert vendor coordination",
+        "Stress-free wedding day",
+        "Memorable celebration experience"
+      ],
+      "button": "Start Planning Your Wedding"
+    }
+  },
+  "corporateEvents": {
+    "hero": {
+      "title": "Corporate Events Excellence",
+      "description": "Professional event management services for conferences, product launches, corporate retreats, and business gatherings that drive results and create lasting impressions.",
+      "getQuote": "Get Quote",
+      "viewServices": "View Services"
+    },
+    "about": {
+      "title": "About Corporate Events",
+      "description": "Corporate Event Managers Work With Clients To Understand Their Requirements And Objectives For The Event, Ensuring Every Detail Aligns With Business Goals And Brand Values.",
+      "services": {
+        "planning": {
+          "title": "Event Planning And Coordination",
+          "description": "This Includes Creating Event Timelines, Managing Budgets, And Coordinating With Vendors And Other Stakeholders To Ensure Seamless Execution."
+        },
+        "venue": {
+          "title": "Venue Selection And Management",
+          "description": "This Involves Selecting The Appropriate Venue For The Event, Negotiating Contracts, And Managing All Venue-Related Logistics And Requirements."
+        },
+        "marketing": {
+          "title": "Marketing And Promotion",
+          "description": "This Includes Developing Marketing Strategies And Promoting The Event Through Various Channels To Maximize Attendance And Engagement."
+        }
+      }
+    },
+    "services": {
+      "title": "Corporate Event Services",
+      "subtitle": "Comprehensive event management solutions tailored to your business objectives and corporate culture",
+      "conferences": {
+        "title": "Conferences & Seminars",
+        "description": "Professional conferences, industry seminars, and educational workshops with comprehensive event management",
+        "features": ["Keynote speaker coordination", "Audio-visual setup", "Registration management", "Catering services"],
+        "price": "From $2,999"
+      },
+      "productLaunches": {
+        "title": "Product Launches",
+        "description": "Strategic product launch events that create buzz and generate media attention",
+        "features": ["Media relations", "Press kit preparation", "Launch venue setup", "Brand activation"],
+        "price": "From $4,999"
+      },
+      "retreats": {
+        "title": "Corporate Retreats",
+        "description": "Team building and corporate retreat events designed to strengthen team bonds",
+        "features": ["Team building activities", "Accommodation booking", "Transportation coordination", "Catering arrangements"],
+        "price": "From $3,499"
+      },
+      "meetings": {
+        "title": "Annual Meetings",
+        "description": "Annual general meetings and shareholder events with professional presentation setup",
+        "features": ["Boardroom setup", "Presentation technology", "Catering services", "Security coordination"],
+        "price": "From $2,499"
+      },
+      "networking": {
+        "title": "Networking Events",
+        "description": "Professional networking events and business mixers to foster industry connections",
+        "features": ["Venue selection", "Guest list management", "Catering coordination", "Networking facilitation"],
+        "price": "From $1,999"
+      },
+      "awards": {
+        "title": "Award Ceremonies",
+        "description": "Corporate award ceremonies and recognition events with elegant presentation",
+        "features": ["Stage design", "Award presentation", "Photography services", "Reception coordination"],
+        "price": "From $3,999"
+      },
+      "keyFeatures": "Key Features:",
+      "bookNow": "Book Now"
+    },
+    "process": {
+      "title": "Our Process",
+      "subtitle": "A systematic approach to delivering exceptional corporate events that meet your business objectives",
+      "consultation": {
+        "title": "Initial Consultation",
+        "description": "We meet with your team to understand your corporate objectives, target audience, and event requirements"
+      },
+      "planning": {
+        "title": "Strategic Planning",
+        "description": "Develop a comprehensive event strategy including timeline, budget, and key performance indicators"
+      },
+      "coordination": {
+        "title": "Vendor Coordination",
+        "description": "Source and coordinate with trusted vendors for venue, catering, technology, and other services"
+      },
+      "execution": {
+        "title": "Event Execution",
+        "description": "Seamless on-site management ensuring everything runs smoothly from start to finish"
+      }
+    },
+    "testimonials": {
+      "title": "Client Testimonials",
+      "subtitle": "Hear from our satisfied corporate clients about their exceptional event experiences",
+      "sarah": {
+        "name": "Sarah Johnson",
+        "company": "Tech Innovations Inc.",
+        "role": "Marketing Director",
+        "content": "The team delivered an exceptional product launch event that exceeded our expectations. Their attention to detail and professional execution made our product launch a huge success."
+      },
+      "michael": {
+        "name": "Michael Chen",
+        "company": "Global Finance Corp.",
+        "role": "CEO",
+        "content": "Our annual conference was flawlessly executed. The seamless coordination and professional service allowed us to focus on our content while they handled all the logistics."
+      },
+      "emily": {
+        "name": "Emily Rodriguez",
+        "company": "Healthcare Solutions",
+        "role": "HR Director",
+        "content": "The corporate retreat they organized was perfect for team building. Every detail was carefully planned and executed, creating an unforgettable experience for our team."
+      }
+    },
+    "gallery": {
+      "title": "Event Types Gallery",
+      "subtitle": "Explore our diverse portfolio of successful corporate events",
+      "techConference": "Tech Conference 2024",
+      "marketingSummit": "Marketing Summit",
+      "designWorkshop": "Design Workshop",
+      "healthcareSymposium": "Healthcare Symposium",
+      "gamingExpo": "Gaming Expo",
+      "digitalMarketingForum": "Digital Marketing Forum",
+      "attendees": "attendees"
+    },
+    "pricing": {
+      "title": "Pricing Packages",
+      "subtitle": "Choose the perfect package for your corporate event needs",
+      "essential": {
+        "name": "Essential",
+        "price": "$2,499",
+        "duration": "Half Day",
+        "attendees": "Up to 50",
+        "features": ["Basic venue setup", "Standard catering", "Audio-visual equipment", "Event coordinator", "Basic decoration"]
+      },
+      "professional": {
+        "name": "Professional",
+        "price": "$4,999",
+        "duration": "Full Day",
+        "attendees": "Up to 100",
+        "features": ["Premium venue setup", "Gourmet catering", "Advanced AV equipment", "Dedicated coordinator", "Custom decoration", "Photography service"],
+        "popular": "Most Popular"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "$9,999",
+        "duration": "Multi-Day",
+        "attendees": "Up to 500",
+        "features": ["Luxury venue setup", "Fine dining catering", "Professional AV team", "Multiple coordinators", "Full decoration", "Professional photography", "Live streaming", "Event app"]
+      },
+      "getStarted": "Get Started"
+    },
+    "technology": {
+      "title": "Technology & Innovation",
+      "subtitle": "Cutting-edge technology solutions for modern corporate events",
+      "eventApps": {
+        "title": "Event Apps",
+        "description": "Custom mobile applications for seamless event management"
+      },
+      "liveStreaming": {
+        "title": "Live Streaming",
+        "description": "Professional live streaming and virtual event capabilities"
+      },
+      "audioSystems": {
+        "title": "Audio Systems",
+        "description": "High-quality sound systems and wireless microphones"
+      },
+      "smartLighting": {
+        "title": "Smart Lighting",
+        "description": "Intelligent lighting systems with mood control"
+      },
+      "analytics": {
+        "title": "Analytics Dashboard",
+        "description": "Real-time event analytics and attendee insights"
+      },
+      "networkingTools": {
+        "title": "Networking Tools",
+        "description": "Digital networking platforms and matchmaking"
+      },
+      "photoBooths": {
+        "title": "Photo Booths",
+        "description": "Interactive photo booths with instant sharing"
+      },
+      "gamification": {
+        "title": "Gamification",
+        "description": "Engaging games and interactive experiences"
+      }
+    },
+    "successStories": {
+      "title": "Success Stories",
+      "subtitle": "Real results from our corporate event partnerships",
+      "techCorp": {
+        "company": "TechCorp Solutions",
+        "event": "Annual Tech Summit 2024",
+        "attendees": "750+",
+        "satisfaction": "98%",
+        "result": "Generated $2.3M in new business leads",
+        "quote": "The event exceeded all our expectations and delivered exceptional ROI."
+      },
+      "globalFinance": {
+        "company": "Global Finance Group",
+        "event": "Investment Conference",
+        "attendees": "500+",
+        "satisfaction": "96%",
+        "result": "Increased client engagement by 150%",
+        "quote": "Professional execution that perfectly aligned with our brand values."
+      },
+      "healthcareInnovations": {
+        "company": "Healthcare Innovations",
+        "event": "Medical Symposium",
+        "attendees": "300+",
+        "satisfaction": "99%",
+        "result": "Established 45 new industry partnerships",
+        "quote": "Flawless organization that allowed us to focus on content delivery."
+      },
+      "retailExcellence": {
+        "company": "Retail Excellence Corp",
+        "event": "Product Launch Event",
+        "attendees": "200+",
+        "satisfaction": "97%",
+        "result": "Achieved 300% media coverage increase",
+        "quote": "The launch event created unprecedented buzz for our new product line."
+      },
+      "keyResult": "Key Result:",
+      "attendees": "Attendees",
+      "satisfaction": "Satisfaction"
+    },
+    "cta": {
+      "title": "Ready to Elevate Your Corporate Events?",
+      "description": "Let us transform your corporate gatherings into powerful business tools that drive engagement, build relationships, and achieve your organizational goals.",
+      "features": [
+        "Professional event planning and execution",
+        "Comprehensive vendor management",
+        "Advanced technology integration",
+        "24/7 on-site support"
+      ],
+      "button": "Start Planning Your Event"
+    }
+  },
+  "birthdayParties": {
+    "hero": {
+      "title": "Unforgettable Birthday & Private Parties",
+      "description": "Create magical moments and lasting memories with our expert party planning services. From intimate gatherings to grand celebrations, we make every occasion special.",
+      "getQuote": "Get Your Quote",
+      "viewServices": "View Our Services"
+    },
+    "about": {
+      "title": "About Our Party Planning Services",
+      "description": "We specialize in creating personalized and memorable celebrations that reflect your unique style and preferences. Our experienced team handles every detail, from theme selection to entertainment coordination, ensuring your party is stress-free and absolutely perfect.",
+      "services": {
+        "theme": {
+          "title": "Custom Theme Design",
+          "description": "Personalized themes that bring your vision to life with creative decorations and styling."
+        },
+        "entertainment": {
+          "title": "Entertainment Coordination",
+          "description": "Professional entertainers, DJs, magicians, and activities tailored to your guest preferences."
+        },
+        "catering": {
+          "title": "Catering & Refreshments",
+          "description": "Delicious food and beverage options from casual snacks to gourmet dining experiences."
+        }
+      }
+    },
+    "services": {
+      "title": "Our Party Services",
+      "subtitle": "Comprehensive party planning solutions for every occasion and age group",
+      "keyFeatures": "Key Features",
+      "bookNow": "Book Now",
+      "kidsBirthday": {
+        "title": "Kids Birthday Parties",
+        "description": "Magical celebrations designed to delight children of all ages with age-appropriate entertainment and activities.",
+        "features": [
+          "Age-appropriate entertainment",
+          "Themed decorations and activities",
+          "Safe and supervised environment",
+          "Party favors and goodie bags",
+          "Professional photography"
+        ],
+        "price": "Starting at $299"
+      },
+      "adultBirthday": {
+        "title": "Adult Birthday Parties",
+        "description": "Sophisticated celebrations for adults featuring elegant themes, gourmet catering, and premium entertainment.",
+        "features": [
+          "Elegant venue setup",
+          "Gourmet catering options",
+          "Premium bar service",
+          "Live entertainment or DJ",
+          "Professional event coordination"
+        ],
+        "price": "Starting at $599"
+      },
+      "anniversary": {
+        "title": "Anniversary Celebrations",
+        "description": "Romantic and meaningful celebrations to honor special milestones in relationships and partnerships.",
+        "features": [
+          "Romantic venue decoration",
+          "Fine dining experience",
+          "Photo montage creation",
+          "Live music or entertainment",
+          "Memory book creation"
+        ],
+        "price": "Starting at $799"
+      },
+      "graduation": {
+        "title": "Graduation Parties",
+        "description": "Celebrate academic achievements with memorable graduation parties featuring personalized themes and entertainment.",
+        "features": [
+          "Academic-themed decorations",
+          "Catering for large groups",
+          "Photo booth with props",
+          "DJ or live entertainment",
+          "Achievement displays"
+        ],
+        "price": "Starting at $499"
+      },
+      "retirement": {
+        "title": "Retirement Celebrations",
+        "description": "Honor years of dedication and service with meaningful retirement celebrations that celebrate achievements.",
+        "features": [
+          "Professional venue setup",
+          "Catering for all ages",
+          "Memory tribute displays",
+          "Entertainment coordination",
+          "Gift presentation setup"
+        ],
+        "price": "Starting at $699"
+      },
+      "housewarming": {
+        "title": "Housewarming Parties",
+        "description": "Welcome guests to your new home with warm and inviting housewarming celebrations.",
+        "features": [
+          "Home tour coordination",
+          "Appetizer catering",
+          "Welcome gift setup",
+          "Background music",
+          "Guest book coordination"
+        ],
+        "price": "Starting at $399"
+      }
+    },
+    "process": {
+      "title": "Our Planning Process",
+      "subtitle": "A simple 4-step process to create your perfect party",
+      "consultation": {
+        "title": "Initial Consultation",
+        "description": "We discuss your vision, preferences, budget, and requirements to understand your perfect party."
+      },
+      "theme": {
+        "title": "Theme Development",
+        "description": "We create a customized theme and design concept that reflects your personality and preferences."
+      },
+      "coordination": {
+        "title": "Vendor Coordination",
+        "description": "We coordinate with caterers, entertainers, photographers, and other vendors to ensure seamless execution."
+      },
+      "execution": {
+        "title": "Event Execution",
+        "description": "Our team manages every detail on the day of your event, ensuring everything runs smoothly."
+      }
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Real testimonials from families who trusted us with their special celebrations",
+      "sarah": {
+        "name": "Sarah Johnson",
+        "company": "Happy Family",
+        "role": "Mother",
+        "content": "My daughter's 8th birthday party was absolutely magical! The team created a princess theme that exceeded all our expectations. Every child had an amazing time."
+      },
+      "michael": {
+        "name": "Michael Chen",
+        "company": "Chen Family",
+        "role": "Father",
+        "content": "Our 50th anniversary celebration was perfect. The attention to detail and romantic atmosphere made our special day unforgettable. Highly recommended!"
+      },
+      "emily": {
+        "name": "Emily Rodriguez",
+        "company": "Rodriguez Family",
+        "role": "Graduate",
+        "content": "My graduation party was everything I dreamed of and more. The team made sure every detail was perfect, and all my friends and family had an amazing time celebrating with me."
+      }
+    },
+    "gallery": {
+      "title": "Party Themes Gallery",
+      "subtitle": "Explore our diverse portfolio of successful birthday and private parties",
+      "princessTheme": "Princess Theme Party",
+      "superheroTheme": "Superhero Theme Party",
+      "elegantDinner": "Elegant Dinner Party",
+      "gardenParty": "Garden Party",
+      "anniversaryCelebration": "Anniversary Celebration",
+      "graduationParty": "Graduation Party",
+      "guests": "guests"
+    },
+    "pricing": {
+      "title": "Pricing Packages",
+      "subtitle": "Choose the perfect package for your birthday or private party",
+      "basic": {
+        "name": "Basic Celebration",
+        "price": "$299",
+        "duration": "3 Hours",
+        "guests": "Up to 20",
+        "features": [
+          "Basic decoration setup",
+          "Simple catering",
+          "Background music",
+          "Party coordinator",
+          "Basic cleanup"
+        ]
+      },
+      "premium": {
+        "name": "Premium Celebration",
+        "price": "$599",
+        "duration": "5 Hours",
+        "guests": "Up to 50",
+        "features": [
+          "Themed decoration",
+          "Quality catering",
+          "DJ or entertainment",
+          "Dedicated coordinator",
+          "Photo booth",
+          "Party favors"
+        ],
+        "popular": "Most Popular"
+      },
+      "luxury": {
+        "name": "Luxury Celebration",
+        "price": "$999",
+        "duration": "8 Hours",
+        "guests": "Up to 100",
+        "features": [
+          "Custom theme design",
+          "Gourmet catering",
+          "Live entertainment",
+          "Multiple coordinators",
+          "Professional photography",
+          "Premium decorations",
+          "Full bar service",
+          "Memory book creation"
+        ]
+      },
+      "getStarted": "Get Started"
+    },
+    "entertainment": {
+      "title": "Entertainment & Activities",
+      "subtitle": "Professional entertainment options to make your party unforgettable",
+      "magicians": {
+        "title": "Magicians",
+        "description": "Professional magicians with age-appropriate shows and interactive performances"
+      },
+      "facePainting": {
+        "title": "Face Painting",
+        "description": "Creative face painting artists for kids and adults with safe, high-quality paints"
+      },
+      "clowns": {
+        "title": "Clowns & Characters",
+        "description": "Friendly clowns and character performers for interactive entertainment"
+      },
+      "dj": {
+        "title": "DJ Services",
+        "description": "Professional DJs with music for all ages and party types"
+      },
+      "games": {
+        "title": "Party Games",
+        "description": "Organized games and activities tailored to your party theme and age group"
+      },
+      "balloonArt": {
+        "title": "Balloon Art",
+        "description": "Creative balloon artists creating sculptures and decorations"
+      },
+      "photoBooth": {
+        "title": "Photo Booth",
+        "description": "Interactive photo booths with props and instant photo printing"
+      },
+      "cakeDecorating": {
+        "title": "Cake Decorating",
+        "description": "Interactive cake decorating activities for kids and adults"
+      }
+    },
+    "successStories": {
+      "title": "Success Stories",
+      "subtitle": "Real celebrations that created lasting memories",
+      "johnsonFamily": {
+        "family": "Johnson Family",
+        "event": "Princess Birthday Party",
+        "guests": "25",
+        "satisfaction": "100%",
+        "result": "Created magical memories for 8-year-old birthday girl",
+        "quote": "The princess party was absolutely perfect! Every detail was magical and our daughter was thrilled."
+      },
+      "smithFamily": {
+        "family": "Smith Family",
+        "event": "50th Anniversary Celebration",
+        "guests": "75",
+        "satisfaction": "98%",
+        "result": "Honored 50 years of marriage with elegant celebration",
+        "quote": "Our anniversary celebration was everything we hoped for and more. Truly unforgettable."
+      },
+      "davisFamily": {
+        "family": "Davis Family",
+        "event": "Graduation Party",
+        "guests": "60",
+        "satisfaction": "99%",
+        "result": "Celebrated academic achievement with memorable party",
+        "quote": "The graduation party was perfect! All our friends and family had an amazing time."
+      },
+      "wilsonFamily": {
+        "family": "Wilson Family",
+        "event": "Retirement Celebration",
+        "guests": "40",
+        "satisfaction": "100%",
+        "result": "Honored 30 years of dedicated service",
+        "quote": "The retirement party was a beautiful tribute to years of hard work. Thank you!"
+      },
+      "keyResult": "Key Result:",
+      "guests": "Guests",
+      "satisfaction": "Satisfaction"
+    },
+    "cta": {
+      "title": "Ready to Plan Your Perfect Party?",
+      "description": "Let us create an unforgettable celebration that reflects your unique style and creates lasting memories for you and your guests.",
+      "features": [
+        "Personalized party planning",
+        "Professional entertainment coordination",
+        "Quality catering and decorations",
+        "Stress-free event management"
+      ],
+      "button": "Start Planning Your Party"
+    }
+  },
+  "concertsEntertainment": {
+    "hero": {
+      "title": "Concerts & Entertainment Shows",
+      "description": "Create unforgettable musical experiences and entertainment events that captivate audiences and leave lasting memories.",
+      "getQuote": "Get Quote",
+      "viewServices": "View Services"
+    },
+    "about": {
+      "title": "About Concerts & Entertainment",
+      "description": "We specialize in producing world-class concerts, music festivals, theater shows, comedy performances, and cultural events. Our team combines technical expertise with creative vision to deliver exceptional entertainment experiences.",
+      "services": {
+        "production": {
+          "title": "Event Production",
+          "description": "Complete event production from concept to execution with professional stage management and artist coordination."
+        },
+        "technical": {
+          "title": "Technical Services",
+          "description": "State-of-the-art sound, lighting, and video production equipment with experienced technical crews."
+        },
+        "marketing": {
+          "title": "Marketing & Promotion",
+          "description": "Comprehensive marketing strategies to maximize ticket sales and audience engagement across all platforms."
+        }
+      }
+    },
+    "services": {
+      "title": "Our Entertainment Services",
+      "subtitle": "Professional entertainment production services for all types of events and venues",
+      "keyFeatures": "Key Features",
+      "bookNow": "Book Now",
+      "liveConcerts": {
+        "title": "Live Concerts",
+        "description": "Full-scale concert production with professional sound, lighting, and stage management.",
+        "features": [
+          "Professional sound engineering",
+          "Advanced lighting design",
+          "Stage and venue setup",
+          "Artist coordination and management",
+          "Security and crowd control",
+          "Merchandise and concessions"
+        ],
+        "price": "From $5,000"
+      },
+      "musicFestivals": {
+        "title": "Music Festivals",
+        "description": "Multi-day music festival production with multiple stages, vendors, and entertainment.",
+        "features": [
+          "Multiple stage setup",
+          "Vendor coordination",
+          "Camping and accommodation",
+          "Food and beverage management",
+          "Transportation logistics",
+          "Emergency medical services"
+        ],
+        "price": "From $15,000"
+      },
+      "theaterShows": {
+        "title": "Theater Shows",
+        "description": "Professional theater production with set design, costumes, and technical support.",
+        "features": [
+          "Set design and construction",
+          "Costume and makeup",
+          "Sound and lighting design",
+          "Stage management",
+          "Actor coordination",
+          "Ticket sales and marketing"
+        ],
+        "price": "From $8,000"
+      },
+      "comedyShows": {
+        "title": "Comedy Shows",
+        "description": "Stand-up comedy and variety show production with intimate venue setup.",
+        "features": [
+          "Intimate venue setup",
+          "Professional sound system",
+          "Lighting design",
+          "Comedian booking",
+          "Audience management",
+          "Bar and refreshments"
+        ],
+        "price": "From $3,000"
+      },
+      "dancePerformances": {
+        "title": "Dance Performances",
+        "description": "Professional dance show production with specialized flooring and lighting.",
+        "features": [
+          "Dance floor installation",
+          "Specialized lighting",
+          "Costume coordination",
+          "Choreography support",
+          "Music and sound design",
+          "Performance photography"
+        ],
+        "price": "From $4,000"
+      },
+      "culturalEvents": {
+        "title": "Cultural Events",
+        "description": "Traditional and contemporary cultural event production celebrating diverse heritage.",
+        "features": [
+          "Cultural theme design",
+          "Traditional music setup",
+          "Cultural food vendors",
+          "Educational components",
+          "Community engagement",
+          "Documentation and media"
+        ],
+        "price": "From $6,000"
+      }
+    },
+    "process": {
+      "title": "Our Production Process",
+      "subtitle": "A systematic approach to creating exceptional entertainment experiences",
+      "consultation": {
+        "title": "Initial Consultation",
+        "description": "We discuss your vision, audience, budget, and requirements to create a comprehensive production plan."
+      },
+      "venue": {
+        "title": "Venue Selection",
+        "description": "We help select and prepare the perfect venue with all necessary technical requirements and permits."
+      },
+      "production": {
+        "title": "Production Planning",
+        "description": "Detailed production planning including technical setup, artist coordination, and timeline management."
+      },
+      "execution": {
+        "title": "Event Execution",
+        "description": "Professional on-site management ensuring smooth execution and exceptional audience experience."
+      }
+    },
+    "testimonials": {
+      "title": "Client Testimonials",
+      "subtitle": "What our clients say about our entertainment production services",
+      "sarah": {
+        "name": "Sarah Johnson",
+        "company": "Music Hall Productions",
+        "role": "Event Director",
+        "content": "The concert production was flawless. The technical quality and attention to detail exceeded our expectations."
+      },
+      "michael": {
+        "name": "Michael Chen",
+        "company": "Festival Organizers",
+        "role": "Festival Director",
+        "content": "Our music festival was a huge success thanks to their professional production management and technical expertise."
+      },
+      "emily": {
+        "name": "Emily Rodriguez",
+        "company": "Theater Company",
+        "role": "Artistic Director",
+        "content": "The theater production support was outstanding. They handled all technical aspects perfectly, allowing us to focus on the performance."
+      }
+    },
+    "gallery": {
+      "title": "Event Gallery",
+      "subtitle": "Showcasing our successful entertainment productions",
+      "attendees": "attendees",
+      "rockConcert": "Rock Concert Spectacular",
+      "jazzFestival": "Jazz Festival Weekend",
+      "broadwayShow": "Broadway Musical",
+      "comedyNight": "Stand-Up Comedy Night",
+      "danceShow": "Contemporary Dance Show",
+      "culturalFestival": "Cultural Heritage Festival"
+    },
+    "pricing": {
+      "title": "Pricing Packages",
+      "subtitle": "Flexible pricing options for entertainment events of all sizes",
+      "getStarted": "Get Started",
+      "basic": {
+        "name": "Basic Package",
+        "price": "$3,000",
+        "duration": "1 Day",
+        "attendees": "Up to 500",
+        "features": [
+          "Basic sound system",
+          "Standard lighting",
+          "Event coordination",
+          "Security services",
+          "Cleanup services"
+        ]
+      },
+      "premium": {
+        "name": "Premium Package",
+        "price": "$8,000",
+        "duration": "2-3 Days",
+        "attendees": "Up to 2,000",
+        "features": [
+          "Professional sound system",
+          "Advanced lighting design",
+          "Video production",
+          "Artist coordination",
+          "Marketing support",
+          "VIP services",
+          "Merchandise setup"
+        ],
+        "popular": "Most Popular"
+      },
+      "luxury": {
+        "name": "Luxury Package",
+        "price": "$15,000+",
+        "duration": "Multi-day",
+        "attendees": "5,000+",
+        "features": [
+          "Premium sound and lighting",
+          "Multi-stage setup",
+          "Live streaming",
+          "Full production team",
+          "Comprehensive marketing",
+          "VIP hospitality",
+          "Media coverage",
+          "Post-event analysis"
+        ]
+      }
+    },
+    "technology": {
+      "title": "Technology & Equipment",
+      "subtitle": "State-of-the-art equipment and technology for exceptional entertainment experiences",
+      "soundSystems": {
+        "title": "Professional Sound Systems",
+        "description": "High-quality audio equipment for crystal-clear sound reproduction"
+      },
+      "lighting": {
+        "title": "Advanced Lighting Design",
+        "description": "Dynamic lighting systems with programmable effects and color coordination"
+      },
+      "videoProduction": {
+        "title": "Video Production",
+        "description": "Professional video recording and live streaming capabilities"
+      },
+      "mixingBoards": {
+        "title": "Digital Mixing Boards",
+        "description": "Professional audio mixing equipment for optimal sound control"
+      },
+      "liveStreaming": {
+        "title": "Live Streaming",
+        "description": "High-quality live streaming for remote audiences"
+      },
+      "stageSetup": {
+        "title": "Stage Setup",
+        "description": "Professional stage construction and setup for all event types"
+      },
+      "monitoring": {
+        "title": "Audio Monitoring",
+        "description": "Professional monitoring systems for sound engineers and performers"
+      },
+      "interactiveTech": {
+        "title": "Interactive Technology",
+        "description": "Cutting-edge interactive technology for enhanced audience engagement"
+      }
+    },
+    "successStories": {
+      "title": "Success Stories",
+      "subtitle": "Real examples of our successful entertainment productions",
+      "attendees": "Attendees",
+      "satisfaction": "Satisfaction",
+      "keyResult": "Key Result:",
+      "musicHall": {
+        "venue": "Grand Music Hall",
+        "event": "Symphony Orchestra Concert",
+        "attendees": "1,200",
+        "satisfaction": "98%",
+        "result": "Sold-out performance with standing ovation",
+        "quote": "The technical execution was flawless. Every note was crystal clear."
+      },
+      "theaterDistrict": {
+        "venue": "Downtown Theater",
+        "event": "Broadway Musical",
+        "attendees": "800",
+        "satisfaction": "100%",
+        "result": "Extended run due to popular demand",
+        "quote": "Professional production values that rival Broadway shows."
+      },
+      "festivalGrounds": {
+        "venue": "City Festival Grounds",
+        "event": "Multi-Genre Music Festival",
+        "attendees": "5,000",
+        "satisfaction": "95%",
+        "result": "Record attendance and positive media coverage",
+        "quote": "The festival exceeded all expectations. Perfect execution across all stages."
+      },
+      "comedyClub": {
+        "venue": "Urban Comedy Club",
+        "event": "Stand-Up Comedy Night",
+        "attendees": "300",
+        "satisfaction": "100%",
+        "result": "Regular monthly event established",
+        "quote": "Intimate setting with professional sound quality. Perfect for comedy."
+      }
+    },
+    "cta": {
+      "title": "Ready to Create an Unforgettable Entertainment Experience?",
+      "description": "Let us bring your entertainment vision to life with professional production services and cutting-edge technology.",
+      "features": [
+        "Professional event production",
+        "State-of-the-art equipment",
+        "Expert technical support",
+        "Comprehensive event management"
+      ],
+      "button": "Start Your Entertainment Project"
+    }
+  },
+  "sportsOutdoorEvents": {
+    "hero": {
+      "title": "Sports & Outdoor Events",
+      "description": "Create unforgettable sporting experiences and outdoor adventures with our comprehensive event management services.",
+      "getQuote": "Get Quote",
+      "viewServices": "View Services"
+    },
+    "about": {
+      "title": "About Sports & Outdoor Events",
+      "description": "We specialize in organizing dynamic sports tournaments, outdoor festivals, adventure races, and team-building events. Our experienced team ensures every event runs smoothly with proper safety measures, equipment, and logistics coordination.",
+      "services": {
+        "venue": {
+          "title": "Venue Selection",
+          "description": "Expert selection of appropriate venues for different types of sports and outdoor events"
+        },
+        "equipment": {
+          "title": "Equipment Management",
+          "description": "Professional-grade sports equipment, timing systems, and safety gear for all events"
+        },
+        "safety": {
+          "title": "Safety & Security",
+          "description": "Comprehensive safety protocols, medical support, and security arrangements for participant safety"
+        }
+      }
+    },
+    "services": {
+      "title": "Our Sports & Outdoor Services",
+      "subtitle": "Comprehensive event management for all types of sports and outdoor activities",
+      "keyFeatures": "Key Features",
+      "bookNow": "Book Now",
+      "tournaments": {
+        "title": "Sports Tournaments",
+        "description": "Professional organization of basketball, soccer, tennis, and other sports tournaments",
+        "features": [
+          "Tournament bracket management",
+          "Professional referees",
+          "Awards and trophies",
+          "Live scoring systems",
+          "Participant registration",
+          "Media coverage"
+        ],
+        "price": "From $2,500"
+      },
+      "marathons": {
+        "title": "Marathons & Running Events",
+        "description": "Full-service marathon and running event management with timing and safety support",
+        "features": [
+          "Professional timing systems",
+          "Route planning and marking",
+          "Medical support stations",
+          "Water and aid stations",
+          "Participant tracking",
+          "Finisher medals"
+        ],
+        "price": "From $5,000"
+      },
+      "outdoorFestivals": {
+        "title": "Outdoor Festivals",
+        "description": "Multi-day outdoor festivals with entertainment, food, and activities",
+        "features": [
+          "Venue setup and management",
+          "Entertainment coordination",
+          "Food and beverage vendors",
+          "Security and safety",
+          "Waste management",
+          "Weather contingency plans"
+        ],
+        "price": "From $8,000"
+      },
+      "adventureRaces": {
+        "title": "Adventure Races",
+        "description": "Thrilling adventure races with obstacle courses and outdoor challenges",
+        "features": [
+          "Course design and setup",
+          "Safety equipment",
+          "Medical support",
+          "Participant briefing",
+          "Timing and scoring",
+          "Emergency protocols"
+        ],
+        "price": "From $3,500"
+      },
+      "teamBuilding": {
+        "title": "Team Building Events",
+        "description": "Corporate team building activities and outdoor challenges",
+        "features": [
+          "Activity planning",
+          "Team coordination",
+          "Equipment provision",
+          "Facilitation services",
+          "Progress tracking",
+          "Debriefing sessions"
+        ],
+        "price": "From $1,500"
+      },
+      "charityEvents": {
+        "title": "Charity Sports Events",
+        "description": "Fundraising sports events and charity runs with full event management",
+        "features": [
+          "Fundraising coordination",
+          "Participant registration",
+          "Sponsor management",
+          "Media promotion",
+          "Donation tracking",
+          "Event reporting"
+        ],
+        "price": "From $2,000"
+      }
+    },
+    "process": {
+      "title": "Our Process",
+      "subtitle": "How we bring your sports and outdoor events to life",
+      "consultation": {
+        "title": "Initial Consultation",
+        "description": "Understanding your event goals, requirements, and participant expectations"
+      },
+      "venue": {
+        "title": "Venue & Logistics",
+        "description": "Selecting the perfect location and planning all logistical requirements"
+      },
+      "logistics": {
+        "title": "Equipment & Setup",
+        "description": "Coordinating equipment, safety measures, and event setup"
+      },
+      "execution": {
+        "title": "Event Execution",
+        "description": "Professional on-site management and real-time problem solving"
+      }
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Success stories from our sports and outdoor events",
+      "sarah": {
+        "name": "Sarah Johnson",
+        "company": "City Marathon Committee",
+        "role": "Event Director",
+        "content": "The marathon organization was flawless. Every detail was handled professionally, from registration to finish line celebrations."
+      },
+      "michael": {
+        "name": "Michael Chen",
+        "company": "Basketball League",
+        "role": "League Commissioner",
+        "content": "Our tournament ran smoothly with professional referees and excellent organization. Highly recommended for sports events."
+      },
+      "emily": {
+        "name": "Emily Rodriguez",
+        "company": "Adventure Racing Club",
+        "role": "Club President",
+        "content": "The adventure race was perfectly organized with top-notch safety measures and exciting challenges for all participants."
+      }
+    },
+    "gallery": {
+      "title": "Event Gallery",
+      "subtitle": "Showcasing our successful sports and outdoor events",
+      "participants": "participants",
+      "marathon": "City Marathon 2024",
+      "basketballTournament": "Spring Basketball Tournament",
+      "outdoorFestival": "Summer Outdoor Festival",
+      "adventureRace": "Mountain Adventure Race",
+      "charityWalk": "Charity Walk for Hope",
+      "teamBuilding": "Corporate Team Building"
+    },
+    "pricing": {
+      "title": "Pricing Packages",
+      "subtitle": "Flexible packages designed for different types of sports and outdoor events",
+      "getStarted": "Get Started",
+      "basic": {
+        "name": "Basic Package",
+        "price": "$1,500",
+        "duration": "Half Day",
+        "participants": "Up to 100",
+        "features": [
+          "Basic event coordination",
+          "Standard equipment",
+          "Safety protocols",
+          "Basic timing systems",
+          "Cleanup services"
+        ]
+      },
+      "premium": {
+        "name": "Premium Package",
+        "price": "$4,000",
+        "duration": "Full Day",
+        "participants": "Up to 500",
+        "features": [
+          "Professional event management",
+          "Advanced timing systems",
+          "Medical support",
+          "Security services",
+          "Media coverage",
+          "Participant tracking"
+        ],
+        "popular": "Most Popular"
+      },
+      "luxury": {
+        "name": "Luxury Package",
+        "price": "$8,000+",
+        "duration": "Multi-day",
+        "participants": "1000+",
+        "features": [
+          "Full-service event management",
+          "Premium equipment",
+          "Comprehensive safety",
+          "Live streaming",
+          "Professional photography",
+          "Custom awards",
+          "Post-event analysis"
+        ]
+      }
+    },
+    "equipment": {
+      "title": "Equipment & Technology",
+      "subtitle": "Professional-grade equipment and technology for sports and outdoor events",
+      "timing": {
+        "title": "Timing Systems",
+        "description": "Professional timing equipment for accurate race and competition results"
+      },
+      "scoring": {
+        "title": "Scoring Systems",
+        "description": "Real-time scoring and leaderboard management for tournaments"
+      },
+      "communication": {
+        "title": "Communication Systems",
+        "description": "Reliable communication equipment for event coordination and safety"
+      },
+      "venueSetup": {
+        "title": "Venue Setup",
+        "description": "Complete venue preparation including barriers, signage, and safety equipment"
+      },
+      "safety": {
+        "title": "Safety Equipment",
+        "description": "Comprehensive safety gear and emergency response equipment"
+      },
+      "mobileApps": {
+        "title": "Mobile Apps",
+        "description": "Custom mobile applications for participant tracking and event information"
+      },
+      "liveStreaming": {
+        "title": "Live Streaming",
+        "description": "Professional live streaming services for remote viewing and coverage"
+      },
+      "audio": {
+        "title": "Audio Systems",
+        "description": "High-quality sound systems for announcements and entertainment"
+      }
+    },
+    "successStories": {
+      "title": "Success Stories",
+      "subtitle": "Real results from our sports and outdoor events",
+      "participants": "Participants",
+      "satisfaction": "Satisfaction",
+      "keyResult": "Key Result",
+      "cityMarathon": {
+        "organization": "City Marathon Committee",
+        "event": "Annual City Marathon",
+        "participants": "5,000",
+        "satisfaction": "98%",
+        "result": "Record participation and successful fundraising for local charities",
+        "quote": "The most professionally organized marathon we've ever had. Every detail was perfect."
+      },
+      "basketballLeague": {
+        "organization": "Youth Basketball League",
+        "event": "Championship Tournament",
+        "participants": "200",
+        "satisfaction": "100%",
+        "result": "Successful tournament with increased league participation",
+        "quote": "Professional referees and flawless organization made this our best tournament yet."
+      },
+      "charityWalk": {
+        "organization": "Cancer Research Foundation",
+        "event": "Annual Charity Walk",
+        "participants": "1,200",
+        "satisfaction": "95%",
+        "result": "Raised $50,000 for cancer research",
+        "quote": "The event exceeded our fundraising goals and provided an amazing experience for all participants."
+      },
+      "adventureRace": {
+        "organization": "Adventure Racing Club",
+        "event": "Mountain Challenge Race",
+        "participants": "150",
+        "satisfaction": "97%",
+        "result": "Successful race with zero safety incidents",
+        "quote": "Perfect safety protocols and exciting challenges. Our members are already asking for the next event."
+      }
+    },
+    "cta": {
+      "title": "Ready to Organize Your Sports Event?",
+      "description": "Let us create an unforgettable sports or outdoor experience with professional event management and safety-first approach.",
+      "features": [
+        "Professional event management",
+        "Safety-first approach",
+        "State-of-the-art equipment",
+        "Comprehensive logistics support"
+      ],
+      "button": "Start Your Sports Event"
+    }
+  },
+  "exhibitionsTradeShows": {
+    "hero": {
+      "title": "Exhibitions & Trade Shows Excellence",
+      "description": "Professional exhibition and trade show management services that maximize your brand visibility, generate leads, and create meaningful business connections.",
+      "getQuote": "Get Quote",
+      "viewServices": "View Services"
+    },
+    "about": {
+      "title": "About Exhibitions & Trade Shows",
+      "description": "Our Exhibition And Trade Show Management Services Are Designed To Help Businesses Maximize Their Presence At Industry Events, Generate Quality Leads, And Build Meaningful Business Relationships Through Strategic Planning And Execution.",
+      "services": {
+        "boothDesign": {
+          "title": "Booth Design And Setup",
+          "description": "This Includes Creating Eye-Catching Booth Designs, Managing Setup And Breakdown, And Ensuring Your Space Stands Out Among Competitors."
+        },
+        "logistics": {
+          "title": "Logistics And Coordination",
+          "description": "This Involves Managing Shipping, Installation, Staff Coordination, And All Operational Aspects To Ensure Smooth Event Execution."
+        },
+        "engagement": {
+          "title": "Lead Generation And Engagement",
+          "description": "This Includes Developing Strategies To Attract Visitors, Capture Leads, And Facilitate Meaningful Business Conversations."
+        }
+      }
+    },
+    "services": {
+      "title": "Exhibition & Trade Show Services",
+      "subtitle": "Comprehensive exhibition management solutions designed to maximize your ROI and business impact",
+      "tradeShows": {
+        "title": "Trade Show Management",
+        "description": "Complete trade show management from booth design to lead generation with professional execution",
+        "features": ["Booth design and setup", "Staff coordination", "Lead capture systems", "Post-show follow-up"],
+        "price": "From $3,999"
+      },
+      "productExhibitions": {
+        "title": "Product Exhibitions",
+        "description": "Strategic product showcase events that highlight your offerings and attract potential customers",
+        "features": ["Product display design", "Interactive demonstrations", "Customer engagement", "Sales support"],
+        "price": "From $2,999"
+      },
+      "industryConferences": {
+        "title": "Industry Conferences",
+        "description": "Professional industry conferences and seminars with comprehensive event management",
+        "features": ["Speaker coordination", "Conference materials", "Registration management", "Networking facilitation"],
+        "price": "From $4,999"
+      },
+      "boothManagement": {
+        "title": "Booth Management",
+        "description": "Complete booth management services including design, setup, and staff coordination",
+        "features": ["Custom booth design", "Setup and breakdown", "Staff training", "Daily management"],
+        "price": "From $1,999"
+      },
+      "brandActivations": {
+        "title": "Brand Activations",
+        "description": "Creative brand activation experiences that engage audiences and build brand awareness",
+        "features": ["Interactive experiences", "Brand storytelling", "Audience engagement", "Social media integration"],
+        "price": "From $3,499"
+      },
+      "leadGeneration": {
+        "title": "Lead Generation",
+        "description": "Strategic lead generation services to maximize your exhibition ROI and business opportunities",
+        "features": ["Lead capture systems", "Qualification processes", "CRM integration", "Follow-up campaigns"],
+        "price": "From $2,499"
+      },
+      "keyFeatures": "Key Features:",
+      "bookNow": "Book Now"
+    },
+    "process": {
+      "title": "Our Exhibition Process",
+      "subtitle": "A systematic approach to delivering exceptional exhibitions that drive business results",
+      "strategy": {
+        "title": "Strategy Development",
+        "description": "We develop comprehensive exhibition strategies aligned with your business objectives and target audience"
+      },
+      "design": {
+        "title": "Design & Planning",
+        "description": "Create compelling booth designs and detailed execution plans that maximize your exhibition impact"
+      },
+      "logistics": {
+        "title": "Logistics Management",
+        "description": "Handle all logistics including shipping, setup, staff coordination, and operational management"
+      },
+      "execution": {
+        "title": "Event Execution",
+        "description": "Seamless on-site management ensuring everything runs smoothly and your objectives are achieved"
+      }
+    },
+    "testimonials": {
+      "title": "Client Testimonials",
+      "subtitle": "Hear from our satisfied exhibition clients about their exceptional event experiences",
+      "alex": {
+        "name": "Alex Thompson",
+        "company": "Tech Innovations Ltd.",
+        "role": "Marketing Director",
+        "content": "The exhibition management team delivered outstanding results at our industry trade show. Their booth design and lead generation strategies exceeded our expectations and generated significant business opportunities."
+      },
+      "maria": {
+        "name": "Maria Rodriguez",
+        "company": "Healthcare Solutions Inc.",
+        "role": "Business Development Manager",
+        "content": "Our product exhibition was flawlessly executed. The team's attention to detail and professional coordination made our brand stand out among competitors and attracted high-quality prospects."
+      },
+      "david": {
+        "name": "David Chen",
+        "company": "Manufacturing Excellence Corp.",
+        "role": "Sales Director",
+        "content": "The trade show management services were exceptional. From booth design to lead follow-up, every aspect was professionally handled, resulting in our most successful exhibition to date."
+      }
+    },
+    "gallery": {
+      "title": "Exhibition Gallery",
+      "subtitle": "Explore our diverse portfolio of successful exhibitions and trade shows",
+      "techExpo": "Tech Expo 2024",
+      "healthcareConference": "Healthcare Conference",
+      "marketingSummit": "Marketing Summit",
+      "designWorkshop": "Design Workshop",
+      "digitalForum": "Digital Marketing Forum",
+      "techConference": "Tech Conference",
+      "attendees": "attendees",
+      "types": {
+        "techExpo": "Tech Expo",
+        "healthcare": "Healthcare",
+        "marketing": "Marketing",
+        "design": "Design",
+        "digital": "Digital",
+        "conference": "Conference"
+      },
+      "altTexts": {
+        "exhibitionSetup": "Exhibition Setup",
+        "professionalManager": "Professional Exhibition Manager"
+      }
+    },
+    "pricing": {
+      "title": "Pricing Packages",
+      "subtitle": "Choose the perfect package for your exhibition needs",
+      "standard": {
+        "name": "Standard",
+        "price": "$2,999",
+        "duration": "3 Days",
+        "attendees": "Up to 100",
+        "features": ["Basic booth design", "Setup and breakdown", "Staff coordination", "Lead capture system", "Basic reporting"]
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "$5,999",
+        "duration": "5 Days",
+        "attendees": "Up to 500",
+        "features": ["Custom booth design", "Premium setup", "Dedicated coordinator", "Advanced lead system", "Detailed analytics", "Post-show follow-up"],
+        "popular": "Most Popular"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "$12,999",
+        "duration": "7+ Days",
+        "attendees": "1000+",
+        "features": ["Luxury booth design", "Full logistics management", "Multiple coordinators", "CRM integration", "Real-time analytics", "Comprehensive follow-up", "ROI reporting"]
+      },
+      "getStarted": "Get Started"
+    },
+    "technology": {
+      "title": "Technology & Innovation",
+      "subtitle": "Cutting-edge technology solutions for modern exhibitions",
+      "eventApps": {
+        "title": "Exhibition Apps",
+        "description": "Custom mobile applications for seamless exhibition management"
+      },
+      "analytics": {
+        "title": "Analytics Dashboard",
+        "description": "Real-time exhibition analytics and visitor insights"
+      },
+      "audioVisual": {
+        "title": "Audio-Visual Systems",
+        "description": "Professional sound and display systems for presentations"
+      },
+      "lighting": {
+        "title": "Smart Lighting",
+        "description": "Intelligent lighting systems for optimal booth presentation"
+      },
+      "photography": {
+        "title": "Event Photography",
+        "description": "Professional photography and videography services"
+      },
+      "networking": {
+        "title": "Networking Tools",
+        "description": "Digital networking platforms and business card scanning"
+      },
+      "interactive": {
+        "title": "Interactive Displays",
+        "description": "Engaging interactive experiences and demonstrations"
+      },
+      "streaming": {
+        "title": "Live Streaming",
+        "description": "Live streaming capabilities for virtual attendees"
+      }
+    },
+    "successStories": {
+      "title": "Success Stories",
+      "subtitle": "Real results from our exhibition partnerships",
+      "techExpo2024": {
+        "company": "TechExpo Solutions",
+        "event": "Global Tech Expo 2024",
+        "attendees": "15,000+",
+        "satisfaction": "97%",
+        "result": "Generated $5.2M in qualified leads",
+        "quote": "The exhibition management exceeded all our expectations. The lead quality and quantity were outstanding."
+      },
+      "healthcareSummit": {
+        "company": "Healthcare Innovations",
+        "event": "Healthcare Summit 2024",
+        "attendees": "8,500+",
+        "satisfaction": "95%",
+        "result": "Achieved 300% ROI on exhibition investment",
+        "quote": "Professional execution and strategic approach delivered exceptional results for our healthcare products."
+      },
+      "marketingForum": {
+        "company": "Digital Marketing Pro",
+        "event": "Marketing Forum 2024",
+        "attendees": "6,200+",
+        "satisfaction": "96%",
+        "result": "Generated 1,200+ qualified prospects",
+        "quote": "The exhibition strategy and execution were flawless. Our brand visibility increased significantly."
+      },
+      "designExpo": {
+        "company": "Creative Design Studio",
+        "event": "Design Expo 2024",
+        "attendees": "4,800+",
+        "satisfaction": "98%",
+        "result": "Secured 45 new client partnerships",
+        "quote": "Outstanding booth design and management services that perfectly represented our brand."
+      },
+      "attendees": "attendees",
+      "satisfaction": "satisfaction",
+      "keyResult": "Key Result"
+    },
+    "cta": {
+      "title": "Ready to Maximize Your Exhibition Impact?",
+      "description": "Transform your exhibition presence with professional management services that drive results and create meaningful business connections.",
+      "features": [
+        "Professional booth design and setup",
+        "Strategic lead generation systems",
+        "Comprehensive logistics management",
+        "Post-exhibition follow-up campaigns"
+      ],
+      "button": "Start Your Exhibition"
+    }
+  },
+  "home1": {
+    "showcase": {
+      "title": "Create Unforgettable Events",
+      "subtitle": "The all-in-one platform for event management, registration, and engagement",
+      "startFreeTrial": "Start Free Trial",
+      "watchDemo": "Watch Demo"
+    },
+    "about": {
+      "label": "About",
+      "title": "Crafting Memorable Events, Every Time",
+      "description1": "We are a passionate team of event planners dedicated to turning your vision into reality. From intimate gatherings to large-scale celebrations, we deliver seamless planning, creative designs, and unforgettable experiences.",
+      "description2": "Our attention to detail and commitment to excellence ensures that every event we create becomes a cherished memory for you and your guests.",
+      "learnMore": "Learn More"
+    },
+    "features": {
+      "title": "Everything You Need to Manage Events",
+      "subtitle": "From planning to execution, our platform provides all the tools you need to create successful events",
+      "eventCreation": {
+        "title": "Event Creation",
+        "description": "Create and customize events with our intuitive drag-and-drop builder"
+      },
+      "registrationManagement": {
+        "title": "Registration Management",
+        "description": "Handle attendee registration, ticketing, and payment processing seamlessly"
+      },
+      "realTimeAnalytics": {
+        "title": "Real-time Analytics",
+        "description": "Track event performance with comprehensive analytics and reporting"
+      },
+      "mobileApp": {
+        "title": "Mobile App",
+        "description": "Provide attendees with a dedicated mobile app for better engagement"
+      },
+      "liveStreaming": {
+        "title": "Live Streaming",
+        "description": "Stream your events live to reach a global audience"
+      },
+      "networkingTools": {
+        "title": "Networking Tools",
+        "description": "Enable attendees to connect and network through our platform"
+      }
+    },
+    "featuredEvents": {
+      "title": "Featured Events",
+      "subtitle": "Discover upcoming events and see how our platform powers successful gatherings",
+      "upcoming": "Upcoming",
+      "attendees": "attendees",
+      "viewDetails": "View Details"
+    },
+    "testimonials": {
+      "title": "What Our Customers Say",
+      "subtitle": "Join thousands of event organizers who trust our platform to deliver exceptional experiences",
+      "testimonial1": {
+        "content": "This platform has revolutionized how we manage our events. The features are intuitive and the support is outstanding.",
+        "name": "Sarah Johnson",
+        "role": "Event Manager",
+        "company": "TechCorp"
+      },
+      "testimonial2": {
+        "content": "The analytics and reporting features give us insights we never had before. Highly recommended!",
+        "name": "Michael Chen",
+        "role": "Conference Director",
+        "company": "InnovateLabs"
+      },
+      "testimonial3": {
+        "content": "Managing multiple events has never been easier. The platform scales perfectly with our needs.",
+        "name": "Emily Rodriguez",
+        "role": "Marketing Director",
+        "company": "GrowthCo"
+      }
+    },
+    "cta": {
+      "title": "Ready to Create Your Next Event?",
+      "subtitle": "Join thousands of event organizers who trust our platform to deliver exceptional experiences",
+      "startFreeTrial": "Start Free Trial",
+      "scheduleDemo": "Schedule Demo"
+    }
+  }
+}
