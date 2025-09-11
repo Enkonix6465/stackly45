@@ -2101,7 +2101,6 @@
     "users": "جميع المستخدمين",
     "userManagement": "إدارة المستخدمين",
     "statistics": "الإحصائيات",
-    "recentActivity": "النشاط الأخير",
     "totalUsers": "إجمالي المستخدمين",
     "activeUsers": "المستخدمون النشطون",
     "newRegistrations": "التسجيلات الجديدة",
@@ -2125,7 +2124,53 @@
       "active": "نشط",
       "inactive": "غير نشط",
       "search": "البحث عن المستخدمين..."
-    }
+    },
+    "quickActions": {
+      "title": "الإجراءات السريعة",
+      "exportData": "تصدير البيانات",
+      "addUser": "إضافة مستخدم"
+    },
+    "recentActivity": {
+      "title": "النشاط الأخير",
+      "newUserRegistered": "تم تسجيل مستخدم جديد",
+      "systemBackupCompleted": "تم إكمال النسخ الاحتياطي للنظام",
+      "securityScanPassed": "تم اجتياز فحص الأمان",
+      "minutesAgo": "منذ دقائق",
+      "hourAgo": "منذ ساعة",
+      "hoursAgo": "منذ ساعات"
+    },
+    "userTable": {
+      "lastActive": "آخر نشاط",
+      "currentUser": "المستخدم الحالي",
+      "delete": "حذف",
+      "noUsersFound": "لم يتم العثور على مستخدمين",
+      "noUsersYet": "لا يوجد مستخدمون بعد",
+      "tryAdjustingSearch": "حاول تعديل معايير البحث أو التصفية.",
+      "usersWillAppear": "ستظهر المستخدمون هنا بمجرد تسجيلهم."
+    },
+    "addUserModal": {
+      "title": "إضافة مستخدم جديد",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "role": "الدور",
+      "userRole": "مستخدم",
+      "adminRole": "مدير",
+      "cancel": "إلغاء",
+      "createUser": "إنشاء مستخدم",
+      "required": "*",
+      "validation": {
+        "firstNameRequired": "الاسم الأول واسم العائلة مطلوبان.",
+        "emailRequired": "البريد الإلكتروني مطلوب.",
+        "emailInvalid": "يرجى إدخال عنوان بريد إلكتروني صحيح.",
+        "passwordMinLength": "يجب أن تكون كلمة المرور 6 أحرف على الأقل."
+      },
+      "success": "تم إنشاء المستخدم بنجاح!",
+      "cannotDeleteSelf": "لا يمكنك حذف حسابك الخاص.",
+      "confirmDelete": "هل أنت متأكد من أنك تريد حذف هذا المستخدم؟ لا يمكن التراجع عن هذا الإجراء."
+    },
+    "totalSessions": "إجمالي الجلسات"
   },
   "weddingPlanning": {
     "hero": {

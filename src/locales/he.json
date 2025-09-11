@@ -2101,7 +2101,6 @@
     "users": "כל המשתמשים",
     "userManagement": "ניהול משתמשים",
     "statistics": "סטטיסטיקות",
-    "recentActivity": "פעילות אחרונה",
     "totalUsers": "סך כל המשתמשים",
     "activeUsers": "משתמשים פעילים",
     "newRegistrations": "הרשמות חדשות",
@@ -2125,7 +2124,53 @@
       "active": "פעיל",
       "inactive": "לא פעיל",
       "search": "חיפוש משתמשים..."
-    }
+    },
+    "quickActions": {
+      "title": "פעולות מהירות",
+      "exportData": "ייצוא נתונים",
+      "addUser": "הוספת משתמש"
+    },
+    "recentActivity": {
+      "title": "פעילות אחרונה",
+      "newUserRegistered": "משתמש חדש נרשם",
+      "systemBackupCompleted": "גיבוי המערכת הושלם",
+      "securityScanPassed": "סריקת האבטחה עברה בהצלחה",
+      "minutesAgo": "לפני דקות",
+      "hourAgo": "לפני שעה",
+      "hoursAgo": "לפני שעות"
+    },
+    "userTable": {
+      "lastActive": "פעילות אחרונה",
+      "currentUser": "המשתמש הנוכחי",
+      "delete": "מחיקה",
+      "noUsersFound": "לא נמצאו משתמשים",
+      "noUsersYet": "אין משתמשים עדיין",
+      "tryAdjustingSearch": "נסה להתאים את קריטריוני החיפוש או הסינון.",
+      "usersWillAppear": "משתמשים יופיעו כאן ברגע שירשמו."
+    },
+    "addUserModal": {
+      "title": "הוספת משתמש חדש",
+      "firstName": "שם פרטי",
+      "lastName": "שם משפחה",
+      "email": "אימייל",
+      "password": "סיסמה",
+      "role": "תפקיד",
+      "userRole": "משתמש",
+      "adminRole": "מנהל",
+      "cancel": "ביטול",
+      "createUser": "צור משתמש",
+      "required": "*",
+      "validation": {
+        "firstNameRequired": "שם פרטי ושם משפחה נדרשים.",
+        "emailRequired": "אימייל נדרש.",
+        "emailInvalid": "אנא הכנס כתובת אימייל תקינה.",
+        "passwordMinLength": "הסיסמה חייבת להיות באורך של לפחות 6 תווים."
+      },
+      "success": "המשתמש נוצר בהצלחה!",
+      "cannotDeleteSelf": "אינך יכול למחוק את החשבון שלך.",
+      "confirmDelete": "האם אתה בטוח שברצונך למחוק את המשתמש הזה? לא ניתן לבטל פעולה זו."
+    },
+    "totalSessions": "סך כל הפעלות"
   },
   "weddingPlanning": {
     "hero": {

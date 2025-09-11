@@ -1891,7 +1891,6 @@
     "users": "All Users",
     "userManagement": "User Management",
     "statistics": "Statistics",
-    "recentActivity": "Recent Activity",
     "totalUsers": "Total Users",
     "activeUsers": "Active Users",
     "newRegistrations": "New Registrations",
@@ -1915,7 +1914,53 @@
       "active": "Active",
       "inactive": "Inactive",
       "search": "Search users..."
-    }
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "exportData": "Export Data",
+      "addUser": "Add User"
+    },
+    "recentActivity": {
+      "title": "Recent Activity",
+      "newUserRegistered": "New user registered",
+      "systemBackupCompleted": "System backup completed",
+      "securityScanPassed": "Security scan passed",
+      "minutesAgo": "minutes ago",
+      "hourAgo": "hour ago",
+      "hoursAgo": "hours ago"
+    },
+    "userTable": {
+      "lastActive": "Last Active",
+      "currentUser": "Current User",
+      "delete": "Delete",
+      "noUsersFound": "No users found",
+      "noUsersYet": "No users yet",
+      "tryAdjustingSearch": "Try adjusting your search or filter criteria.",
+      "usersWillAppear": "Users will appear here once they register."
+    },
+    "addUserModal": {
+      "title": "Add New User",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "password": "Password",
+      "role": "Role",
+      "userRole": "User",
+      "adminRole": "Admin",
+      "cancel": "Cancel",
+      "createUser": "Create User",
+      "required": "*",
+      "validation": {
+        "firstNameRequired": "First name and last name are required.",
+        "emailRequired": "Email is required.",
+        "emailInvalid": "Please enter a valid email address.",
+        "passwordMinLength": "Password must be at least 6 characters long."
+      },
+      "success": "User created successfully!",
+      "cannotDeleteSelf": "You cannot delete your own account.",
+      "confirmDelete": "Are you sure you want to delete this user? This action cannot be undone."
+    },
+    "totalSessions": "Total Sessions"
   },
   "weddingPlanning": {
     "hero": {

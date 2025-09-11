@@ -58,11 +58,11 @@ export default function AdminDashboard() {
   const handleDeleteUser = (userId) => {
     // Prevent admin from deleting themselves
     if (loggedInUser && loggedInUser.id === userId) {
-      alert('You cannot delete your own account.');
+      alert(t('admin.addUserModal.cannotDeleteSelf'));
       return;
     }
 
-    if (window.confirm('Are you sure you want to delete this user? This action cannot be undone.')) {
+    if (window.confirm(t('admin.addUserModal.confirmDelete'))) {
       const allUsers = getUsers();
       const updatedUsers = allUsers.filter(user => user.id !== userId);
       saveUsers(updatedUsers);
@@ -98,19 +98,19 @@ export default function AdminDashboard() {
 
     // Validation
     if (!newUser.firstName.trim() || !newUser.lastName.trim()) {
-      setAddUserError('First name and last name are required.');
+      setAddUserError(t('admin.addUserModal.validation.firstNameRequired'));
       return;
     }
     if (!newUser.email.trim()) {
-      setAddUserError('Email is required.');
+      setAddUserError(t('admin.addUserModal.validation.emailRequired'));
       return;
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(newUser.email)) {
-      setAddUserError('Please enter a valid email address.');
+      setAddUserError(t('admin.addUserModal.validation.emailInvalid'));
       return;
     }
     if (!newUser.password || newUser.password.length < 6) {
-      setAddUserError('Password must be at least 6 characters long.');
+      setAddUserError(t('admin.addUserModal.validation.passwordMinLength'));
       return;
     }
 
@@ -134,7 +134,7 @@ export default function AdminDashboard() {
         password: '',
         role: 'user'
       });
-      alert('User created successfully!');
+      alert(t('admin.addUserModal.success'));
     } else {
       setAddUserError(result.message);
     }
@@ -278,7 +278,7 @@ export default function AdminDashboard() {
               delay={200}
             />
             <StatCard
-              title="Total Sessions"
+              title={t('admin.totalSessions')}
               value={stats.totalSessions}
               icon={Activity}
               color="from-orange-500 to-orange-600"
@@ -292,13 +292,13 @@ export default function AdminDashboard() {
             <div className="lg:col-span-2">
               <div className="bg-white/10 dark:bg-gray-900/10 backdrop-blur-xl border border-white/20 dark:border-gray-700/20 rounded-2xl p-6">
                 <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">Quick Actions</h3>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">{t('admin.quickActions.title')}</h3>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <button className="group p-4 rounded-xl bg-gradient-to-br from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                     <div className="flex items-center space-x-3">
                       <Download className="h-6 w-6 text-white" />
-                      <span className="text-white font-medium">Export Data</span>
+                      <span className="text-white font-medium">{t('admin.quickActions.exportData')}</span>
                     </div>
                   </button>
                   <button 
@@ -307,7 +307,7 @@ export default function AdminDashboard() {
                   >
                     <div className="flex items-center space-x-3">
                       <UserPlus className="h-6 w-6 text-white" />
-                      <span className="text-white font-medium">Add User</span>
+                      <span className="text-white font-medium">{t('admin.quickActions.addUser')}</span>
                     </div>
                   </button>
                 </div>
@@ -315,15 +315,15 @@ export default function AdminDashboard() {
             </div>
             
             <div className="bg-white/10 dark:bg-gray-900/10 backdrop-blur-xl border border-white/20 dark:border-gray-700/20 rounded-2xl p-6">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Recent Activity</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">{t('admin.recentActivity.title')}</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="p-2 bg-emerald-100 dark:bg-emerald-900/20 rounded-lg">
                     <UserCheck className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-medium text-gray-900 dark:text-white">New user registered</p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400">2 minutes ago</p>
+                    <p className="text-sm font-medium text-gray-900 dark:text-white">{t('admin.recentActivity.newUserRegistered')}</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">2 {t('admin.recentActivity.minutesAgo')}</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -331,8 +331,8 @@ export default function AdminDashboard() {
                     <Activity className="h-4 w-4 text-purple-600 dark:text-purple-400" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-medium text-gray-900 dark:text-white">System backup completed</p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400">1 hour ago</p>
+                    <p className="text-sm font-medium text-gray-900 dark:text-white">{t('admin.recentActivity.systemBackupCompleted')}</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">1 {t('admin.recentActivity.hourAgo')}</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -340,8 +340,8 @@ export default function AdminDashboard() {
                     <Shield className="h-4 w-4 text-purple-600 dark:text-purple-400" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-medium text-gray-900 dark:text-white">Security scan passed</p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400">3 hours ago</p>
+                    <p className="text-sm font-medium text-gray-900 dark:text-white">{t('admin.recentActivity.securityScanPassed')}</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">3 {t('admin.recentActivity.hoursAgo')}</p>
                   </div>
                 </div>
               </div>
@@ -400,7 +400,7 @@ export default function AdminDashboard() {
                       {t('admin.userDetails.status')}
                     </th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                      Last Active
+                      {t('admin.userTable.lastActive')}
                     </th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                       {t('admin.userDetails.actions')}
@@ -444,14 +444,14 @@ export default function AdminDashboard() {
                         <div className="flex items-center space-x-2">
                           {loggedInUser && loggedInUser.id === user.id ? (
                             <span className="px-3 py-1 text-sm font-medium text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-gray-800 rounded-lg">
-                              Current User
+                              {t('admin.userTable.currentUser')}
                             </span>
                           ) : (
                             <button 
                               onClick={() => handleDeleteUser(user.id)}
                               className="px-3 py-1 text-sm font-medium text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-lg transition-colors"
                             >
-                              Delete
+                              {t('admin.userTable.delete')}
                             </button>
                           )}
                         </div>
@@ -467,12 +467,12 @@ export default function AdminDashboard() {
               <div className="text-center py-12">
                 <Users className="mx-auto h-12 w-12 text-gray-400" />
                 <h3 className="mt-2 text-sm font-medium text-gray-900 dark:text-white">
-                  {searchTerm || filterStatus !== 'all' ? 'No users found' : 'No users yet'}
+                  {searchTerm || filterStatus !== 'all' ? t('admin.userTable.noUsersFound') : t('admin.userTable.noUsersYet')}
                 </h3>
                 <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
                   {searchTerm || filterStatus !== 'all' 
-                    ? 'Try adjusting your search or filter criteria.' 
-                    : 'Users will appear here once they register.'}
+                    ? t('admin.userTable.tryAdjustingSearch') 
+                    : t('admin.userTable.usersWillAppear')}
                 </p>
               </div>
             )}
@@ -486,7 +486,7 @@ export default function AdminDashboard() {
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto">
             <div className="p-6">
               <div className="flex items-center justify-between mb-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">Add New User</h3>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white">{t('admin.addUserModal.title')}</h3>
                 <button
                   onClick={handleCloseModal}
                   className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
@@ -501,7 +501,7 @@ export default function AdminDashboard() {
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                      First Name *
+                      {t('admin.addUserModal.firstName')} {t('admin.addUserModal.required')}
                     </label>
                     <input
                       type="text"
@@ -515,7 +515,7 @@ export default function AdminDashboard() {
                   </div>
                   <div>
                     <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                      Last Name *
+                      {t('admin.addUserModal.lastName')} {t('admin.addUserModal.required')}
                     </label>
                     <input
                       type="text"
@@ -531,7 +531,7 @@ export default function AdminDashboard() {
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Email *
+                    {t('admin.addUserModal.email')} {t('admin.addUserModal.required')}
                   </label>
                   <input
                     type="email"
@@ -546,7 +546,7 @@ export default function AdminDashboard() {
 
                 <div>
                   <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Password *
+                    {t('admin.addUserModal.password')} {t('admin.addUserModal.required')}
                   </label>
                   <input
                     type="password"
@@ -562,7 +562,7 @@ export default function AdminDashboard() {
 
                 <div>
                   <label htmlFor="role" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Role
+                    {t('admin.addUserModal.role')}
                   </label>
                   <select
                     id="role"
@@ -571,8 +571,8 @@ export default function AdminDashboard() {
                     onChange={handleNewUserChange}
                     className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                   >
-                    <option value="user">User</option>
-                    <option value="admin">Admin</option>
+                    <option value="user">{t('admin.addUserModal.userRole')}</option>
+                    <option value="admin">{t('admin.addUserModal.adminRole')}</option>
                   </select>
                 </div>
 
@@ -588,13 +588,13 @@ export default function AdminDashboard() {
                     onClick={handleCloseModal}
                     className="flex-1 px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition-colors"
                   >
-                    Cancel
+                    {t('admin.addUserModal.cancel')}
                   </button>
                   <button
                     type="submit"
                     className="flex-1 px-4 py-2 text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors"
                   >
-                    Create User
+                    {t('admin.addUserModal.createUser')}
                   </button>
                 </div>
               </form>
