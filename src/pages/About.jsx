@@ -75,8 +75,8 @@ export default function About() {
       <div className="mt-8 flex gap-4 justify-center">
         {/* Primary Button */}
         <a
-          href="/about"
-          className="btn-animate-strong rounded-lg px-8 py-4 font-bold text-lg transition-all duration-300 bg-indigo-500 text-white hover:bg-indigo-600 shadow-lg hover:shadow-xl"
+          href="/contact"
+          className="btn-animate-strong rounded-lg px-8 py-4 font-bold text-lg transition-all duration-300 bg-purple-500 text-white hover:bg-purple-600 shadow-lg hover:shadow-xl"
         >
           {t('about.showcase.connectButton')}
         </a>
@@ -103,12 +103,6 @@ export default function About() {
         <div className="relative z-10 mx-auto max-w-7xl px-4 py-24">
           {/* Header */}
           <div className="text-center mb-16">
-            <ScrollAnimation animation="fade-in" stagger="scroll-stagger-1">
-              <div className={`inline-flex items-center gap-2 ${isDark ? 'text-purple-400' : 'text-purple-600'} text-sm font-medium mb-4`}>
-                <div className={`w-2 h-2 ${isDark ? 'bg-purple-400' : 'bg-purple-600'} rounded-full`}></div>
-                MISSION & VISION
-              </div>
-            </ScrollAnimation>
             
             <ScrollAnimation animation="fade-in" stagger="scroll-stagger-2">
               <h2 className={`text-5xl md:text-6xl font-extrabold leading-tight mb-6 ${isDark ? 'text-white' : 'text-black'}`}>
@@ -128,7 +122,7 @@ export default function About() {
             {/* Left Column - Mission Statement */}
             <ScrollAnimation animation="fade-in" stagger="scroll-stagger-4">
               <div className="space-y-6">
-                <h3 className={`text-2xl font-bold ${isDark ? 'text-purple-400' : 'text-purple-600'} mb-4`}>Our Mission</h3>
+                <h3 className={`text-2xl font-bold ${isDark ? 'text-purple-400' : 'text-purple-600'} mb-4`}>{t('about.mission.ourMission')}</h3>
                 <p className={`${isDark ? 'text-white/90' : 'text-black/80'} leading-relaxed text-lg`}>
                   {t('about.mission.missionStatement')}
                 </p>
@@ -136,7 +130,7 @@ export default function About() {
                   href="#about" 
                   className={`inline-flex items-center gap-2 ${isDark ? 'text-purple-400 hover:text-purple-300' : 'text-purple-600 hover:text-purple-700'} transition-colors font-medium`}
                 >
-                  Learn More
+                  {t('about.mission.learnMore')}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -162,7 +156,7 @@ export default function About() {
             {/* Right Column - Vision Statement */}
             <ScrollAnimation animation="fade-in" stagger="scroll-stagger-6">
               <div className="space-y-6">
-                <h3 className={`text-2xl font-bold ${isDark ? 'text-purple-400' : 'text-purple-600'} mb-4`}>Our Vision</h3>
+                <h3 className={`text-2xl font-bold ${isDark ? 'text-purple-400' : 'text-purple-600'} mb-4`}>{t('about.mission.ourVision')}</h3>
                 <p className={`${isDark ? 'text-white/90' : 'text-black/80'} leading-relaxed text-lg`}>
                   {t('about.mission.visionStatement')}
                 </p>
@@ -170,7 +164,7 @@ export default function About() {
                   href="#about" 
                   className={`inline-flex items-center gap-2 ${isDark ? 'text-purple-400 hover:text-purple-300' : 'text-purple-600 hover:text-purple-700'} transition-colors font-medium`}
                 >
-                  Get Started
+                  {t('about.mission.getStarted')}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>

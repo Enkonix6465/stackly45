@@ -30,6 +30,7 @@
     "forFreelancers": "For Freelancers",
     "contactUs": "Contact Us",
     "home1": "Home1",
+    "home2": "Home2",
     "about": "About",
     "services": "Services",
     "blog": "Blog",
@@ -104,6 +105,28 @@
     "noAccount": "Don't have an account?",
     "register": "Register",
     "errorEmailPassword": "Please enter email and password"
+  },
+  "register": {
+    "createAccount": "Create your account",
+    "joinUs": "Join us and get started",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "firstNamePlaceholder": "First name",
+    "lastNamePlaceholder": "Last name",
+    "emailPlaceholder": "you@example.com",
+    "passwordPlaceholder": "At least 6 characters",
+    "confirmPasswordPlaceholder": "Re-enter your password",
+    "createAccountButton": "Create Account",
+    "forgotPassword": "Forgot your password?",
+    "alreadyHaveAccount": "Already have an account?",
+    "login": "Login",
+    "errorFirstNameLastName": "Please enter your first and last name",
+    "errorValidEmail": "Please enter a valid email",
+    "errorPasswordLength": "Password must be at least 6 characters",
+    "errorPasswordsMatch": "Passwords do not match"
   },
   "forgotPassword": {
     "resetPassword": "Reset Password",
@@ -229,8 +252,8 @@
     "showcase": {
       "title": "Event Management Excellence",
       "subtitle": "Transform your events with our comprehensive platform designed for seamless planning and execution",
-      "exploreButton": "Explore Platform",
-      "learnMoreButton": "Learn More",
+      "exploreButton": "Explore",
+      "learnMoreButton": "Contact",
       "features": {
         "comprehensive": {
           "title": "Comprehensive Event Solutions",
@@ -382,9 +405,15 @@
     "mission": {
       "title": "Mission & Vision",
       "subtitle": "Empowering event organizers through innovative event management solutions",
+      "ourMission": "Our Mission",
+      "ourVision": "Our Vision",
+      "learnMore": "Learn More",
+      "getStarted": "Get Started",
       "missionStatement": "Our mission is to revolutionize the way events are created, managed, and experienced by providing a comprehensive platform that connects event organizers with attendees, streamlines event planning processes, and delivers exceptional event experiences that bring people together.",
       "visionStatement": "We envision a future where every event, from intimate gatherings to large-scale conferences, can be seamlessly organized and enjoyed through our platform, creating meaningful connections and memorable experiences that transcend geographical boundaries and time zones.",
       "values": {
+        "title": "Our Core Values",
+        "subtitle": "The principles that guide everything we do and shape our commitment to excellence",
         "innovation": {
           "title": "Innovation",
           "description": "Continuously evolving our platform with cutting-edge technology to enhance event experiences and streamline event management processes."
@@ -401,10 +430,6 @@
           "title": "Collaboration",
           "description": "Fostering meaningful connections between event organizers and attendees to create successful and impactful events."
         }
-      },
-      "values": {
-        "title": "Our Core Values",
-        "subtitle": "The principles that guide everything we do and shape our culture"
       },
       "stats": {
         "projectsCompleted": "5,000+",
@@ -618,13 +643,150 @@
   "services": {
     "showcase": {
       "tagline": "Our Services",
-      "title": "Empowering Businesses with Freelance Expertise",
-      "subtitle": "Showcasing projects that blend creativity, technology, and strategy to deliver meaningful results.",
-      "exploreButton": "Explore",
-      "reachOutButton": "Reach out"
+      "title": "Event Management Excellence",
+      "subtitle": "Creating unforgettable experiences through innovative event planning",
+      "exploreButton": "Explore Services",
+      "planEventButton": "Plan Your Event"
     },
     "video": {
       "notSupported": "Your browser does not support the video tag."
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Our streamlined process ensures your event is executed flawlessly from concept to completion",
+      "steps": {
+        "consultation": {
+          "title": "Initial Consultation",
+          "description": "We discuss your vision, requirements, budget, and timeline to understand your event goals"
+        },
+        "planning": {
+          "title": "Planning & Design",
+          "description": "We create detailed event plans, timelines, and design concepts tailored to your specific needs"
+        },
+        "coordination": {
+          "title": "Coordination & Setup",
+          "description": "Our team coordinates with vendors, manages logistics, and ensures everything is perfectly set up"
+        },
+        "execution": {
+          "title": "Event Execution",
+          "description": "We execute your event flawlessly with on-site management and real-time problem solving"
+        }
+      }
+    },
+    "eventCategories": {
+      "title": "Event Categories",
+      "subtitle": "Specialized event management services tailored to different occasions and celebrations",
+      "weddingPlanning": {
+        "title": "Wedding Planning",
+        "description": "Complete wedding planning from venue selection to reception coordination with elegant execution",
+        "price": "From $3,999",
+        "button": "View"
+      },
+      "corporateEvents": {
+        "title": "Corporate Events",
+        "description": "Professional conferences, seminars, product launches, and corporate gatherings with seamless execution",
+        "price": "From $2,499",
+        "button": "View"
+      },
+      "birthdayParties": {
+        "title": "Birthday & Private Parties",
+        "description": "Personalized celebrations for birthdays, anniversaries, and private gatherings with custom themes",
+        "price": "From $799",
+        "button": "View"
+      },
+      "concertsEntertainment": {
+        "title": "Concerts & Entertainment Shows",
+        "description": "Live music concerts, entertainment shows, and cultural performances with professional production",
+        "price": "From $4,999",
+        "button": "View"
+      },
+      "sportsOutdoor": {
+        "title": "Sports & Outdoor Events",
+        "description": "Sports tournaments, outdoor festivals, and athletic events with comprehensive logistics management",
+        "price": "From $3,499",
+        "button": "View"
+      },
+      "exhibitionsTradeShows": {
+        "title": "Exhibitions & Trade Shows",
+        "description": "Professional exhibitions, trade shows, and industry conferences with booth management and logistics",
+        "price": "From $5,999",
+        "button": "View"
+      }
+    },
+    "eventPackages": {
+      "title": "Event Packages",
+      "subtitle": "Choose the perfect package for your event needs",
+      "birthdayParties": {
+        "title": "Birthday Parties",
+        "price": "From $150",
+        "duration": "4 Hours",
+        "capacity": "Up to 10 Persons",
+        "decoration": "Decoration",
+        "catering": "Catering"
+      },
+      "familyCelebrations": {
+        "title": "Family Celebrations",
+        "price": "From $450",
+        "duration": "6 Hours",
+        "capacity": "Up to 20 Persons",
+        "decoration": "Decoration",
+        "catering": "Catering"
+      },
+      "weddingCelebrations": {
+        "title": "Wedding Celebrations",
+        "price": "From $900",
+        "duration": "8 Hours",
+        "capacity": "Up to 50 Persons",
+        "decoration": "Decoration",
+        "catering": "Catering"
+      },
+      "corporateEvents": {
+        "title": "Corporate Events",
+        "price": "From $750",
+        "duration": "6 Hours",
+        "capacity": "Up to 100 Persons",
+        "decoration": "Decoration",
+        "catering": "Catering"
+      }
+    },
+    "upcomingEvents": {
+      "title": "Upcoming Events",
+      "subtitle": "Don't miss out on our exciting upcoming events and experiences",
+      "summerFestival": {
+        "category": "Music Festival",
+        "title": "Summer Music Festival 2024",
+        "description": "Join us for an unforgettable musical experience featuring top artists and amazing performances.",
+        "date": "July 15, 2024",
+        "location": "Central Park",
+        "button": "Get Tickets"
+      },
+      "networkingGala": {
+        "category": "Corporate Event",
+        "title": "Corporate Networking Gala",
+        "description": "An exclusive networking event for industry leaders and professionals.",
+        "date": "August 22, 2024",
+        "location": "Grand Ballroom",
+        "button": "Register Now"
+      },
+      "weddingExpo": {
+        "category": "Wedding Expo",
+        "title": "Wedding Expo 2024",
+        "description": "Discover the latest trends and vendors for your perfect wedding day.",
+        "date": "September 8, 2024",
+        "location": "Convention Center",
+        "button": "Learn More"
+      }
+    },
+    "servicesCta": {
+      "title": "Ready to Create Your Perfect Event?",
+      "subtitle": "Let us transform your vision into an unforgettable experience. From intimate gatherings to grand celebrations, we bring your events to life.",
+      "benefits": [
+        "Professional event planners with years of experience",
+        "Seamless execution from planning to completion",
+        "Competitive pricing with transparent costs",
+        "Flexible packages tailored to your needs"
+      ],
+      "button": "Start Planning Your Event"
     },
     "offerings": {
       "title": "What I Offer",
@@ -1758,8 +1920,8 @@
   "weddingPlanning": {
     "hero": {
       "title": "Dream Wedding Planning",
-      "description": "Create your perfect wedding day with our comprehensive planning services. From intimate ceremonies to grand celebrations, we bring your vision to life with elegance and precision.",
-      "getQuote": "Get Quote",
+      "description": "From intimate ceremonies to grand celebrations, we bring your vision to life with elegance and precision.",
+      "getQuote": "Connect",
       "viewServices": "View Services"
     },
     "about": {
@@ -1969,22 +2131,22 @@
       "getStarted": "Get Started"
     },
     "cta": {
-      "title": "Ready to Plan Your Dream Wedding?",
-      "description": "Let us transform your wedding vision into an unforgettable celebration. From intimate ceremonies to grand affairs, we create magical moments that last a lifetime.",
+      "title": "Make Every Event Extraordinary",
+      "description": "Get expert support, smart tools, and flawless execution all in one place",
       "features": [
         "Personalized wedding planning",
         "Expert vendor coordination",
         "Stress-free wedding day",
         "Memorable celebration experience"
       ],
-      "button": "Start Planning Your Wedding"
+      "button": "Get Started Today"
     }
   },
   "corporateEvents": {
     "hero": {
       "title": "Corporate Events Excellence",
-      "description": "Professional event management services for conferences, product launches, corporate retreats, and business gatherings that drive results and create lasting impressions.",
-      "getQuote": "Get Quote",
+      "description": "Professional event management that drive results and create lasting impressions.",
+      "getQuote": "Connect",
       "viewServices": "View Services"
     },
     "about": {
@@ -2007,7 +2169,7 @@
     },
     "services": {
       "title": "Corporate Event Services",
-      "subtitle": "Comprehensive event management solutions tailored to your business objectives and corporate culture",
+      "subtitle": "Comprehensive event management solutions tailored to your business objectives",
       "conferences": {
         "title": "Conferences & Seminars",
         "description": "Professional conferences, industry seminars, and educational workshops with comprehensive event management",
@@ -2203,26 +2365,26 @@
       "satisfaction": "Satisfaction"
     },
     "cta": {
-      "title": "Ready to Elevate Your Corporate Events?",
-      "description": "Let us transform your corporate gatherings into powerful business tools that drive engagement, build relationships, and achieve your organizational goals.",
+      "title": "Make Every Event Extraordinary",
+      "description": "Get expert support, smart tools, and flawless execution all in one place",
       "features": [
         "Professional event planning and execution",
         "Comprehensive vendor management",
         "Advanced technology integration",
         "24/7 on-site support"
       ],
-      "button": "Start Planning Your Event"
+      "button": "Get Started Today"
     }
   },
   "birthdayParties": {
     "hero": {
-      "title": "Unforgettable Birthday & Private Parties",
-      "description": "Create magical moments and lasting memories with our expert party planning services. From intimate gatherings to grand celebrations, we make every occasion special.",
-      "getQuote": "Get Your Quote",
+      "title": "Turning Moments Into Memories",
+      "description": "Create magical moments and lasting memories with our expert party planning services.",
+      "getQuote": "Connect",
       "viewServices": "View Our Services"
     },
     "about": {
-      "title": "About Our Party Planning Services",
+      "title": "Our Party Planning",
       "description": "We specialize in creating personalized and memorable celebrations that reflect your unique style and preferences. Our experienced team handles every detail, from theme selection to entertainment coordination, ensuring your party is stress-free and absolutely perfect.",
       "services": {
         "theme": {
@@ -2495,26 +2657,26 @@
       "satisfaction": "Satisfaction"
     },
     "cta": {
-      "title": "Ready to Plan Your Perfect Party?",
-      "description": "Let us create an unforgettable celebration that reflects your unique style and creates lasting memories for you and your guests.",
+      "title": "Make Every Event Extraordinary",
+      "description": "Get expert support, smart tools, and flawless execution all in one place",
       "features": [
         "Personalized party planning",
         "Professional entertainment coordination",
         "Quality catering and decorations",
         "Stress-free event management"
       ],
-      "button": "Start Planning Your Party"
+      "button": "Get Started Today"
     }
   },
   "concertsEntertainment": {
     "hero": {
-      "title": "Concerts & Entertainment Shows",
-      "description": "Create unforgettable musical experiences and entertainment events that captivate audiences and leave lasting memories.",
-      "getQuote": "Get Quote",
+      "title": "Experience the Magic Live",
+      "description": "Create unforgettable musical experiences and entertainment events",
+      "getQuote": "Connect",
       "viewServices": "View Services"
     },
     "about": {
-      "title": "About Concerts & Entertainment",
+      "title": "Concerts & Entertainment",
       "description": "We specialize in producing world-class concerts, music festivals, theater shows, comedy performances, and cultural events. Our team combines technical expertise with creative vision to deliver exceptional entertainment experiences.",
       "services": {
         "production": {
@@ -2613,26 +2775,6 @@
           "Documentation and media"
         ],
         "price": "From $6,000"
-      }
-    },
-    "process": {
-      "title": "Our Production Process",
-      "subtitle": "A systematic approach to creating exceptional entertainment experiences",
-      "consultation": {
-        "title": "Initial Consultation",
-        "description": "We discuss your vision, audience, budget, and requirements to create a comprehensive production plan."
-      },
-      "venue": {
-        "title": "Venue Selection",
-        "description": "We help select and prepare the perfect venue with all necessary technical requirements and permits."
-      },
-      "production": {
-        "title": "Production Planning",
-        "description": "Detailed production planning including technical setup, artist coordination, and timeline management."
-      },
-      "execution": {
-        "title": "Event Execution",
-        "description": "Professional on-site management ensuring smooth execution and exceptional audience experience."
       }
     },
     "testimonials": {
@@ -2754,66 +2896,27 @@
         "description": "Cutting-edge interactive technology for enhanced audience engagement"
       }
     },
-    "successStories": {
-      "title": "Success Stories",
-      "subtitle": "Real examples of our successful entertainment productions",
-      "attendees": "Attendees",
-      "satisfaction": "Satisfaction",
-      "keyResult": "Key Result:",
-      "musicHall": {
-        "venue": "Grand Music Hall",
-        "event": "Symphony Orchestra Concert",
-        "attendees": "1,200",
-        "satisfaction": "98%",
-        "result": "Sold-out performance with standing ovation",
-        "quote": "The technical execution was flawless. Every note was crystal clear."
-      },
-      "theaterDistrict": {
-        "venue": "Downtown Theater",
-        "event": "Broadway Musical",
-        "attendees": "800",
-        "satisfaction": "100%",
-        "result": "Extended run due to popular demand",
-        "quote": "Professional production values that rival Broadway shows."
-      },
-      "festivalGrounds": {
-        "venue": "City Festival Grounds",
-        "event": "Multi-Genre Music Festival",
-        "attendees": "5,000",
-        "satisfaction": "95%",
-        "result": "Record attendance and positive media coverage",
-        "quote": "The festival exceeded all expectations. Perfect execution across all stages."
-      },
-      "comedyClub": {
-        "venue": "Urban Comedy Club",
-        "event": "Stand-Up Comedy Night",
-        "attendees": "300",
-        "satisfaction": "100%",
-        "result": "Regular monthly event established",
-        "quote": "Intimate setting with professional sound quality. Perfect for comedy."
-      }
-    },
     "cta": {
-      "title": "Ready to Create an Unforgettable Entertainment Experience?",
-      "description": "Let us bring your entertainment vision to life with professional production services and cutting-edge technology.",
+      "title": "Make Every Event Extraordinary",
+      "description": "Get expert support, smart tools, and flawless execution all in one place",
       "features": [
         "Professional event production",
         "State-of-the-art equipment",
         "Expert technical support",
         "Comprehensive event management"
       ],
-      "button": "Start Your Entertainment Project"
+      "button": "Get Started Today"
     }
   },
   "sportsOutdoorEvents": {
     "hero": {
-      "title": "Sports & Outdoor Events",
-      "description": "Create unforgettable sporting experiences and outdoor adventures with our comprehensive event management services.",
-      "getQuote": "Get Quote",
+      "title": "Experience the Thrill Live",
+      "description": "Create unforgettable sporting experiences and outdoor adventures",
+      "getQuote": "Connect",
       "viewServices": "View Services"
     },
     "about": {
-      "title": "About Sports & Outdoor Events",
+      "title": "Sports & Outdoor Events",
       "description": "We specialize in organizing dynamic sports tournaments, outdoor festivals, adventure races, and team-building events. Our experienced team ensures every event runs smoothly with proper safety measures, equipment, and logistics coordination.",
       "services": {
         "venue": {
@@ -3091,15 +3194,15 @@
       }
     },
     "cta": {
-      "title": "Ready to Organize Your Sports Event?",
-      "description": "Let us create an unforgettable sports or outdoor experience with professional event management and safety-first approach.",
+      "title": "Make Every Event Extraordinary",
+      "description": "Get expert support, smart tools, and flawless execution all in one place",
       "features": [
         "Professional event management",
         "Safety-first approach",
         "State-of-the-art equipment",
         "Comprehensive logistics support"
       ],
-      "button": "Start Your Sports Event"
+      "button": "Get Started Today"
     }
   },
   "exhibitionsTradeShows": {
@@ -3337,22 +3440,24 @@
       "keyResult": "Key Result"
     },
     "cta": {
-      "title": "Ready to Maximize Your Exhibition Impact?",
-      "description": "Transform your exhibition presence with professional management services that drive results and create meaningful business connections.",
+      "title": "Make Every Event Extraordinary",
+      "description": "Get expert support, smart tools, and flawless execution all in one place",
       "features": [
         "Professional booth design and setup",
         "Strategic lead generation systems",
         "Comprehensive logistics management",
         "Post-exhibition follow-up campaigns"
       ],
-      "button": "Start Your Exhibition"
+      "button": "Get Started Today"
     }
   },
   "home1": {
     "showcase": {
+      "mainTitle": "The Future of Event Management",
       "title": "Create Unforgettable Events",
       "subtitle": "The all-in-one platform for event management, registration, and engagement",
       "startFreeTrial": "Start Free Trial",
+      "exploreButton": "Explore",
       "watchDemo": "Watch Demo"
     },
     "about": {
@@ -3360,11 +3465,12 @@
       "title": "Crafting Memorable Events, Every Time",
       "description1": "We are a passionate team of event planners dedicated to turning your vision into reality. From intimate gatherings to large-scale celebrations, we deliver seamless planning, creative designs, and unforgettable experiences.",
       "description2": "Our attention to detail and commitment to excellence ensures that every event we create becomes a cherished memory for you and your guests.",
-      "learnMore": "Learn More"
+      "learnMore": "Learn More",
+      "knowMoreButton": "Know More"
     },
     "features": {
       "title": "Everything You Need to Manage Events",
-      "subtitle": "From planning to execution, our platform provides all the tools you need to create successful events",
+      "subtitle": "From planning to execution, our platform provides all the tools need to create successful events",
       "eventCreation": {
         "title": "Event Creation",
         "description": "Create and customize events with our intuitive drag-and-drop builder"
@@ -3395,7 +3501,30 @@
       "subtitle": "Discover upcoming events and see how our platform powers successful gatherings",
       "upcoming": "Upcoming",
       "attendees": "attendees",
-      "viewDetails": "View Details"
+      "viewDetails": "View Details",
+      "events": {
+        "techConference": {
+          "title": "Tech Conference 2024",
+          "date": "March 15-17, 2024",
+          "location": "San Francisco, CA",
+          "category": "Technology",
+          "price": "$299"
+        },
+        "marketingSummit": {
+          "title": "Marketing Summit",
+          "date": "April 22, 2024",
+          "location": "New York, NY",
+          "category": "Marketing",
+          "price": "$199"
+        },
+        "designWorkshop": {
+          "title": "Design Workshop",
+          "date": "May 8, 2024",
+          "location": "Los Angeles, CA",
+          "category": "Design",
+          "price": "$99"
+        }
+      }
     },
     "testimonials": {
       "title": "What Our Customers Say",
@@ -3423,7 +3552,8 @@
       "title": "Ready to Create Your Next Event?",
       "subtitle": "Join thousands of event organizers who trust our platform to deliver exceptional experiences",
       "startFreeTrial": "Start Free Trial",
-      "scheduleDemo": "Schedule Demo"
+      "scheduleDemo": "Schedule Demo",
+      "connectButton": "Connect"
     }
   }
 }

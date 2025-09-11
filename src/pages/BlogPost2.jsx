@@ -334,25 +334,25 @@ export default function BlogPost2() {
                     </p>
                   </div>
                   <div 
+                    className="cursor-pointer group p-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
+                    onClick={() => navigate('/blog/2')}
+                  >
+                    <h4 className="font-semibold group-hover:text-blue-600 transition-colors text-gray-800 dark:text-gray-200">
+                      🎪 Top 10 Afterparty Golden Rules
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      Master the art of afterparty planning with these essential golden rules for unforgettable celebrations.
+                    </p>
+                  </div>
+                  <div 
                     className="cursor-pointer group p-3 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors"
                     onClick={() => navigate('/blog/3')}
                   >
                     <h4 className="font-semibold group-hover:text-purple-600 transition-colors text-gray-800 dark:text-gray-200">
-                      💒 Wedding Planning Essentials
+                      💒 Wedding Venue Selection Guide
                     </h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Complete guide to planning the perfect wedding day with timeline and vendor tips.
-                    </p>
-                  </div>
-                  <div 
-                    className="cursor-pointer group p-3 rounded-lg hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors"
-                    onClick={() => navigate('/blog/4')}
-                  >
-                    <h4 className="font-semibold group-hover:text-green-600 transition-colors text-gray-800 dark:text-gray-200">
-                      🏆 Sports & Outdoor Event Management
-                    </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Planning outdoor events, sports tournaments, and recreational activities for all ages.
+                      Complete guide to choosing the perfect wedding venue that matches your vision and budget.
                     </p>
                   </div>
                 </div>

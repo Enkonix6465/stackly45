@@ -88,12 +88,6 @@ export default function Services() {
     logoutUser()
     navigate('/login', { replace: true })
   }
-  const benefits = [
-    'Professional event planners with years of experience',
-    'Seamless execution from planning to completion',
-    'Competitive pricing with transparent costs',
-    'Flexible packages tailored to your needs'
-  ];
 
   return (
     <div className={`${isDark ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
@@ -121,28 +115,28 @@ export default function Services() {
 
         {/* Content */}
         <div className="relative z-10 px-6 max-w-4xl">
-          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-white">
-            Event Management Excellence
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-none text-white whitespace-nowrap">
+            {t('services.showcase.title')}
           </h1>
-          <p className="mt-6 text-xl text-white/80 max-w-3xl mx-auto">
-            Creating unforgettable experiences through innovative event planning, seamless execution, and cutting-edge technology solutions
+          <p className="mt-6 text-xl text-white/80 max-w-3xl mx-auto whitespace-nowrap">
+            {t('services.showcase.subtitle')}
           </p>
-          <div className="mt-8 flex gap-4 justify-center">
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             {/* Primary Button */}
-            <a
-              href="/services"
-              className="btn-animate-strong rounded-lg px-8 py-4 font-bold text-lg transition-all duration-300 bg-purple-500 text-white hover:bg-purple-600 shadow-lg hover:shadow-xl"
+            <button
+              onClick={() => navigate('/services')}
+              className="px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25"
             >
-              Explore Services
-            </a>
+              {t('services.showcase.exploreButton')}
+            </button>
 
             {/* Secondary Button */}
-            <a
-              href="/about"
-              className="btn-animate-strong rounded-lg px-8 py-4 font-bold text-lg transition-all duration-300 bg-white text-purple-600 border-2 border-purple-500 hover:bg-purple-500 hover:text-white shadow-lg hover:shadow-xl"
+            <button
+              onClick={() => navigate('/about')}
+              className="border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm border-white text-white hover:bg-white hover:text-purple-600 shadow-white/20"
             >
-              Plan Your Event
-            </a>
+              {t('services.showcase.planEventButton')}
+            </button>
           </div>
         </div>
       </section>
@@ -158,10 +152,10 @@ export default function Services() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className={`text-4xl md:text-5xl font-extrabold mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>
-              How It Works
+              {t('services.howItWorks.title')}
             </h2>
-            <p className={`text-xl max-w-3xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-              Our streamlined process ensures your event is executed flawlessly from concept to completion
+            <p className={`text-xl max-w-3xl mx-auto whitespace-nowrap ${isDark ? "text-gray-300" : "text-gray-600"}`}>
+              {t('services.howItWorks.subtitle')}
             </p>
             <div className="w-24 h-1 bg-purple-500 mx-auto mt-6 rounded-full"></div>
           </div>
@@ -185,10 +179,10 @@ export default function Services() {
                   
                   {/* Content */}
                   <h3 className={`text-xl font-bold mb-3 text-center ${isDark ? "text-black" : "text-gray-900"}`}>
-                    Initial Consultation
+                    {t('services.howItWorks.steps.consultation.title')}
                   </h3>
                   <p className={`text-center ${isDark ? "text-black" : "text-gray-600"}`}>
-                    We discuss your vision, requirements, budget, and timeline to understand your event goals
+                    {t('services.howItWorks.steps.consultation.description')}
                   </p>
                   
                   {/* Decorative Element */}
@@ -211,10 +205,10 @@ export default function Services() {
                   
                   {/* Content */}
                   <h3 className={`text-xl font-bold mb-3 text-center ${isDark ? "text-black" : "text-gray-900"}`}>
-                    Planning & Design
+                    {t('services.howItWorks.steps.planning.title')}
                   </h3>
                   <p className={`text-center ${isDark ? "text-black" : "text-gray-600"}`}>
-                    We create detailed event plans, timelines, and design concepts tailored to your specific needs
+                    {t('services.howItWorks.steps.planning.description')}
                   </p>
                   
                   {/* Decorative Element */}
@@ -237,10 +231,10 @@ export default function Services() {
                   
                   {/* Content */}
                   <h3 className={`text-xl font-bold mb-3 text-center ${isDark ? "text-black" : "text-gray-900"}`}>
-                    Coordination & Setup
+                    {t('services.howItWorks.steps.coordination.title')}
                   </h3>
                   <p className={`text-center ${isDark ? "text-black" : "text-gray-600"}`}>
-                    Our team coordinates with vendors, manages logistics, and ensures everything is perfectly set up
+                    {t('services.howItWorks.steps.coordination.description')}
                   </p>
                   
                   {/* Decorative Element */}
@@ -263,10 +257,10 @@ export default function Services() {
                   
                   {/* Content */}
                   <h3 className={`text-xl font-bold mb-3 text-center ${isDark ? "text-black" : "text-gray-900"}`}>
-                    Event Execution
+                    {t('services.howItWorks.steps.execution.title')}
                   </h3>
                   <p className={`text-center ${isDark ? "text-black" : "text-gray-600"}`}>
-                    We execute your event flawlessly with on-site management and real-time problem solving
+                    {t('services.howItWorks.steps.execution.description')}
                   </p>
                   
                   {/* Decorative Element */}
@@ -290,10 +284,10 @@ export default function Services() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className={`text-4xl md:text-5xl font-extrabold mb-4 ${isDark ? "text-white" : "text-black"}`}>
-              Event Categories
+              {t('services.eventCategories.title')}
       </h2>
-            <p className={`text-xl max-w-3xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-              Specialized event management services tailored to different occasions and celebrations
+            <p className={`text-xl max-w-3xl mx-auto whitespace-nowrap ${isDark ? "text-gray-300" : "text-gray-600"}`}>
+              {t('services.eventCategories.subtitle')}
       </p>
             </div>
 
@@ -309,17 +303,17 @@ export default function Services() {
                 />
               </div>
               <div className="absolute bottom-0 left-0 right-0">
-                <h3 className="service-title">Wedding Planning</h3>
+                <h3 className="service-title">{t('services.eventCategories.weddingPlanning.title')}</h3>
                 <p className="service-description">
-                  Complete wedding planning from venue selection to reception coordination with elegant execution
+                  {t('services.eventCategories.weddingPlanning.description')}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="service-price">From $3,999</span>
+                  <span className="service-price">{t('services.eventCategories.weddingPlanning.price')}</span>
                   <button 
                     onClick={() => navigate('/services/wedding-planning')}
                     className="service-button bg-purple-600 hover:bg-purple-700 text-white"
                   >
-                    Learn More
+                    {t('services.eventCategories.weddingPlanning.button')}
                   </button>
                 </div>
               </div>
@@ -336,17 +330,17 @@ export default function Services() {
                 />
               </div>
               <div className="absolute bottom-0 left-0 right-0">
-                <h3 className="service-title">Corporate Events</h3>
+                <h3 className="service-title">{t('services.eventCategories.corporateEvents.title')}</h3>
                 <p className="service-description">
-                  Professional conferences, seminars, product launches, and corporate gatherings with seamless execution
+                  {t('services.eventCategories.corporateEvents.description')}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="service-price">From $2,499</span>
+                  <span className="service-price">{t('services.eventCategories.corporateEvents.price')}</span>
                   <button 
                     onClick={() => navigate('/services/corporate-events')}
                     className="service-button bg-purple-600 hover:bg-purple-700 text-white"
                   >
-                    Learn More
+                    {t('services.eventCategories.corporateEvents.button')}
                   </button>
                 </div>
               </div>
@@ -363,14 +357,17 @@ export default function Services() {
                 />
               </div>
               <div className="absolute bottom-0 left-0 right-0">
-                <h3 className="service-title">Birthday & Private Parties</h3>
+                <h3 className="service-title">{t('services.eventCategories.birthdayParties.title')}</h3>
                 <p className="service-description">
-                  Personalized celebrations for birthdays, anniversaries, and private gatherings with custom themes
+                  {t('services.eventCategories.birthdayParties.description')}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="service-price">From $799</span>
-                  <button className="service-button bg-purple-600 hover:bg-purple-700 text-white">
-                    Connect
+                  <span className="service-price">{t('services.eventCategories.birthdayParties.price')}</span>
+                  <button 
+                    onClick={() => navigate('/services/birthday-private-parties')}
+                    className="service-button bg-purple-600 hover:bg-purple-700 text-white"
+                  >
+                    {t('services.eventCategories.birthdayParties.button')}
                   </button>
                 </div>
               </div>
@@ -387,17 +384,17 @@ export default function Services() {
                 />
               </div>
               <div className="absolute bottom-0 left-0 right-0">
-                <h3 className="service-title">Concerts & Entertainment Shows</h3>
+                <h3 className="service-title">{t('services.eventCategories.concertsEntertainment.title')}</h3>
                 <p className="service-description">
-                  Live music concerts, entertainment shows, and cultural performances with professional production
+                  {t('services.eventCategories.concertsEntertainment.description')}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="service-price">From $4,999</span>
+                  <span className="service-price">{t('services.eventCategories.concertsEntertainment.price')}</span>
                   <button 
                     onClick={() => navigate('/services/concerts-entertainment')}
                     className="service-button bg-purple-600 hover:bg-purple-700 text-white"
                   >
-                    Learn More
+                    {t('services.eventCategories.concertsEntertainment.button')}
                   </button>
                 </div>
               </div>
@@ -414,15 +411,18 @@ export default function Services() {
                 />
                   </div>
               <div className="absolute bottom-0 left-0 right-0">
-                <h3 className="service-title">Sports & Outdoor Events</h3>
+                <h3 className="service-title">{t('services.eventCategories.sportsOutdoor.title')}</h3>
                 <p className="service-description">
-                  Sports tournaments, outdoor festivals, and athletic events with comprehensive logistics management
+                  {t('services.eventCategories.sportsOutdoor.description')}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="service-price">From $3,499</span>
-                  <button className="service-button bg-purple-600 hover:bg-purple-700 text-white">
-                    Connect
-                    </button>
+                  <span className="service-price">{t('services.eventCategories.sportsOutdoor.price')}</span>
+                  <button 
+                    onClick={() => navigate('/services/sports-outdoor-events')}
+                    className="service-button bg-purple-600 hover:bg-purple-700 text-white"
+                  >
+                    {t('services.eventCategories.sportsOutdoor.button')}
+                  </button>
                   </div>
               </div>
               <div className="animate-service-accent bg-white"></div>
@@ -438,18 +438,18 @@ export default function Services() {
                 />
                   </div>
               <div className="absolute bottom-0 left-0 right-0">
-                <h3 className="service-title">Exhibitions & Trade Shows</h3>
+                <h3 className="service-title">{t('services.eventCategories.exhibitionsTradeShows.title')}</h3>
                 <p className="service-description">
-                  Professional exhibitions, trade shows, and industry conferences with booth management and logistics
+                  {t('services.eventCategories.exhibitionsTradeShows.description')}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="service-price">From $5,999</span>
+                  <span className="service-price">{t('services.eventCategories.exhibitionsTradeShows.price')}</span>
                   <button 
                     onClick={() => navigate('/services/exhibitions-trade-shows')}
                     className="service-button bg-purple-600 hover:bg-purple-700 text-white"
                   >
-                    Learn More
-                    </button>
+                    {t('services.eventCategories.exhibitionsTradeShows.button')}
+                  </button>
                   </div>
                 </div>
               <div className="animate-service-accent bg-white"></div>
@@ -471,10 +471,10 @@ export default function Services() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className={`text-4xl md:text-5xl font-extrabold mb-4 ${isDark ? "text-white" : "text-black"}`}>
-              Event Packages
+              {t('services.eventPackages.title')}
             </h2>
             <p className={`text-xl max-w-3xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-              Choose the perfect package for your event needs
+              {t('services.eventPackages.subtitle')}
             </p>
           </div>
 
@@ -483,15 +483,15 @@ export default function Services() {
             {/* Birthday Parties */}
             <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
               <div className="p-6 text-center">
-                <h3 className="text-xl font-bold text-black mb-2">Birthday Parties</h3>
-                <div className="text-3xl font-bold text-purple-600 mb-4">From $150</div>
+                <h3 className="text-xl font-bold text-black mb-2">{t('services.eventPackages.birthdayParties.title')}</h3>
+                <div className="text-3xl font-bold text-purple-600 mb-4">{t('services.eventPackages.birthdayParties.price')}</div>
               </div>
               <div className="bg-black p-6 text-white">
                 <ul className="space-y-3 text-center">
-                  <li>4 Hours</li>
-                  <li>Up to 10 Persons</li>
-                  <li>Decoration</li>
-                  <li>Catering</li>
+                  <li>{t('services.eventPackages.birthdayParties.duration')}</li>
+                  <li>{t('services.eventPackages.birthdayParties.capacity')}</li>
+                  <li>{t('services.eventPackages.birthdayParties.decoration')}</li>
+                  <li>{t('services.eventPackages.birthdayParties.catering')}</li>
                 </ul>
                 <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mt-6 hover:bg-gray-100 transition-colors duration-300">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -504,15 +504,15 @@ export default function Services() {
             {/* Family Celebrations */}
             <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
               <div className="p-6 text-center">
-                <h3 className="text-xl font-bold text-black mb-2">Family Celebrations</h3>
-                <div className="text-3xl font-bold text-purple-600 mb-4">From $450</div>
+                <h3 className="text-xl font-bold text-black mb-2">{t('services.eventPackages.familyCelebrations.title')}</h3>
+                <div className="text-3xl font-bold text-purple-600 mb-4">{t('services.eventPackages.familyCelebrations.price')}</div>
               </div>
               <div className="bg-purple-600 p-6 text-white">
                 <ul className="space-y-3 text-center">
-                  <li>6 Hours</li>
-                  <li>Up to 20 Persons</li>
-                  <li>Decoration</li>
-                  <li>Catering</li>
+                  <li>{t('services.eventPackages.familyCelebrations.duration')}</li>
+                  <li>{t('services.eventPackages.familyCelebrations.capacity')}</li>
+                  <li>{t('services.eventPackages.familyCelebrations.decoration')}</li>
+                  <li>{t('services.eventPackages.familyCelebrations.catering')}</li>
                 </ul>
                 <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mt-6 hover:bg-gray-100 transition-colors duration-300">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -525,15 +525,15 @@ export default function Services() {
             {/* Wedding Celebrations */}
             <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
               <div className="p-6 text-center">
-                <h3 className="text-xl font-bold text-black mb-2">Wedding Celebrations</h3>
-                <div className="text-3xl font-bold text-purple-600 mb-4">From $900</div>
+                <h3 className="text-xl font-bold text-black mb-2">{t('services.eventPackages.weddingCelebrations.title')}</h3>
+                <div className="text-3xl font-bold text-purple-600 mb-4">{t('services.eventPackages.weddingCelebrations.price')}</div>
               </div>
               <div className="bg-black p-6 text-white">
                 <ul className="space-y-3 text-center">
-                  <li>8 Hours</li>
-                  <li>Up to 50 Persons</li>
-                  <li>Decoration</li>
-                  <li>Catering</li>
+                  <li>{t('services.eventPackages.weddingCelebrations.duration')}</li>
+                  <li>{t('services.eventPackages.weddingCelebrations.capacity')}</li>
+                  <li>{t('services.eventPackages.weddingCelebrations.decoration')}</li>
+                  <li>{t('services.eventPackages.weddingCelebrations.catering')}</li>
                 </ul>
                 <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mt-6 hover:bg-gray-100 transition-colors duration-300">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -546,15 +546,15 @@ export default function Services() {
             {/* Corporate Events */}
             <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
               <div className="p-6 text-center">
-                <h3 className="text-xl font-bold text-black mb-2">Corporate Events</h3>
-                <div className="text-3xl font-bold text-purple-600 mb-4">From $750</div>
+                <h3 className="text-xl font-bold text-black mb-2">{t('services.eventPackages.corporateEvents.title')}</h3>
+                <div className="text-3xl font-bold text-purple-600 mb-4">{t('services.eventPackages.corporateEvents.price')}</div>
               </div>
               <div className="bg-purple-600 p-6 text-white">
                 <ul className="space-y-3 text-center">
-                  <li>6 Hours</li>
-                  <li>Up to 100 Persons</li>
-                  <li>Decoration</li>
-                  <li>Catering</li>
+                  <li>{t('services.eventPackages.corporateEvents.duration')}</li>
+                  <li>{t('services.eventPackages.corporateEvents.capacity')}</li>
+                  <li>{t('services.eventPackages.corporateEvents.decoration')}</li>
+                  <li>{t('services.eventPackages.corporateEvents.catering')}</li>
     </ul>
                 <button 
                   onClick={() => navigate('/services/corporate-events')}
@@ -581,10 +581,10 @@ export default function Services() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className={`text-4xl md:text-5xl font-extrabold mb-4 ${isDark ? "text-white" : "text-black"}`}>
-              Upcoming Events
+              {t('services.upcomingEvents.title')}
       </h2>
             <p className={`text-xl max-w-3xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-              Don't miss out on our exciting upcoming events and experiences
+              {t('services.upcomingEvents.subtitle')}
             </p>
           </div>
 
@@ -605,30 +605,30 @@ export default function Services() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                   <div className="absolute bottom-8 left-8 right-8 text-white">
                     <div className="bg-purple-600 px-4 py-2 rounded-full text-sm font-semibold mb-4 inline-block">
-                      Music Festival
+                      {t('services.upcomingEvents.summerFestival.category')}
                     </div>
-                    <h3 className="text-3xl md:text-4xl font-bold mb-2">Summer Music Festival 2024</h3>
-                    <p className="text-lg mb-4 opacity-90">Join us for an unforgettable musical experience featuring top artists and amazing performances.</p>
+                    <h3 className="text-3xl md:text-4xl font-bold mb-2">{t('services.upcomingEvents.summerFestival.title')}</h3>
+                    <p className="text-lg mb-4 opacity-90">{t('services.upcomingEvents.summerFestival.description')}</p>
                     <div className="flex items-center gap-4 mb-4">
                       <div className="flex items-center gap-2">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
-                        <span>July 15, 2024</span>
+                        <span>{t('services.upcomingEvents.summerFestival.date')}</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
-                        <span>Central Park</span>
+                        <span>{t('services.upcomingEvents.summerFestival.location')}</span>
                       </div>
                     </div>
                     <button 
                       onClick={() => navigate('/contact')}
                       className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300"
                     >
-                      Get Tickets
+                      {t('services.upcomingEvents.summerFestival.button')}
                     </button>
                   </div>
                 </div>
@@ -645,30 +645,30 @@ export default function Services() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                   <div className="absolute bottom-8 left-8 right-8 text-white">
                     <div className="bg-black px-4 py-2 rounded-full text-sm font-semibold mb-4 inline-block">
-                      Corporate Event
+                      {t('services.upcomingEvents.networkingGala.category')}
                     </div>
-                    <h3 className="text-3xl md:text-4xl font-bold mb-2">Corporate Networking Gala</h3>
-                    <p className="text-lg mb-4 opacity-90">An exclusive networking event for industry leaders and professionals.</p>
+                    <h3 className="text-3xl md:text-4xl font-bold mb-2">{t('services.upcomingEvents.networkingGala.title')}</h3>
+                    <p className="text-lg mb-4 opacity-90">{t('services.upcomingEvents.networkingGala.description')}</p>
                     <div className="flex items-center gap-4 mb-4">
                       <div className="flex items-center gap-2">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
-                        <span>August 22, 2024</span>
+                        <span>{t('services.upcomingEvents.networkingGala.date')}</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
-                        <span>Grand Ballroom</span>
+                        <span>{t('services.upcomingEvents.networkingGala.location')}</span>
                       </div>
                     </div>
                     <button 
                       onClick={() => navigate('/contact')}
                       className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300"
                     >
-                      Register Now
+                      {t('services.upcomingEvents.networkingGala.button')}
                     </button>
                   </div>
                 </div>
@@ -685,30 +685,30 @@ export default function Services() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                   <div className="absolute bottom-8 left-8 right-8 text-white">
                     <div className="bg-purple-600 px-4 py-2 rounded-full text-sm font-semibold mb-4 inline-block">
-                      Wedding Expo
+                      {t('services.upcomingEvents.weddingExpo.category')}
                     </div>
-                    <h3 className="text-3xl md:text-4xl font-bold mb-2">Wedding Expo 2024</h3>
-                    <p className="text-lg mb-4 opacity-90">Discover the latest trends and vendors for your perfect wedding day.</p>
+                    <h3 className="text-3xl md:text-4xl font-bold mb-2">{t('services.upcomingEvents.weddingExpo.title')}</h3>
+                    <p className="text-lg mb-4 opacity-90">{t('services.upcomingEvents.weddingExpo.description')}</p>
                     <div className="flex items-center gap-4 mb-4">
                       <div className="flex items-center gap-2">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
-                        <span>September 8, 2024</span>
+                        <span>{t('services.upcomingEvents.weddingExpo.date')}</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                        <span>Convention Center</span>
+                        <span>{t('services.upcomingEvents.weddingExpo.location')}</span>
                       </div>
                     </div>
                     <button 
                       onClick={() => navigate('/contact')}
                       className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300"
                     >
-                      Learn More
+                      {t('services.upcomingEvents.weddingExpo.button')}
                     </button>
                   </div>
                 </div>
@@ -773,15 +773,15 @@ export default function Services() {
         
         <div className="relative z-10 mx-auto max-w-6xl px-4 py-24 grid md:grid-cols-3 gap-10 items-center">
           <div className="md:col-span-2">
-            <h2 className="text-3xl font-extrabold text-white">Ready to Create Your Perfect Event?</h2>
+            <h2 className="text-3xl font-extrabold text-white">{t('services.servicesCta.title')}</h2>
                <p className="mt-2 text-white/80">
-      Let us transform your vision into an unforgettable experience. From intimate gatherings to grand celebrations, we bring your events to life.
+      {t('services.servicesCta.subtitle')}
     </p>
             <ul className="mt-5 grid sm:grid-cols-2 gap-3 text-sm">
-      {benefits.map((b) => (
-        <li key={b} className="flex items-center gap-2">
+      {t('services.servicesCta.benefits', { returnObjects: true }).map((benefit, index) => (
+        <li key={index} className="flex items-center gap-2">
           <span className="h-2 w-2 rounded-full bg-purple-400" />
-          <span className="text-white/90">{b}</span>
+          <span className="text-white/90">{benefit}</span>
         </li>
       ))}
     </ul>
@@ -791,7 +791,7 @@ export default function Services() {
               href="/about"
               className="btn-animate-strong inline-flex items-center justify-center rounded-lg bg-purple-500 px-8 py-4 font-bold text-lg text-white transition-all duration-300 hover:bg-purple-600 shadow-lg hover:shadow-xl"
             >
-              Start Planning Your Event
+              {t('services.servicesCta.button')}
             </a>
           </div>
         </div>

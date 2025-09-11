@@ -4,6 +4,7 @@ import { getCurrentUser, isAuthenticated } from '../../utils/auth'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import { useTranslation } from 'react-i18next'
+import { motion } from 'framer-motion'
 
 export default function SportsOutdoorEvents() {
   const navigate = useNavigate()
@@ -42,53 +43,9 @@ export default function SportsOutdoorEvents() {
       description: t('sportsOutdoorEvents.services.outdoorFestivals.description'),
       features: t('sportsOutdoorEvents.services.outdoorFestivals.features', { returnObjects: true }),
       price: t('sportsOutdoorEvents.services.outdoorFestivals.price')
-    },
-    {
-      title: t('sportsOutdoorEvents.services.adventureRaces.title'),
-      description: t('sportsOutdoorEvents.services.adventureRaces.description'),
-      features: t('sportsOutdoorEvents.services.adventureRaces.features', { returnObjects: true }),
-      price: t('sportsOutdoorEvents.services.adventureRaces.price')
-    },
-    {
-      title: t('sportsOutdoorEvents.services.teamBuilding.title'),
-      description: t('sportsOutdoorEvents.services.teamBuilding.description'),
-      features: t('sportsOutdoorEvents.services.teamBuilding.features', { returnObjects: true }),
-      price: t('sportsOutdoorEvents.services.teamBuilding.price')
-    },
-    {
-      title: t('sportsOutdoorEvents.services.charityEvents.title'),
-      description: t('sportsOutdoorEvents.services.charityEvents.description'),
-      features: t('sportsOutdoorEvents.services.charityEvents.features', { returnObjects: true }),
-      price: t('sportsOutdoorEvents.services.charityEvents.price')
     }
   ]
 
-  const processSteps = [
-    {
-      step: "01",
-      title: t('sportsOutdoorEvents.process.consultation.title'),
-      description: t('sportsOutdoorEvents.process.consultation.description'),
-      icon: "🏃"
-    },
-    {
-      step: "02", 
-      title: t('sportsOutdoorEvents.process.venue.title'),
-      description: t('sportsOutdoorEvents.process.venue.description'),
-      icon: "🏟️"
-    },
-    {
-      step: "03",
-      title: t('sportsOutdoorEvents.process.logistics.title'),
-      description: t('sportsOutdoorEvents.process.logistics.description'),
-      icon: "🚚"
-    },
-    {
-      step: "04",
-      title: t('sportsOutdoorEvents.process.execution.title'),
-      description: t('sportsOutdoorEvents.process.execution.description'),
-      icon: "🏆"
-    }
-  ]
 
   const testimonials = [
     {
@@ -128,7 +85,7 @@ export default function SportsOutdoorEvents() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/Services.mp4" type="video/mp4" />
+          <source src="/Sports & Outdoor Events.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         
@@ -137,26 +94,41 @@ export default function SportsOutdoorEvents() {
 
         {/* Content */}
         <div className="relative z-10 px-6 max-w-4xl">
-          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-white mb-6">
+          <motion.h1 
+            className="text-5xl md:text-6xl font-extrabold leading-tight text-white mb-6"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             {t('sportsOutdoorEvents.hero.title')}
-          </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
+          </motion.h1>
+          <motion.p 
+            className="text-xl text-white/90 max-w-3xl mx-auto mb-8"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             {t('sportsOutdoorEvents.hero.description')}
-          </p>
-          <div className="flex gap-4 justify-center">
+          </motion.p>
+          <motion.div 
+            className="flex gap-4 justify-center"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             <button 
               onClick={() => navigate('/contact')}
-              className="btn-animate-strong rounded-lg px-8 py-4 font-bold text-lg transition-all duration-300 bg-purple-500 text-white hover:bg-purple-600 shadow-lg hover:shadow-xl"
+              className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-white text-purple-600 hover:bg-purple-50 shadow-white/20'}`}
             >
               {t('sportsOutdoorEvents.hero.getQuote')}
             </button>
             <button 
               onClick={() => document.getElementById('services').scrollIntoView({ behavior: 'smooth' })}
-              className="btn-animate-strong rounded-lg px-8 py-4 font-bold text-lg transition-all duration-300 bg-white text-purple-600 border-2 border-purple-500 hover:bg-purple-500 hover:text-white shadow-lg hover:shadow-xl"
+              className={`border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm ${isDark ? 'border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white shadow-purple-400/25' : 'border-white text-white hover:bg-white hover:text-purple-600 shadow-white/20'}`}
             >
               {t('sportsOutdoorEvents.hero.viewServices')}
             </button>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -169,27 +141,39 @@ export default function SportsOutdoorEvents() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Images */}
-            <div className="relative">
+            <motion.div 
+              className="relative"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="/images/Sports & Outdoor Events.jpg"
+                  src="/images/Corporate team building events!.jpg"
                   alt="Sports Event Setup"
                   className="w-full h-[500px] object-cover"
                 />
                 {/* Circular Overlay Image */}
                 <div className="absolute bottom-6 left-6 w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
                   <img
-                    src="/images/Agent4.jpg"
+                    src="/images/outdoor.jpg"
                     alt="Professional Sports Event Manager"
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Right Column - Content */}
-            <div className={`${isDark ? "text-white" : "text-black"}`}>
+            <motion.div 
+              className={`${isDark ? "text-white" : "text-black"}`}
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
               <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${isDark ? "text-white" : "text-gray-900"}`}>
                 {t('sportsOutdoorEvents.about.title')}
               </h2>
@@ -249,7 +233,7 @@ export default function SportsOutdoorEvents() {
                 </div>
               </div>
 
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -263,29 +247,43 @@ export default function SportsOutdoorEvents() {
       >
         <div className="mx-auto max-w-7xl px-4">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <h2 className={`text-4xl md:text-5xl font-extrabold mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>
               {t('sportsOutdoorEvents.services.title')}
             </h2>
             <p className={`text-xl max-w-3xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
               {t('sportsOutdoorEvents.services.subtitle')}
             </p>
-            <div className="w-24 h-1 bg-purple-500 mx-auto mt-6 rounded-full"></div>
-          </div>
+          </motion.div>
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {sportsServices.map((service, index) => (
-              <div 
+              <motion.div 
                 key={index}
                 className={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${
                   isDark ? "bg-gray-800 border border-gray-700" : "bg-white border border-gray-100"
                 }`}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
               >
                 <div className="p-8">
                   <div className="mb-6">
                     <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <span className="text-2xl">🏃</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} viewBox="0 0 48 48">
+                        <circle cx={28} cy={9} r={5} fill="#ff9800"></circle>
+                        <path fill="#00796b" d="m29 27.3l-9.2-4.1c-1-.5-1.5 1-2 2s-4.1 7.2-3.8 8.3c.3.9 1.1 1.4 1.9 1.4c.2 0 .4 0 .6-.1L28.8 31c.8-.2 1.4-1 1.4-1.8s-.5-1.6-1.2-1.9"></path>
+                        <path fill="#009688" d="m26.8 15.2l-2.2-1c-1.3-.6-2.9 0-3.5 1.3L9.2 41.1c-.5 1 0 2.2 1 2.7c.3.1.6.2.9.2c.8 0 1.5-.4 1.8-1.1c0 0 9.6-13.3 10.4-14.9s4.9-9.3 4.9-9.3c.5-1.3 0-2.9-1.4-3.5"></path>
+                        <path fill="#ff9800" d="M40.5 15.7c-.7-.8-2-1-2.8-.3l-5 4.2l-6.4-3.5c-1.1-.6-2.6-.4-3.3.9c-.8 1.3-.4 2.9.8 3.4l8.3 3.4c.3.1.6.2.9.2c.5 0 .9-.2 1.3-.5l6-5c.8-.7.9-1.9.2-2.8m-28.8 7.4l3.4-5.1l4.6.6l1.5-3.1c.4-.9 1.2-1.4 2.1-1.5h-9.2c-.7 0-1.3.3-1.7.9l-4 6c-.6.9-.4 2.2.6 2.8c.2.2.6.3 1 .3c.6 0 1.3-.3 1.7-.9"></path>
+                      </svg>
                     </div>
                     <h3 className={`text-xl font-bold mb-3 ${isDark ? "text-white" : "text-gray-900"}`}>
                       {service.title}
@@ -321,50 +319,12 @@ export default function SportsOutdoorEvents() {
                     </button>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Process Section */}
-      <section 
-        className={`py-20 transition-colors duration-300 ${
-          isDark ? "bg-gray-900 text-white" : "bg-white text-black"
-        }`}
-      >
-        <div className="mx-auto max-w-7xl px-4">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className={`text-4xl md:text-5xl font-extrabold mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>
-              {t('sportsOutdoorEvents.process.title')}
-            </h2>
-            <p className={`text-xl max-w-3xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-              {t('sportsOutdoorEvents.process.subtitle')}
-            </p>
-          </div>
-
-          {/* Process Steps */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {processSteps.map((step, index) => (
-              <div key={index} className="text-center">
-                <div className={`relative mb-6 ${isDark ? "bg-gray-800" : "bg-white"} rounded-2xl p-8 shadow-lg`}>
-                  <div className="text-4xl mb-4">{step.icon}</div>
-                  <div className={`text-sm font-bold ${isDark ? "text-purple-400" : "text-purple-600"} mb-2`}>
-                    STEP {step.step}
-                  </div>
-                  <h3 className={`text-xl font-bold mb-3 ${isDark ? "text-white" : "text-gray-900"}`}>
-                    {step.title}
-                  </h3>
-                  <p className={`${isDark ? "text-gray-300" : "text-gray-600"}`}>
-                    {step.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Testimonials Section */}
       <section 
@@ -434,12 +394,12 @@ export default function SportsOutdoorEvents() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: t('sportsOutdoorEvents.gallery.marathon'), type: "Marathon", participants: "5000+", image: "/images/Sports & Outdoor Events.jpg" },
-              { title: t('sportsOutdoorEvents.gallery.basketballTournament'), type: "Tournament", participants: "200+", image: "/images/Sports & Outdoor Events.jpg" },
-              { title: t('sportsOutdoorEvents.gallery.outdoorFestival'), type: "Festival", participants: "3000+", image: "/images/Sports & Outdoor Events.jpg" },
-              { title: t('sportsOutdoorEvents.gallery.adventureRace'), type: "Adventure Race", participants: "150+", image: "/images/Sports & Outdoor Events.jpg" },
-              { title: t('sportsOutdoorEvents.gallery.charityWalk'), type: "Charity Event", participants: "1000+", image: "/images/Sports & Outdoor Events.jpg" },
-              { title: t('sportsOutdoorEvents.gallery.teamBuilding'), type: "Team Building", participants: "50+", image: "/images/Sports & Outdoor Events.jpg" }
+              { title: t('sportsOutdoorEvents.gallery.marathon'), type: "Marathon", participants: "5000+", image: "/images/Marathon.jpg" },
+              { title: t('sportsOutdoorEvents.gallery.basketballTournament'), type: "Tournament", participants: "200+", image: "/images/Basketbal.jpg" },
+              { title: t('sportsOutdoorEvents.gallery.outdoorFestival'), type: "Festival", participants: "3000+", image: "/images/Summer Outdoor Festival.jpg" },
+              { title: t('sportsOutdoorEvents.gallery.adventureRace'), type: "Adventure Race", participants: "150+", image: "/images/Mountain Adventure Race.jpg" },
+              { title: t('sportsOutdoorEvents.gallery.charityWalk'), type: "Charity Event", participants: "1000+", image: "/images/Charity Walk for Hope.jpg" },
+              { title: t('sportsOutdoorEvents.gallery.teamBuilding'), type: "Team Building", participants: "50+", image: "/images/Corporate Team Building.jpg" }
             ].map((event, index) => (
               <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
                 <div className="aspect-[4/3] relative overflow-hidden">
@@ -459,234 +419,8 @@ export default function SportsOutdoorEvents() {
         </div>
       </section>
 
-      {/* Pricing Packages Section */}
-      <section 
-        className={`py-20 transition-colors duration-300 ${
-          isDark ? "bg-gray-900 text-white" : "bg-gradient-to-br from-gray-50 to-white text-black"
-        }`}
-      >
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="text-center mb-16">
-            <h2 className={`text-4xl md:text-5xl font-extrabold mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>
-              {t('sportsOutdoorEvents.pricing.title')}
-            </h2>
-            <p className={`text-xl max-w-3xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-              {t('sportsOutdoorEvents.pricing.subtitle')}
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: t('sportsOutdoorEvents.pricing.basic.name'),
-                price: t('sportsOutdoorEvents.pricing.basic.price'),
-                duration: t('sportsOutdoorEvents.pricing.basic.duration'),
-                participants: t('sportsOutdoorEvents.pricing.basic.participants'),
-                features: t('sportsOutdoorEvents.pricing.basic.features', { returnObjects: true }),
-                popular: false
-              },
-              {
-                name: t('sportsOutdoorEvents.pricing.premium.name'),
-                price: t('sportsOutdoorEvents.pricing.premium.price'),
-                duration: t('sportsOutdoorEvents.pricing.premium.duration'),
-                participants: t('sportsOutdoorEvents.pricing.premium.participants'),
-                features: t('sportsOutdoorEvents.pricing.premium.features', { returnObjects: true }),
-                popular: true
-              },
-              {
-                name: t('sportsOutdoorEvents.pricing.luxury.name'),
-                price: t('sportsOutdoorEvents.pricing.luxury.price'),
-                duration: t('sportsOutdoorEvents.pricing.luxury.duration'),
-                participants: t('sportsOutdoorEvents.pricing.luxury.participants'),
-                features: t('sportsOutdoorEvents.pricing.luxury.features', { returnObjects: true }),
-                popular: false
-              }
-            ].map((pkg, index) => (
-              <div key={index} className={`relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${
-                pkg.popular ? "ring-2 ring-purple-500 scale-105" : ""
-              } ${isDark ? "bg-gray-800 border border-gray-700" : "bg-white border border-gray-100"}`}>
-                {pkg.popular && (
-                  <div className="absolute top-0 right-0 bg-purple-500 text-white px-4 py-2 rounded-bl-2xl text-sm font-semibold">
-                    {t('sportsOutdoorEvents.pricing.premium.popular')}
-                  </div>
-                )}
-                <div className="p-8">
-                  <h3 className={`text-2xl font-bold mb-2 ${isDark ? "text-white" : "text-gray-900"}`}>
-                    {pkg.name}
-                  </h3>
-                  <div className={`text-4xl font-bold mb-4 ${isDark ? "text-purple-400" : "text-purple-600"}`}>
-                    {pkg.price}
-                  </div>
-                  <div className={`text-lg mb-6 ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-                    <p>{pkg.duration} • {pkg.participants} participants</p>
-                  </div>
-                  <ul className={`space-y-3 mb-8 ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-                    {pkg.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <button 
-                    onClick={() => navigate('/contact')}
-                    className={`w-full py-3 rounded-lg font-semibold transition-colors duration-300 ${
-                      pkg.popular 
-                        ? "bg-purple-600 hover:bg-purple-700 text-white" 
-                        : "bg-gray-200 hover:bg-gray-300 text-gray-900"
-                    }`}
-                  >
-                    {t('sportsOutdoorEvents.pricing.getStarted')}
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* Equipment & Technology Section */}
-      <section 
-        className={`py-20 transition-colors duration-300 ${
-          isDark ? "bg-gray-900 text-white" : "bg-white text-black"
-        }`}
-      >
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="text-center mb-16">
-            <h2 className={`text-4xl md:text-5xl font-extrabold mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>
-              {t('sportsOutdoorEvents.equipment.title')}
-            </h2>
-            <p className={`text-xl max-w-3xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-              {t('sportsOutdoorEvents.equipment.subtitle')}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { icon: "🏃", title: t('sportsOutdoorEvents.equipment.timing.title'), description: t('sportsOutdoorEvents.equipment.timing.description') },
-              { icon: "📊", title: t('sportsOutdoorEvents.equipment.scoring.title'), description: t('sportsOutdoorEvents.equipment.scoring.description') },
-              { icon: "📡", title: t('sportsOutdoorEvents.equipment.communication.title'), description: t('sportsOutdoorEvents.equipment.communication.description') },
-              { icon: "🏟️", title: t('sportsOutdoorEvents.equipment.venueSetup.title'), description: t('sportsOutdoorEvents.equipment.venueSetup.description') },
-              { icon: "🚨", title: t('sportsOutdoorEvents.equipment.safety.title'), description: t('sportsOutdoorEvents.equipment.safety.description') },
-              { icon: "📱", title: t('sportsOutdoorEvents.equipment.mobileApps.title'), description: t('sportsOutdoorEvents.equipment.mobileApps.description') },
-              { icon: "📺", title: t('sportsOutdoorEvents.equipment.liveStreaming.title'), description: t('sportsOutdoorEvents.equipment.liveStreaming.description') },
-              { icon: "🎵", title: t('sportsOutdoorEvents.equipment.audio.title'), description: t('sportsOutdoorEvents.equipment.audio.description') }
-            ].map((equipment, index) => (
-              <div key={index} className={`text-center p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${
-                isDark ? "bg-gray-800 border border-gray-700" : "bg-white border border-gray-100"
-              }`}>
-                <div className="text-4xl mb-4">{equipment.icon}</div>
-                <h3 className={`text-xl font-bold mb-3 ${isDark ? "text-white" : "text-gray-900"}`}>
-                  {equipment.title}
-                </h3>
-                <p className={`${isDark ? "text-gray-300" : "text-gray-600"}`}>
-                  {equipment.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Success Stories Section */}
-      <section 
-        className={`py-20 transition-colors duration-300 ${
-          isDark ? "bg-gray-900 text-white" : "bg-gradient-to-br from-gray-50 to-white text-black"
-        }`}
-      >
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="text-center mb-16">
-            <h2 className={`text-4xl md:text-5xl font-extrabold mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>
-              {t('sportsOutdoorEvents.successStories.title')}
-            </h2>
-            <p className={`text-xl max-w-3xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-              {t('sportsOutdoorEvents.successStories.subtitle')}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                organization: t('sportsOutdoorEvents.successStories.cityMarathon.organization'),
-                event: t('sportsOutdoorEvents.successStories.cityMarathon.event'),
-                participants: t('sportsOutdoorEvents.successStories.cityMarathon.participants'),
-                satisfaction: t('sportsOutdoorEvents.successStories.cityMarathon.satisfaction'),
-                result: t('sportsOutdoorEvents.successStories.cityMarathon.result'),
-                quote: t('sportsOutdoorEvents.successStories.cityMarathon.quote')
-              },
-              {
-                organization: t('sportsOutdoorEvents.successStories.basketballLeague.organization'),
-                event: t('sportsOutdoorEvents.successStories.basketballLeague.event'),
-                participants: t('sportsOutdoorEvents.successStories.basketballLeague.participants'),
-                satisfaction: t('sportsOutdoorEvents.successStories.basketballLeague.satisfaction'),
-                result: t('sportsOutdoorEvents.successStories.basketballLeague.result'),
-                quote: t('sportsOutdoorEvents.successStories.basketballLeague.quote')
-              },
-              {
-                organization: t('sportsOutdoorEvents.successStories.charityWalk.organization'),
-                event: t('sportsOutdoorEvents.successStories.charityWalk.event'),
-                participants: t('sportsOutdoorEvents.successStories.charityWalk.participants'),
-                satisfaction: t('sportsOutdoorEvents.successStories.charityWalk.satisfaction'),
-                result: t('sportsOutdoorEvents.successStories.charityWalk.result'),
-                quote: t('sportsOutdoorEvents.successStories.charityWalk.quote')
-              },
-              {
-                organization: t('sportsOutdoorEvents.successStories.adventureRace.organization'),
-                event: t('sportsOutdoorEvents.successStories.adventureRace.event'),
-                participants: t('sportsOutdoorEvents.successStories.adventureRace.participants'),
-                satisfaction: t('sportsOutdoorEvents.successStories.adventureRace.satisfaction'),
-                result: t('sportsOutdoorEvents.successStories.adventureRace.result'),
-                quote: t('sportsOutdoorEvents.successStories.adventureRace.quote')
-              }
-            ].map((story, index) => (
-              <div key={index} className={`p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${
-                isDark ? "bg-gray-800 border border-gray-700" : "bg-white border border-gray-100"
-              }`}>
-                <div className="mb-6">
-                  <h3 className={`text-2xl font-bold mb-2 ${isDark ? "text-white" : "text-gray-900"}`}>
-                    {story.organization}
-                  </h3>
-                  <p className={`text-lg ${isDark ? "text-purple-400" : "text-purple-600"} font-semibold mb-4`}>
-                    {story.event}
-                  </p>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className={`text-center p-4 rounded-lg ${isDark ? "bg-gray-700" : "bg-gray-50"}`}>
-                    <div className={`text-2xl font-bold ${isDark ? "text-white" : "text-gray-900"}`}>
-                      {story.participants}
-                    </div>
-                    <div className={`text-sm ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-                      {t('sportsOutdoorEvents.successStories.participants')}
-                    </div>
-                  </div>
-                  <div className={`text-center p-4 rounded-lg ${isDark ? "bg-gray-700" : "bg-gray-50"}`}>
-                    <div className={`text-2xl font-bold ${isDark ? "text-white" : "text-gray-900"}`}>
-                      {story.satisfaction}
-                    </div>
-                    <div className={`text-sm ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-                      {t('sportsOutdoorEvents.successStories.satisfaction')}
-                    </div>
-                  </div>
-                </div>
-
-                <div className={`mb-4 p-4 rounded-lg ${isDark ? "bg-purple-900/30" : "bg-purple-50"}`}>
-                  <h4 className={`font-semibold mb-2 ${isDark ? "text-white" : "text-gray-900"}`}>
-                    {t('sportsOutdoorEvents.successStories.keyResult')}
-                  </h4>
-                  <p className={`${isDark ? "text-gray-300" : "text-gray-600"}`}>
-                    {story.result}
-                  </p>
-                </div>
-
-                <blockquote className={`italic ${isDark ? "text-gray-300" : "text-gray-600"} border-l-4 border-purple-500 pl-4`}>
-                  "{story.quote}"
-                </blockquote>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="border-t border-black/10 relative overflow-hidden">
@@ -700,40 +434,40 @@ export default function SportsOutdoorEvents() {
         {/* Blur Effect */}
         <div className="absolute -right-20 top-10 h-64 w-64 rounded-full bg-purple-500/10 blur-3xl pointer-events-none" />
         
-        <div className="relative z-10 mx-auto max-w-6xl px-4 py-24 grid md:grid-cols-3 gap-10 items-center">
-          <div className="md:col-span-2">
-            <h2 className="text-3xl font-extrabold text-white mb-4">
-              {t('sportsOutdoorEvents.cta.title')}
-            </h2>
-            <p className="text-white/80 mb-6">
-              {t('sportsOutdoorEvents.cta.description')}
-            </p>
-            <ul className="grid sm:grid-cols-2 gap-3 text-sm">
-              <li className="flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-purple-400" />
-                <span className="text-white/90">{t('sportsOutdoorEvents.cta.features.0')}</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-purple-400" />
-                <span className="text-white/90">{t('sportsOutdoorEvents.cta.features.1')}</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-purple-400" />
-                <span className="text-white/90">{t('sportsOutdoorEvents.cta.features.2')}</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-purple-400" />
-                <span className="text-white/90">{t('sportsOutdoorEvents.cta.features.3')}</span>
-              </li>
-            </ul>
-          </div>
-          <div className="md:justify-self-end">
-            <button
-              onClick={() => navigate('/contact')}
-              className="btn-animate-strong inline-flex items-center justify-center rounded-lg bg-purple-500 px-8 py-4 font-bold text-lg text-white transition-all duration-300 hover:bg-purple-600 shadow-lg hover:shadow-xl"
+        <div className="relative z-10 mx-auto max-w-6xl px-4 py-24 text-center">
+          <div className="max-w-4xl mx-auto">
+            <motion.h2 
+              className="text-4xl md:text-5xl font-extrabold text-white mb-6"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
             >
-              {t('sportsOutdoorEvents.cta.button')}
-            </button>
+              {t('sportsOutdoorEvents.cta.title')}
+            </motion.h2>
+            <motion.p 
+              className="text-xl text-white/90 mb-8 max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              {t('sportsOutdoorEvents.cta.description')}
+            </motion.p>
+            <motion.div 
+              className="flex justify-center"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <button
+                onClick={() => navigate('/contact')}
+                className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-white text-purple-600 hover:bg-purple-50 shadow-white/20'}`}
+              >
+                {t('sportsOutdoorEvents.cta.button')}
+              </button>
+            </motion.div>
           </div>
         </div>
       </section>

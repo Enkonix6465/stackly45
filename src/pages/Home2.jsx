@@ -53,7 +53,7 @@ export default function Home2() {
         <div className="relative z-10 mx-auto max-w-7xl px-4 h-full flex items-center justify-center">
           <div className="text-center">
             <motion.h1 
-              className="text-6xl md:text-8xl font-extrabold mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white whitespace-nowrap"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -61,7 +61,7 @@ export default function Home2() {
               {t('home2.hero.title')}
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
+              className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto whitespace-nowrap"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -74,10 +74,16 @@ export default function Home2() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl">
+              <button 
+                onClick={() => navigate('/contact')}
+                className="px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25"
+              >
                 {t('home2.hero.createEvent')}
               </button>
-              <button className="bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300">
+              <button 
+                onClick={() => navigate('/services')}
+                className="border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm border-white text-white hover:bg-white hover:text-purple-600 shadow-white/20"
+              >
                 {t('home2.hero.browseEvents')}
               </button>
             </motion.div>
@@ -99,7 +105,7 @@ export default function Home2() {
               {t('home2.showcase.title')}
             </motion.h2>
             <motion.p 
-              className="text-lg text-gray-600 max-w-3xl mx-auto"
+              className={`text-lg max-w-3xl mx-auto whitespace-nowrap ${isDark ? 'text-white' : 'text-gray-600'}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -119,17 +125,17 @@ export default function Home2() {
               <div className="space-y-8">
                 <div className={`p-6 rounded-xl shadow-lg ${isDark ? 'bg-gray-700' : 'bg-white'}`}>
                   <h3 className="text-xl font-bold mb-3">{t('home2.showcase.features.comprehensive.title')}</h3>
-                  <p className="text-gray-600">{t('home2.showcase.features.comprehensive.description')}</p>
+                  <p className={isDark ? 'text-white' : 'text-gray-600'}>{t('home2.showcase.features.comprehensive.description')}</p>
                 </div>
                 
                 <div className={`p-6 rounded-xl shadow-lg ${isDark ? 'bg-gray-700' : 'bg-white'}`}>
                   <h3 className="text-xl font-bold mb-3">{t('home2.showcase.features.integration.title')}</h3>
-                  <p className="text-gray-600">{t('home2.showcase.features.integration.description')}</p>
+                  <p className={isDark ? 'text-white' : 'text-gray-600'}>{t('home2.showcase.features.integration.description')}</p>
                 </div>
                 
                 <div className={`p-6 rounded-xl shadow-lg ${isDark ? 'bg-gray-700' : 'bg-white'}`}>
                   <h3 className="text-xl font-bold mb-3">{t('home2.showcase.features.scalability.title')}</h3>
-                  <p className="text-gray-600">{t('home2.showcase.features.scalability.description')}</p>
+                  <p className={isDark ? 'text-white' : 'text-gray-600'}>{t('home2.showcase.features.scalability.description')}</p>
                 </div>
               </div>
             </motion.div>
@@ -142,10 +148,13 @@ export default function Home2() {
               viewport={{ once: true }}
             >
               <div className={`p-8 rounded-2xl shadow-xl ${isDark ? 'bg-gray-700' : 'bg-white'}`}>
-                <h3 className="text-2xl font-bold mb-6 text-center">{t('home2.showcase.highlights.title')}</h3>
+                <h3 className={`text-2xl font-bold mb-6 text-center ${isDark ? 'text-white' : 'text-black'}`}>{t('home2.showcase.highlights.title')}</h3>
                 <div className="space-y-4">
                   {[
-                    { icon: "🎯", text: t('home2.showcase.highlights.precision') },
+                    { 
+                      icon: <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></path><path fill="#000" d="M12 2c.896 0 1.764.118 2.59.339l-2.126 2.125A3 3 0 0 0 12.04 5H12a7 7 0 1 0 7 7v-.04q.29-.18.535-.425l2.126-2.125c.221.826.339 1.694.339 2.59c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m-.414 5.017c0 .851-.042 1.714.004 2.564l-.54.54a2 2 0 1 0 2.829 2.829l.54-.54c.85.046 1.712.004 2.564.004a5 5 0 1 1-5.397-5.397m6.918-4.89a1 1 0 0 1 .617.923v1.83h1.829a1 1 0 0 1 .707 1.707L18.12 10.12a1 1 0 0 1-.707.293H15l-1.828 1.829a1 1 0 0 1-1.415-1.415L13.586 9V6.586a1 1 0 0 1 .293-.708l3.535-3.535a1 1 0 0 1 1.09-.217"></path></g></svg>, 
+                      text: t('home2.showcase.highlights.precision') 
+                    },
                     { icon: "⚡", text: t('home2.showcase.highlights.speed') },
                     { icon: "🔒", text: t('home2.showcase.highlights.security') },
                     { icon: "📊", text: t('home2.showcase.highlights.analytics') },
@@ -161,7 +170,7 @@ export default function Home2() {
                       viewport={{ once: true }}
                     >
                       <span className="text-2xl">{highlight.icon}</span>
-                      <span className="text-gray-700">{highlight.text}</span>
+                      <span className={isDark ? 'text-white' : 'text-gray-700'}>{highlight.text}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -177,10 +186,16 @@ export default function Home2() {
             viewport={{ once: true }}
           >
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl">
+              <button 
+                onClick={() => navigate('/services')}
+                className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
                 {t('home2.showcase.exploreButton')}
               </button>
-              <button className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300">
+              <button 
+                onClick={() => navigate('/contact')}
+                className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300"
+              >
                 {t('home2.showcase.learnMoreButton')}
               </button>
             </div>
@@ -194,7 +209,7 @@ export default function Home2() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="text-center mb-16">
             <motion.h2 
-              className="text-4xl font-bold mb-4"
+              className={`text-4xl font-bold mb-4 ${isDark ? 'text-white' : 'text-black'}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -203,7 +218,7 @@ export default function Home2() {
               {t('home2.platform.title')}
             </motion.h2>
             <motion.p 
-              className="text-lg text-gray-600 max-w-3xl mx-auto"
+              className={`text-lg max-w-3xl mx-auto ${isDark ? 'text-white' : 'text-gray-600'}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -220,8 +235,8 @@ export default function Home2() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-bold mb-6">{t('home2.platform.comprehensive.title')}</h3>
-              <p className="text-gray-600 mb-6">{t('home2.platform.comprehensive.description')}</p>
+              <h3 className={`text-2xl font-bold mb-6 ${isDark ? 'text-white' : 'text-black'}`}>{t('home2.platform.comprehensive.title')}</h3>
+              <p className={`mb-6 ${isDark ? 'text-white' : 'text-gray-600'}`}>{t('home2.platform.comprehensive.description')}</p>
               
               <div className="space-y-4">
                 {[
@@ -239,7 +254,7 @@ export default function Home2() {
                     viewport={{ once: true }}
                   >
                     <span className="text-2xl">{feature.icon}</span>
-                    <span className="text-gray-700">{feature.text}</span>
+                    <span className={isDark ? 'text-white' : 'text-gray-700'}>{feature.text}</span>
                   </motion.div>
                 ))}
               </div>
@@ -269,8 +284,8 @@ export default function Home2() {
                       viewport={{ once: true }}
                     >
                       <div className="text-3xl mb-2">{feature.icon}</div>
-                      <h4 className="font-semibold mb-1">{feature.title}</h4>
-                      <p className="text-sm text-gray-600">{feature.desc}</p>
+                      <h4 className={`font-semibold mb-1 ${isDark ? 'text-white' : 'text-black'}`}>{feature.title}</h4>
+                      <p className={`text-sm ${isDark ? 'text-white' : 'text-gray-600'}`}>{feature.desc}</p>
                     </motion.div>
                   ))}
                 </div>
@@ -286,7 +301,7 @@ export default function Home2() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold mb-8">{t('home2.platform.benefits.title')}</h3>
+            <h3 className={`text-2xl font-bold mb-8 ${isDark ? 'text-white' : 'text-black'}`}>{t('home2.platform.benefits.title')}</h3>
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 { 
@@ -315,8 +330,8 @@ export default function Home2() {
                   whileHover={{ y: -5 }}
                 >
                   <div className="text-4xl mb-4">{benefit.icon}</div>
-                  <h4 className="text-xl font-bold mb-3">{benefit.title}</h4>
-                  <p className="text-gray-600">{benefit.description}</p>
+                  <h4 className={`text-xl font-bold mb-3 ${isDark ? 'text-white' : 'text-black'}`}>{benefit.title}</h4>
+                  <p className={isDark ? 'text-white' : 'text-gray-600'}>{benefit.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -365,10 +380,16 @@ export default function Home2() {
             {t('home2.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl">
+            <button 
+              onClick={() => navigate('/contact')}
+              className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
               {t('home2.cta.getStarted')}
             </button>
-            <button className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300">
+            <button 
+              onClick={() => navigate('/contact')}
+              className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300"
+            >
               {t('home2.cta.scheduleDemo')}
             </button>
           </div>

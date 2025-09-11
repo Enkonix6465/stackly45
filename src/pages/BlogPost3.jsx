@@ -393,7 +393,7 @@ export default function BlogPost3() {
             <div className="lg:col-span-1">
               {/* Related Posts */}
               <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
-                <h3 className="font-bold text-lg mb-4 text-pink-800 dark:text-pink-200">💒 Related Wedding Planning Posts</h3>
+                <h3 className="font-bold text-lg mb-4 text-pink-800 dark:text-pink-200">🎉 Related Event Planning Posts</h3>
                 <div className="space-y-4">
                   <div 
                     className="cursor-pointer group p-3 rounded-lg hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-colors"
@@ -407,10 +407,10 @@ export default function BlogPost3() {
                     </p>
                   </div>
                   <div 
-                    className="cursor-pointer group p-3 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors"
+                    className="cursor-pointer group p-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
                     onClick={() => navigate('/blog/2')}
                   >
-                    <h4 className="font-semibold group-hover:text-purple-600 transition-colors text-gray-800 dark:text-gray-200">
+                    <h4 className="font-semibold group-hover:text-blue-600 transition-colors text-gray-800 dark:text-gray-200">
                       🎪 Top 10 Afterparty Golden Rules
                     </h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -418,14 +418,14 @@ export default function BlogPost3() {
                     </p>
                   </div>
                   <div 
-                    className="cursor-pointer group p-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
-                    onClick={() => navigate('/blog/4')}
+                    className="cursor-pointer group p-3 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors"
+                    onClick={() => navigate('/blog/3')}
                   >
-                    <h4 className="font-semibold group-hover:text-blue-600 transition-colors text-gray-800 dark:text-gray-200">
-                      🏆 Sports & Outdoor Event Management
+                    <h4 className="font-semibold group-hover:text-purple-600 transition-colors text-gray-800 dark:text-gray-200">
+                      💒 Wedding Venue Selection Guide
                     </h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Planning outdoor events, sports tournaments, and recreational activities for all ages.
+                      Complete guide to choosing the perfect wedding venue that matches your vision and budget.
                     </p>
                   </div>
                 </div>

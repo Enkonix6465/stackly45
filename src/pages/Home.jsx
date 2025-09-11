@@ -26,44 +26,44 @@ export default function Home() {
 
   const user = getCurrentUser()
 
-  // Dummy data for events
+  //  data for events
   const featuredEvents = [
     {
       id: 1,
-      title: "Tech Conference 2024",
-      date: "March 15-17, 2024",
-      location: "San Francisco, CA",
+      title: t('home1.featuredEvents.events.techConference.title'),
+      date: t('home1.featuredEvents.events.techConference.date'),
+      location: t('home1.featuredEvents.events.techConference.location'),
       attendees: 2500,
-      price: "$299",
+      price: t('home1.featuredEvents.events.techConference.price'),
       image: "/images/Tech Conference.jpg",
-      category: "Technology",
+      category: t('home1.featuredEvents.events.techConference.category'),
       status: "Upcoming"
     },
     {
       id: 2,
-      title: "Marketing Summit",
-      date: "April 22, 2024",
-      location: "New York, NY",
+      title: t('home1.featuredEvents.events.marketingSummit.title'),
+      date: t('home1.featuredEvents.events.marketingSummit.date'),
+      location: t('home1.featuredEvents.events.marketingSummit.location'),
       attendees: 1200,
-      price: "$199",
+      price: t('home1.featuredEvents.events.marketingSummit.price'),
       image: "/images/Marketing Summit.jpg",
-      category: "Marketing",
+      category: t('home1.featuredEvents.events.marketingSummit.category'),
       status: "Upcoming"
     },
     {
       id: 3,
-      title: "Design Workshop",
-      date: "May 8, 2024",
-      location: "Los Angeles, CA",
+      title: t('home1.featuredEvents.events.designWorkshop.title'),
+      date: t('home1.featuredEvents.events.designWorkshop.date'),
+      location: t('home1.featuredEvents.events.designWorkshop.location'),
       attendees: 150,
-      price: "$99",
+      price: t('home1.featuredEvents.events.designWorkshop.price'),
       image: "/images/Design Workshop.jpeg",
-      category: "Design",
+      category: t('home1.featuredEvents.events.designWorkshop.category'),
       status: "Upcoming"
     }
   ]
 
-  // Dummy data for testimonials
+  // data for testimonials
   const testimonials = [
     {
       id: 1,
@@ -94,7 +94,7 @@ export default function Home() {
     }
   ]
 
-  // Dummy data for features
+  //  data for features
   const features = [
     {
       id: 1,
@@ -157,25 +157,31 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 px-6 max-w-4xl">
-          <ScrollAnimation animation="fade-in" stagger="scroll-stagger-1">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-              {t('home1.showcase.title')}
+          <ScrollAnimation animation="fade-in-up" stagger="scroll-stagger-1">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white whitespace-nowrap">
+              {t('home1.showcase.mainTitle')}
             </h1>
           </ScrollAnimation>
           
-          <ScrollAnimation animation="fade-in" stagger="scroll-stagger-2">
+          <ScrollAnimation animation="fade-in-up" stagger="scroll-stagger-2">
             <p className="text-xl md:text-2xl mb-8 text-white/80">
               {t('home1.showcase.subtitle')}
             </p>
           </ScrollAnimation>
           
-          <ScrollAnimation animation="fade-in" stagger="scroll-stagger-3">
+          <ScrollAnimation animation="fade-in-up" stagger="scroll-stagger-3">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-purple-50 transition-colors">
+              <button 
+                onClick={() => navigate('/contact')}
+                className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-white text-purple-600 hover:bg-purple-50 shadow-white/20'}`}
+              >
                 {t('home1.showcase.startFreeTrial')}
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-purple-600 transition-colors">
-                {t('home1.showcase.watchDemo')}
+              <button 
+                onClick={() => navigate('/services')}
+                className={`border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm ${isDark ? 'border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white shadow-purple-400/25' : 'border-white text-white hover:bg-white hover:text-purple-600 shadow-white/20'}`}
+              >
+                {t('home1.showcase.exploreButton')}
               </button>
             </div>
           </ScrollAnimation>
@@ -187,59 +193,66 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Column - Image */}
-            <div className="relative">
-              <div className="relative overflow-hidden rounded-lg shadow-2xl">
-                <img 
-                  src="/images/Home1.jpg" 
-                  alt="Golden Rangoli Events - Luxury Event Planning"
-                  className="w-full h-96 object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            <ScrollAnimation animation="fade-left" stagger="scroll-stagger-1">
+              <div className="relative">
+                <div className="relative overflow-hidden rounded-lg shadow-2xl">
+                  <img 
+                    src="/images/Home1.jpg" 
+                    alt="Golden Rangoli Events - Luxury Event Planning"
+                    className="w-full h-96 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                </div>
               </div>
-            </div>
+            </ScrollAnimation>
 
             {/* Right Column - Content */}
-            <div className="relative">
-              {/* Background Pattern */}
-              <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
-                <svg viewBox="0 0 100 100" className="w-full h-full">
-                  <defs>
-                    <pattern id="rangoli-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                      <circle cx="10" cy="10" r="2" fill={isDark ? "#D97706" : "#8B4513"} opacity="0.3"/>
-                      <circle cx="5" cy="5" r="1" fill={isDark ? "#D97706" : "#8B4513"} opacity="0.2"/>
-                      <circle cx="15" cy="15" r="1" fill={isDark ? "#D97706" : "#8B4513"} opacity="0.2"/>
-                    </pattern>
-                  </defs>
-                  <rect width="100" height="100" fill="url(#rangoli-pattern)"/>
-                </svg>
+            <ScrollAnimation animation="fade-right" stagger="scroll-stagger-2">
+              <div className="relative">
+                {/* Background Pattern */}
+                <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
+                  <svg viewBox="0 0 100 100" className="w-full h-full">
+                    <defs>
+                      <pattern id="rangoli-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <circle cx="10" cy="10" r="2" fill={isDark ? "#D97706" : "#8B4513"} opacity="0.3"/>
+                        <circle cx="5" cy="5" r="1" fill={isDark ? "#D97706" : "#8B4513"} opacity="0.2"/>
+                        <circle cx="15" cy="15" r="1" fill={isDark ? "#D97706" : "#8B4513"} opacity="0.2"/>
+                      </pattern>
+                    </defs>
+                    <rect width="100" height="100" fill="url(#rangoli-pattern)"/>
+                  </svg>
+                </div>
+
+                <div className="relative z-10">
+                  <div className="mb-6">
+                    <h3 className={`text-sm font-serif uppercase tracking-wider mb-2 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+                      {t('home1.about.label')}
+                    </h3>
+                    <h2 className={`text-4xl md:text-5xl font-bold font-serif ${isDark ? 'text-white' : 'text-black'}`}>
+                      {t('home1.about.title')}
+                    </h2>
+                  </div>
+
+                  <div className={`space-y-4 leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+                    <p>
+                      {t('home1.about.description1')}
+                    </p>
+                    <p>
+                      {t('home1.about.description2')}
+                    </p>
+                  </div>
+
+                  <div className="mt-8">
+                    <button 
+                      onClick={() => navigate('/about')}
+                      className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-white text-purple-600 hover:bg-purple-50 shadow-white/20'}`}
+                    >
+                      {t('home1.about.knowMoreButton')}
+                    </button>
+                  </div>
+                </div>
               </div>
-
-              <div className="relative z-10">
-                <div className="mb-6">
-                  <h3 className={`text-sm font-serif uppercase tracking-wider mb-2 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                    {t('home1.about.label')}
-                  </h3>
-                  <h2 className={`text-4xl md:text-5xl font-bold font-serif ${isDark ? 'text-white' : 'text-black'}`}>
-                    {t('home1.about.title')}
-                  </h2>
-                </div>
-
-                <div className={`space-y-4 leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
-                  <p>
-                    {t('home1.about.description1')}
-                  </p>
-                  <p>
-                    {t('home1.about.description2')}
-                  </p>
-                </div>
-
-                <div className="mt-8">
-                  <button className="bg-gradient-to-r from-purple-600 to-purple-800 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-purple-700 hover:to-purple-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                    {t('home1.about.learnMore')}
-                  </button>
-                </div>
-              </div>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -254,7 +267,7 @@ export default function Home() {
               </h2>
             </ScrollAnimation>
             <ScrollAnimation animation="fade-in" stagger="scroll-stagger-2">
-              <p className={`text-xl max-w-3xl mx-auto ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+              <p className={`text-xl max-w-3xl mx-auto whitespace-nowrap ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                 {t('home1.features.subtitle')}
               </p>
             </ScrollAnimation>
@@ -321,7 +334,10 @@ export default function Home() {
                       <span className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>{event.attendees} {t('home1.featuredEvents.attendees')}</span>
                       <span className="text-lg font-bold text-purple-600">{event.price}</span>
                     </div>
-                    <button className="w-full bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors">
+                    <button 
+                      onClick={() => navigate('/services')}
+                      className="w-full bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors"
+                    >
                       {t('home1.featuredEvents.viewDetails')}
                     </button>
                   </div>
@@ -342,7 +358,7 @@ export default function Home() {
               </h2>
             </ScrollAnimation>
             <ScrollAnimation animation="fade-in" stagger="scroll-stagger-2">
-              <p className={`text-xl max-w-3xl mx-auto ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+              <p className={`text-xl max-w-3xl mx-auto whitespace-nowrap ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                 {t('home1.testimonials.subtitle')}
               </p>
             </ScrollAnimation>
@@ -388,18 +404,18 @@ export default function Home() {
           </ScrollAnimation>
           
           <ScrollAnimation animation="fade-in" stagger="scroll-stagger-2">
-            <p className={`text-xl mb-8 max-w-3xl mx-auto ${isDark ? 'text-gray-300' : 'text-purple-100'}`}>
+            <p className={`text-xl mb-8 max-w-3xl mx-auto whitespace-nowrap ${isDark ? 'text-gray-300' : 'text-purple-100'}`}>
               {t('home1.cta.subtitle')}
             </p>
           </ScrollAnimation>
           
           <ScrollAnimation animation="fade-in" stagger="scroll-stagger-3">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className={`px-8 py-4 rounded-lg font-semibold text-lg transition-colors ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700' : 'bg-white text-purple-600 hover:bg-purple-50'}`}>
-                {t('home1.cta.startFreeTrial')}
-              </button>
-              <button className={`border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-colors ${isDark ? 'border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white' : 'border-white text-white hover:bg-white hover:text-purple-600'}`}>
-                {t('home1.cta.scheduleDemo')}
+            <div className="flex justify-center">
+              <button 
+                onClick={() => navigate('/contact')}
+                className={`px-8 py-4 rounded-lg font-semibold text-lg transition-colors ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700' : 'bg-white text-purple-600 hover:bg-purple-50'}`}
+              >
+                {t('home1.cta.connectButton')}
               </button>
             </div>
           </ScrollAnimation>

@@ -354,13 +354,24 @@ export default function BlogPost1() {
                 <div className="space-y-4">
                   <div 
                     className="cursor-pointer group p-3 rounded-lg hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-colors"
-                    onClick={() => navigate('/blog/2')}
+                    onClick={() => navigate('/blog/1')}
                   >
                     <h4 className="font-semibold group-hover:text-pink-600 transition-colors text-gray-800 dark:text-gray-200">
-                      🎪 Corporate Event Planning Guide
+                      🎂 Best Kids' Birthday Party Ideas
                     </h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Essential tips for planning successful corporate events, conferences, and business celebrations.
+                      Creative themes and activities for unforgettable children's birthday celebrations.
+                    </p>
+                  </div>
+                  <div 
+                    className="cursor-pointer group p-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
+                    onClick={() => navigate('/blog/2')}
+                  >
+                    <h4 className="font-semibold group-hover:text-blue-600 transition-colors text-gray-800 dark:text-gray-200">
+                      🎪 Top 10 Afterparty Golden Rules
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      Master the art of afterparty planning with these essential golden rules for unforgettable celebrations.
                     </p>
                   </div>
                   <div 
@@ -368,21 +379,10 @@ export default function BlogPost1() {
                     onClick={() => navigate('/blog/3')}
                   >
                     <h4 className="font-semibold group-hover:text-purple-600 transition-colors text-gray-800 dark:text-gray-200">
-                      💒 Wedding Planning Essentials
+                      💒 Wedding Venue Selection Guide
                     </h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Complete guide to planning the perfect wedding day with timeline, checklist, and vendor tips.
-                    </p>
-                  </div>
-                  <div 
-                    className="cursor-pointer group p-3 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
-                    onClick={() => navigate('/blog/4')}
-                  >
-                    <h4 className="font-semibold group-hover:text-blue-600 transition-colors text-gray-800 dark:text-gray-200">
-                      🏆 Sports & Outdoor Event Management
-                    </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Planning outdoor events, sports tournaments, and recreational activities for all ages.
+                      Complete guide to choosing the perfect wedding venue that matches your vision and budget.
                     </p>
                   </div>
                 </div>

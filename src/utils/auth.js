@@ -34,7 +34,7 @@ export function saveUsers(users) {
   return users; // ✅ return updated array for convenience
 }
 
-export function registerUser({ firstName, lastName, email, password }) {
+export function registerUser({ firstName, lastName, email, password, role = 'user' }) {
   const normalizedEmail = String(email || '').trim().toLowerCase();
 
   const existingUsers = getUsers();
@@ -52,6 +52,8 @@ export function registerUser({ firstName, lastName, email, password }) {
     lastName,
     email: normalizedEmail,
     password,
+    role,
+    createdAt: new Date().toISOString(),
   };
 
   const updatedUsers = saveUsers([...existingUsers, newUser]);
@@ -153,6 +155,23 @@ export function resetPassword(email, newPassword) {
   console.log('✅ Password reset successfully for:', normalizedEmail);
   
   return { success: true, message: 'Password reset successfully' };
+}
+
+// Utility function to create an admin user
+export function createAdminUser() {
+  const adminUser = {
+    firstName: 'Admin',
+    lastName: 'User',
+    email: 'admin@example.com',
+    password: 'admin123',
+    role: 'admin'
+  };
+  
+  const result = registerUser(adminUser);
+  if (result.success) {
+    console.log('✅ Admin user created successfully:', adminUser.email);
+  }
+  return result;
 }
 
 

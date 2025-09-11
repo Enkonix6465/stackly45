@@ -14,6 +14,7 @@ import BlogPost1 from './pages/BlogPost1'
 import BlogPost2 from './pages/BlogPost2'
 import BlogPost3 from './pages/BlogPost3'
 import AdminDashboard from './pages/admin-dashboard'
+import AdminSetup from './pages/AdminSetup'
 import WeddingPlanning from './pages/Services/WeddingPlanning'
 import CorporateEvents from './pages/Services/CorporateEvents'
 import BirthdayPrivateParties from './pages/Services/BirthdayPrivateParties'
@@ -50,6 +51,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/admin-setup" element={<AdminSetup />} />
           <Route 
             path="/admin-dashboard" 
             element={

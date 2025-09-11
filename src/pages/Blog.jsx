@@ -164,7 +164,7 @@ export default function Blog() {
           href="/contact"
           className="btn-animate-strong rounded-lg px-8 py-4 font-bold text-lg transition-all duration-300 bg-purple-500 text-white hover:bg-purple-600 shadow-lg hover:shadow-xl"
         >
-          Plan your Event
+          {t('blogPage.showcase.subscribeButton')}
         </a>
       </div>
     </ScrollAnimation>
@@ -603,7 +603,7 @@ export default function Blog() {
           href="/contact"
           className="btn-animate-strong rounded-lg px-8 py-4 font-bold text-lg transition-all duration-300 bg-purple-500 text-white hover:bg-purple-600 shadow-lg hover:shadow-xl"
         >
-          Start planning now
+          {t('blogPage.cta.startFreelancingButton')}
         </a>
         <a
           href="/contact"

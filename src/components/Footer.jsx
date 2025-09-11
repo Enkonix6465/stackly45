@@ -57,9 +57,8 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="lg:col-span-1">
             <div className="mb-6">
-              <h3 className={`text-lg font-bold mb-3 relative ${isDark ? 'text-white' : 'text-black'}`}> 
+              <h3 className={`text-lg font-bold mb-3 ${isDark ? 'text-white' : 'text-black'}`}> 
                 {t('footer.quickLinks')}
-                <div className="absolute bottom-0 left-0 w-12 h-0.5 bg-purple-600"></div>
               </h3>
             </div>
             <ul className="space-y-3">
@@ -85,9 +84,8 @@ export default function Footer() {
           {/* For Freelancers */}
           <div className="lg:col-span-1">
             <div className="mb-6">
-              <h3 className={`text-lg font-bold mb-3 relative ${isDark ? 'text-white' : 'text-black'}`}> 
+              <h3 className={`text-lg font-bold mb-3 ${isDark ? 'text-white' : 'text-black'}`}> 
                 {t('footer.forFreelancers')}
-                <div className="absolute bottom-0 left-0 w-12 h-0.5 bg-purple-600"></div>
               </h3>
             </div>
             <ul className="space-y-3">
@@ -95,7 +93,7 @@ export default function Footer() {
                 { name: t('footer.weddingPlanning'), path: '/services/wedding-planning' },
                 { name: t('footer.corporateEvents'), path: '/services/corporate-events' },
                 { name: t('footer.birthdayPrivateParties'), path: '/services/birthday-private-parties' },
-                { name: t('footer.concertsEntertainmentShows'), path: '/services/concerts-entertainment-shows' },
+                { name: t('footer.concertsEntertainmentShows'), path: '/services/concerts-entertainment' },
                 { name: t('footer.sportsOutdoorEvents'), path: '/services/sports-outdoor-events' },
                 { name: t('footer.exhibitionsTradeShows'), path: '/services/exhibitions-trade-shows' }
               ].map((service) => (
@@ -113,9 +111,8 @@ export default function Footer() {
           {/* Contact Information */}
           <div className="lg:col-span-1">
             <div className="mb-6">
-              <h3 className={`text-lg font-bold mb-3 relative ${isDark ? 'text-white' : 'text-black'}`}> 
+              <h3 className={`text-lg font-bold mb-3 ${isDark ? 'text-white' : 'text-black'}`}> 
                 Contact Information
-                <div className="absolute bottom-0 left-0 w-12 h-0.5 bg-purple-600"></div>
               </h3>
             </div>
             <ul className="space-y-4">

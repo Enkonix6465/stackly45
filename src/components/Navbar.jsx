@@ -101,7 +101,7 @@ export default function Navbar({ user }) {
                   {label: t('nav.weddingPlanning'), path:'/services/wedding-planning'},
                   {label: t('nav.corporateEvents'), path:'/services/corporate-events'},
                   {label: t('nav.birthdayPrivateParties'), path:'/services/birthday-private-parties'},
-                  {label: t('nav.concertsEntertainmentShows'), path:'/services/concerts-entertainment-shows'},
+                  {label: t('nav.concertsEntertainmentShows'), path:'/services/concerts-entertainment'},
                   {label: t('nav.sportsOutdoorEvents'), path:'/services/sports-outdoor-events'},
                   {label: t('nav.exhibitionsTradeShows'), path:'/services/exhibitions-trade-shows'}
                 ].map((item) => (
