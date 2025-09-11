@@ -125,7 +125,7 @@ export default function Services() {
             {/* Primary Button */}
             <button
               onClick={() => navigate('/services')}
-              className="px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25"
+              className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25'}`}
             >
               {t('services.showcase.exploreButton')}
             </button>
@@ -133,7 +133,7 @@ export default function Services() {
             {/* Secondary Button */}
             <button
               onClick={() => navigate('/about')}
-              className="border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm border-white text-white hover:bg-white hover:text-purple-600 shadow-white/20"
+              className={`border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm ${isDark ? 'border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white shadow-purple-400/25' : 'border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white shadow-purple-400/25'}`}
             >
               {t('services.showcase.planEventButton')}
             </button>
@@ -157,7 +157,6 @@ export default function Services() {
             <p className={`text-xl max-w-3xl mx-auto whitespace-nowrap ${isDark ? "text-gray-300" : "text-gray-600"}`}>
               {t('services.howItWorks.subtitle')}
             </p>
-            <div className="w-24 h-1 bg-purple-500 mx-auto mt-6 rounded-full"></div>
           </div>
 
           {/* Steps Container */}
@@ -759,40 +758,44 @@ export default function Services() {
       </section>
 
 
-      {/* 6) CTA (distinct for freelancing platform) */}
-      <section id="cta" className="border-t border-black/10 relative overflow-hidden">
+      {/* CTA Section - Simple Design */}
+      <section id="cta" className="relative overflow-hidden py-16">
         {/* Background Image */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
-          style={{ backgroundImage: 'url(/images/CalltoAction.jpg)' }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: 'url(/images/SBG.jpg)' }}
         ></div>
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
-        {/* Blur Effect */}
-        <div className="absolute -right-20 top-10 h-64 w-64 rounded-full bg-purple-500/10 blur-3xl pointer-events-none" />
+        {/* Black Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
         
-        <div className="relative z-10 mx-auto max-w-6xl px-4 py-24 grid md:grid-cols-3 gap-10 items-center">
-          <div className="md:col-span-2">
-            <h2 className="text-3xl font-extrabold text-white">{t('services.servicesCta.title')}</h2>
-               <p className="mt-2 text-white/80">
-      {t('services.servicesCta.subtitle')}
-    </p>
-            <ul className="mt-5 grid sm:grid-cols-2 gap-3 text-sm">
-      {t('services.servicesCta.benefits', { returnObjects: true }).map((benefit, index) => (
-        <li key={index} className="flex items-center gap-2">
-          <span className="h-2 w-2 rounded-full bg-purple-400" />
-          <span className="text-white/90">{benefit}</span>
-        </li>
-      ))}
-    </ul>
-          </div>
-          <div className="md:justify-self-end">
-            <a
-              href="/about"
-              className="btn-animate-strong inline-flex items-center justify-center rounded-lg bg-purple-500 px-8 py-4 font-bold text-lg text-white transition-all duration-300 hover:bg-purple-600 shadow-lg hover:shadow-xl"
-            >
-              {t('services.servicesCta.button')}
-            </a>
+        <div className="relative z-10 mx-auto max-w-6xl px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left Side - Text Content */}
+            <div className="text-white">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                {t('services.servicesCta.title')}
+              </h2>
+              <p className="text-xl text-purple-300 mb-8">
+                {t('services.servicesCta.subtitle')}
+              </p>
+              <button
+                onClick={() => navigate('/contact')}
+                className="bg-white text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-300"
+              >
+                {t('services.servicesCta.button')}
+              </button>
+            </div>
+            
+            {/* Right Side - Image */}
+            <div className="relative">
+              <div className="aspect-square max-w-md mx-auto">
+                <img
+                  src="/images/CTASs.jpg"
+                  alt="Professional Networking Event"
+                  className="w-full h-full object-cover rounded-2xl shadow-2xl"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

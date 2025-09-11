@@ -50,28 +50,28 @@ export default function BlogPost1() {
 
   <div className="relative mx-auto max-w-6xl px-4 py-16">
     <div className="max-w-4xl">
-      <div className="flex items-center gap-2 mb-4">
-        <span className="px-3 py-1 bg-pink-500/30 rounded-full text-sm font-medium">Birthday Parties</span>
-        <span className="text-white/80">•</span>
-        <span className="text-white/80">8 min read</span>
-        <span className="text-white/80">•</span>
-        <span className="text-white/80">December 2024</span>
-      </div>
-      <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-pink-200 to-purple-200 bg-clip-text text-transparent">
-        Best Kids' Birthday Party Ideas
-      </h1>
-      <p className="text-xl text-white/90 mb-6 max-w-3xl">
-        Create magical memories with these creative and fun birthday party themes that will make your child's special day unforgettable!
-      </p>
-      <div className="flex items-center gap-4">
-        <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold">
-          EM
-        </div>
-        <div>
-          <p className="font-semibold">Event Management Team</p>
-          <p className="text-white/80 text-sm">Party Planning Specialists</p>
-        </div>
-      </div>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="px-3 py-1 bg-pink-500/30 rounded-full text-sm font-medium">{t('blogPost1.hero.category')}</span>
+              <span className="text-white/80">•</span>
+              <span className="text-white/80">{t('blogPost1.hero.readTime')}</span>
+              <span className="text-white/80">•</span>
+              <span className="text-white/80">{t('blogPost1.hero.date')}</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-pink-200 to-purple-200 bg-clip-text text-transparent">
+              {t('blogPost1.hero.title')}
+            </h1>
+            <p className="text-xl text-white/90 mb-6 max-w-3xl">
+              {t('blogPost1.hero.subtitle')}
+            </p>
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold">
+                EM
+              </div>
+              <div>
+                <p className="font-semibold">{t('blogPost1.hero.author')}</p>
+                <p className="text-white/80 text-sm">{t('blogPost1.hero.authorRole')}</p>
+              </div>
+            </div>
     </div>
   </div>
 </section>
@@ -90,39 +90,39 @@ export default function BlogPost1() {
                 />
                 
                 <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-                  Planning the perfect birthday party for your child can be both exciting and overwhelming. With so many themes, activities, and details to consider, it's easy to feel lost in the planning process. This comprehensive guide will help you create magical memories that your child will treasure forever.
+                  {t('blogPost1.content.intro')}
                 </p>
 
                 <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-                  Why Theme-Based Parties Work Best
+                  {t('blogPost1.content.whyThemeBased.title')}
                 </h2>
                 <p className="mb-6">
-                  A well-chosen theme provides a cohesive framework for decorations, activities, food, and entertainment. It helps create an immersive experience that captivates children and makes the party memorable for all guests.
+                  {t('blogPost1.content.whyThemeBased.description')}
                 </p>
 
                 <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
-                  Benefits of Themed Birthday Parties
+                  {t('blogPost1.content.whyThemeBased.benefits.title')}
                 </h3>
                 <ul className="mb-6 space-y-2">
                   <li className="flex items-start gap-3">
                     <span className="text-pink-500 text-lg">🎉</span>
-                    <span>Creates excitement and anticipation for the birthday child</span>
+                    <span>{t('blogPost1.content.whyThemeBased.benefits.excitement')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-pink-500 text-lg">🎨</span>
-                    <span>Makes decoration planning easier and more organized</span>
+                    <span>{t('blogPost1.content.whyThemeBased.benefits.decoration')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-pink-500 text-lg">🎯</span>
-                    <span>Provides clear direction for activities and games</span>
+                    <span>{t('blogPost1.content.whyThemeBased.benefits.activities')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-pink-500 text-lg">📸</span>
-                    <span>Creates amazing photo opportunities and memories</span>
+                    <span>{t('blogPost1.content.whyThemeBased.benefits.photos')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-pink-500 text-lg">👥</span>
-                    <span>Helps guests feel more engaged and involved</span>
+                    <span>{t('blogPost1.content.whyThemeBased.benefits.engagement')}</span>
                   </li>
                 </ul>
 
@@ -135,17 +135,17 @@ export default function BlogPost1() {
 
                 <div className="bg-pink-50 dark:bg-pink-900/20 p-6 rounded-xl mb-8">
                   <h4 className="font-semibold mb-3 text-pink-800 dark:text-pink-200">
-                    🎂 Essential Party Planning Checklist
+                    🎂 {t('blogPost1.content.topThemes.checklist.title')}
                   </h4>
                   <ul className="space-y-2 text-pink-700 dark:text-pink-300">
-                    <li>• Choose a theme that matches your child's interests</li>
-                    <li>• Set a budget and guest list (2-3 months before)</li>
-                    <li>• Book venue or prepare home space (6-8 weeks before)</li>
-                    <li>• Send out invitations (4-6 weeks before)</li>
-                    <li>• Plan activities and entertainment (3-4 weeks before)</li>
-                    <li>• Order decorations and supplies (2-3 weeks before)</li>
-                    <li>• Plan the menu and order cake (1-2 weeks before)</li>
-                    <li>• Prepare party favors and goodie bags (1 week before)</li>
+                    <li>• {t('blogPost1.content.topThemes.checklist.theme')}</li>
+                    <li>• {t('blogPost1.content.topThemes.checklist.budget')}</li>
+                    <li>• {t('blogPost1.content.topThemes.checklist.venue')}</li>
+                    <li>• {t('blogPost1.content.topThemes.checklist.invitations')}</li>
+                    <li>• {t('blogPost1.content.topThemes.checklist.activities')}</li>
+                    <li>• {t('blogPost1.content.topThemes.checklist.decorations')}</li>
+                    <li>• {t('blogPost1.content.topThemes.checklist.menu')}</li>
+                    <li>• {t('blogPost1.content.topThemes.checklist.favors')}</li>
                   </ul>
                 </div>
 
@@ -161,156 +161,156 @@ export default function BlogPost1() {
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4 mb-8">
                   <div className="p-4 border border-pink-200 dark:border-pink-700 rounded-lg bg-gradient-to-br from-pink-50 to-purple-50 dark:from-pink-900/20 dark:to-purple-900/20">
-                    <h4 className="font-semibold mb-2 text-pink-800 dark:text-pink-200">🌟 Princess & Superhero</h4>
+                    <h4 className="font-semibold mb-2 text-pink-800 dark:text-pink-200">🌟 {t('blogPost1.content.popularThemes.categories.princess.title')}</h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Perfect for ages 3-8. Includes dress-up, photo booths, and themed activities.
+                      {t('blogPost1.content.popularThemes.categories.princess.description')}
                     </p>
                   </div>
                   <div className="p-4 border border-blue-200 dark:border-blue-700 rounded-lg bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20">
-                    <h4 className="font-semibold mb-2 text-blue-800 dark:text-blue-200">🚀 Space & Adventure</h4>
+                    <h4 className="font-semibold mb-2 text-blue-800 dark:text-blue-200">🚀 {t('blogPost1.content.popularThemes.categories.space.title')}</h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Great for ages 5-12. Features rocket ships, alien crafts, and cosmic decorations.
+                      {t('blogPost1.content.popularThemes.categories.space.description')}
                     </p>
                   </div>
                   <div className="p-4 border border-green-200 dark:border-green-700 rounded-lg bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20">
-                    <h4 className="font-semibold mb-2 text-green-800 dark:text-green-200">🐾 Animal & Nature</h4>
+                    <h4 className="font-semibold mb-2 text-green-800 dark:text-green-200">🐾 {t('blogPost1.content.popularThemes.categories.animal.title')}</h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Ideal for ages 2-10. Includes zoo animals, safari themes, and outdoor activities.
+                      {t('blogPost1.content.popularThemes.categories.animal.description')}
                     </p>
                   </div>
                   <div className="p-4 border border-yellow-200 dark:border-yellow-700 rounded-lg bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20">
-                    <h4 className="font-semibold mb-2 text-yellow-800 dark:text-yellow-200">🎪 Circus & Carnival</h4>
+                    <h4 className="font-semibold mb-2 text-yellow-800 dark:text-yellow-200">🎪 {t('blogPost1.content.popularThemes.categories.circus.title')}</h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Fun for all ages. Features games, cotton candy, and circus entertainment.
+                      {t('blogPost1.content.popularThemes.categories.circus.description')}
                     </p>
                   </div>
                 </div>
 
                 <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-                  Party Activities & Entertainment
+                  {t('blogPost1.content.activities.title')}
                 </h2>
                 <p className="mb-6">
-                  Keep your little guests engaged and entertained with these fun activities that complement your chosen theme and create lasting memories.
+                  {t('blogPost1.content.activities.description')}
                 </p>
 
                 <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
-                  🎮 Essential Party Activities
+                  🎮 {t('blogPost1.content.activities.essentialActivities.title')}
                 </h3>
                 <ol className="mb-8 space-y-3 list-decimal list-inside">
                   <li>
-                    <strong>Photo Booth Station:</strong> Set up a themed backdrop with props for memorable photos
+                    <strong>{t('blogPost1.content.activities.essentialActivities.photoBooth')}</strong>
                   </li>
                   <li>
-                    <strong>Arts & Crafts Corner:</strong> Provide themed coloring pages, stickers, and simple crafts
+                    <strong>{t('blogPost1.content.activities.essentialActivities.artsCrafts')}</strong>
                   </li>
                   <li>
-                    <strong>Interactive Games:</strong> Musical chairs, pin the tail, treasure hunts, or themed bingo
+                    <strong>{t('blogPost1.content.activities.essentialActivities.games')}</strong>
                   </li>
                   <li>
-                    <strong>Face Painting:</strong> Hire a professional or set up a DIY station with safe paints
+                    <strong>{t('blogPost1.content.activities.essentialActivities.facePainting')}</strong>
                   </li>
                   <li>
-                    <strong>Balloon Animals:</strong> A balloon artist or DIY balloon twisting station
+                    <strong>{t('blogPost1.content.activities.essentialActivities.balloonAnimals')}</strong>
                   </li>
                   <li>
-                    <strong>Story Time:</strong> Themed story reading or puppet shows for younger guests
+                    <strong>{t('blogPost1.content.activities.essentialActivities.storyTime')}</strong>
                   </li>
                   <li>
-                    <strong>Dance Party:</strong> Create a playlist of kid-friendly songs and have a dance-off
+                    <strong>{t('blogPost1.content.activities.essentialActivities.danceParty')}</strong>
                   </li>
                   <li>
-                    <strong>Party Games:</strong> Relay races, obstacle courses, or themed scavenger hunts
+                    <strong>{t('blogPost1.content.activities.essentialActivities.partyGames')}</strong>
                   </li>
                 </ol>
 
                 <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-                  Food & Treats Ideas
+                  {t('blogPost1.content.foodTreats.title')}
                 </h2>
                 <p className="mb-6">
-                  No birthday party is complete without delicious food and treats! Here are some creative ideas that will delight both kids and parents.
+                  {t('blogPost1.content.foodTreats.description')}
                 </p>
 
                 <div className="bg-yellow-50 dark:bg-yellow-900/20 p-6 rounded-xl mb-8">
                   <h4 className="font-semibold mb-3 text-yellow-800 dark:text-yellow-200">
-                    🍰 Themed Food & Treat Ideas
+                    🍰 {t('blogPost1.content.foodTreats.themedFood.title')}
                   </h4>
                   <ul className="space-y-2 text-yellow-700 dark:text-yellow-300">
-                    <li>• Themed cupcakes with matching toppers and colors</li>
-                    <li>• Character-shaped sandwiches and fruit skewers</li>
-                    <li>• DIY decorating stations (cookies, cupcakes, or pretzels)</li>
-                    <li>• Themed drinks with colorful straws and umbrellas</li>
-                    <li>• Healthy snack options (veggie platters, fruit cups)</li>
-                    <li>• Popcorn bar with different seasonings and toppings</li>
-                    <li>• Ice cream sundae station with various toppings</li>
-                    <li>• Themed cake pops or mini desserts</li>
+                    <li>• {t('blogPost1.content.foodTreats.themedFood.cupcakes')}</li>
+                    <li>• {t('blogPost1.content.foodTreats.themedFood.sandwiches')}</li>
+                    <li>• {t('blogPost1.content.foodTreats.themedFood.decorating')}</li>
+                    <li>• {t('blogPost1.content.foodTreats.themedFood.drinks')}</li>
+                    <li>• {t('blogPost1.content.foodTreats.themedFood.healthy')}</li>
+                    <li>• {t('blogPost1.content.foodTreats.themedFood.popcorn')}</li>
+                    <li>• {t('blogPost1.content.foodTreats.themedFood.iceCream')}</li>
+                    <li>• {t('blogPost1.content.foodTreats.themedFood.cakePops')}</li>
                   </ul>
                 </div>
 
                 <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-                  Budget-Friendly Party Tips
+                  {t('blogPost1.content.budgetTips.title')}
                 </h2>
                 <p className="mb-6">
-                  Creating an amazing birthday party doesn't have to break the bank. Here are practical tips to plan a memorable celebration within your budget.
+                  {t('blogPost1.content.budgetTips.description')}
                 </p>
 
                 <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
-                  💰 Smart Budgeting Strategies
+                  💰 {t('blogPost1.content.budgetTips.strategies.title')}
                 </h3>
                 <ul className="mb-8 space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-green-500 text-lg">💡</span>
-                    <span><strong>DIY Decorations:</strong> Create your own banners, centerpieces, and photo backdrops using craft supplies</span>
+                    <span><strong>{t('blogPost1.content.budgetTips.strategies.diy')}</strong></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-500 text-lg">🎁</span>
-                    <span><strong>Simple Party Favors:</strong> Use themed stickers, small toys, or homemade treats as take-home gifts</span>
+                    <span><strong>{t('blogPost1.content.budgetTips.strategies.favors')}</strong></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-500 text-lg">🏠</span>
-                    <span><strong>Home Venue:</strong> Host at home or in a local park to save on venue costs</span>
+                    <span><strong>{t('blogPost1.content.budgetTips.strategies.home')}</strong></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-500 text-lg">👥</span>
-                    <span><strong>Potluck Style:</strong> Ask parents to bring a dish or snack to share</span>
+                    <span><strong>{t('blogPost1.content.budgetTips.strategies.potluck')}</strong></span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-500 text-lg">📅</span>
-                    <span><strong>Off-Peak Timing:</strong> Consider morning or afternoon parties instead of evening events</span>
+                    <span><strong>{t('blogPost1.content.budgetTips.strategies.timing')}</strong></span>
                   </li>
                 </ul>
 
                 <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-                  Safety & Logistics
+                  {t('blogPost1.content.safety.title')}
                 </h2>
                 <p className="mb-6">
-                  Ensuring a safe and well-organized party is crucial for both children and parents. Here are essential considerations for a successful celebration.
+                  {t('blogPost1.content.safety.description')}
                 </p>
 
                 <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl mb-8">
                   <h4 className="font-semibold mb-3 text-green-800 dark:text-green-200">
-                    🛡️ Safety First Checklist
+                    🛡️ {t('blogPost1.content.safety.checklist.title')}
                   </h4>
                   <ul className="space-y-2 text-green-700 dark:text-green-300">
-                    <li>• Check for allergies and dietary restrictions before planning food</li>
-                    <li>• Ensure adequate adult supervision (1 adult per 4-5 children)</li>
-                    <li>• Childproof the party area and remove potential hazards</li>
-                    <li>• Have a first aid kit readily available</li>
-                    <li>• Plan for weather contingencies if hosting outdoors</li>
-                    <li>• Keep emergency contact information handy</li>
-                    <li>• Set clear boundaries for play areas</li>
-                    <li>• Consider age-appropriate activities and games</li>
+                    <li>• {t('blogPost1.content.safety.checklist.allergies')}</li>
+                    <li>• {t('blogPost1.content.safety.checklist.supervision')}</li>
+                    <li>• {t('blogPost1.content.safety.checklist.childproof')}</li>
+                    <li>• {t('blogPost1.content.safety.checklist.firstAid')}</li>
+                    <li>• {t('blogPost1.content.safety.checklist.weather')}</li>
+                    <li>• {t('blogPost1.content.safety.checklist.emergency')}</li>
+                    <li>• {t('blogPost1.content.safety.checklist.boundaries')}</li>
+                    <li>• {t('blogPost1.content.safety.checklist.ageAppropriate')}</li>
                   </ul>
                 </div>
 
                 <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-                  Making Memories That Last
+                  {t('blogPost1.content.memories.title')}
                 </h2>
                 <p className="mb-8">
-                  The most important aspect of any birthday party is creating joyful memories that your child will cherish for years to come. Focus on what makes your child happy and unique, and don't stress about perfection.
+                  {t('blogPost1.content.memories.description')}
                 </p>
 
                 <p className="text-lg text-gray-600 dark:text-gray-400">
-                  Remember, the best birthday parties are those where children feel loved, celebrated, and surrounded by friends and family. With these ideas and tips, you're well on your way to planning an unforgettable celebration that will bring smiles to everyone's faces!
+                  {t('blogPost1.content.memories.conclusion')}
                 </p>
               </article>
 
@@ -321,23 +321,16 @@ export default function BlogPost1() {
                     EM
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2 text-pink-800 dark:text-pink-200">Event Management Team</h3>
+                    <h3 className="text-xl font-bold mb-2 text-pink-800 dark:text-pink-200">{t('blogPost1.author.name')}</h3>
                     <p className="text-gray-600 dark:text-gray-400 mb-3">
-                      Our experienced event planners specialize in creating magical birthday celebrations and memorable family events. With over 5 years of experience in party planning, we've helped hundreds of families create unforgettable moments.
+                      {t('blogPost1.author.bio')}
                     </p>
                     <div className="flex gap-2 flex-wrap">
-                      <span className="px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 text-sm rounded-full">
-                        Birthday Parties
-                      </span>
-                      <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full">
-                        Event Planning
-                      </span>
-                      <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full">
-                        Theme Design
-                      </span>
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">
-                        Family Events
-                      </span>
+                      {t('blogPost1.author.tags', { returnObjects: true }).map((tag, index) => (
+                        <span key={index} className="px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 text-sm rounded-full">
+                          {tag}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -350,17 +343,17 @@ export default function BlogPost1() {
 
               {/* Related Posts */}
               <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
-                <h3 className="font-bold text-lg mb-4 text-pink-800 dark:text-pink-200">🎉 Related Event Planning Posts</h3>
+                <h3 className="font-bold text-lg mb-4 text-pink-800 dark:text-pink-200">🎉 {t('blogPost1.relatedPosts.title')}</h3>
                 <div className="space-y-4">
                   <div 
                     className="cursor-pointer group p-3 rounded-lg hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-colors"
                     onClick={() => navigate('/blog/1')}
                   >
                     <h4 className="font-semibold group-hover:text-pink-600 transition-colors text-gray-800 dark:text-gray-200">
-                      🎂 Best Kids' Birthday Party Ideas
+                      🎂 {t('blogPost1.relatedPosts.post1.title')}
                     </h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Creative themes and activities for unforgettable children's birthday celebrations.
+                      {t('blogPost1.relatedPosts.post1.description')}
                     </p>
                   </div>
                   <div 
@@ -368,10 +361,10 @@ export default function BlogPost1() {
                     onClick={() => navigate('/blog/2')}
                   >
                     <h4 className="font-semibold group-hover:text-blue-600 transition-colors text-gray-800 dark:text-gray-200">
-                      🎪 Top 10 Afterparty Golden Rules
+                      🎪 {t('blogPost1.relatedPosts.post2.title')}
                     </h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Master the art of afterparty planning with these essential golden rules for unforgettable celebrations.
+                      {t('blogPost1.relatedPosts.post2.description')}
                     </p>
                   </div>
                   <div 
@@ -379,10 +372,10 @@ export default function BlogPost1() {
                     onClick={() => navigate('/blog/3')}
                   >
                     <h4 className="font-semibold group-hover:text-purple-600 transition-colors text-gray-800 dark:text-gray-200">
-                      💒 Wedding Venue Selection Guide
+                      💒 {t('blogPost1.relatedPosts.post3.title')}
                     </h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Complete guide to choosing the perfect wedding venue that matches your vision and budget.
+                      {t('blogPost1.relatedPosts.post3.description')}
                     </p>
                   </div>
                 </div>

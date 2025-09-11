@@ -172,9 +172,17 @@ export default function Blog() {
         {/* Primary Button */}
         <a
           href="/contact"
-          className="btn-animate-strong rounded-lg px-8 py-4 font-bold text-lg transition-all duration-300 bg-purple-500 text-white hover:bg-purple-600 shadow-lg hover:shadow-xl"
+          className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25'}`}
         >
           {t('blogPage.showcase.subscribeButton')}
+        </a>
+        
+        {/* Secondary Button */}
+        <a
+          href="/services"
+          className={`border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm ${isDark ? 'border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white shadow-purple-400/25' : 'border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white shadow-purple-400/25'}`}
+        >
+          View
         </a>
       </div>
     </ScrollAnimation>
@@ -288,7 +296,7 @@ export default function Blog() {
               </div>
 
               <ScrollAnimation animation="fade-in" stagger="scroll-stagger-5">
-                <button className="bg-purple-500 hover:bg-purple-600 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                <button className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25'}`}>
                   {t('blogPage.organizeTheBestEvent.discoverButton')}
                 </button>
               </ScrollAnimation>
@@ -616,13 +624,13 @@ export default function Blog() {
       <div className="flex flex-col sm:flex-row gap-5 justify-center">
         <a
           href="/contact"
-          className="btn-animate-strong rounded-lg px-8 py-4 font-bold text-lg transition-all duration-300 bg-purple-500 text-white hover:bg-purple-600 shadow-lg hover:shadow-xl"
+          className="px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25"
         >
           {t('blogPage.cta.startFreelancingButton')}
         </a>
         <a
           href="/contact"
-          className="btn-animate-strong rounded-lg px-8 py-4 font-bold text-lg transition-all duration-300 bg-white text-purple-600 border-2 border-purple-500 hover:bg-purple-500 hover:text-white shadow-lg hover:shadow-xl"
+          className="border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white shadow-purple-400/25"
         >
           {t('blogPage.cta.learnMoreButton')}
         </a>

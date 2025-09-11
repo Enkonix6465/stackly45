@@ -72,16 +72,22 @@ export default function About() {
     </ScrollAnimation>
     
     <ScrollAnimation animation="fade-in" stagger="scroll-stagger-3">
-      <div className="mt-8 flex gap-4 justify-center">
+      <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
         {/* Primary Button */}
-        <a
-          href="/contact"
-          className="btn-animate-strong rounded-lg px-8 py-4 font-bold text-lg transition-all duration-300 bg-purple-500 text-white hover:bg-purple-600 shadow-lg hover:shadow-xl"
+        <button 
+          onClick={() => navigate('/contact')}
+          className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25'}`}
         >
           {t('about.showcase.connectButton')}
-        </a>
-
+        </button>
         
+        {/* Secondary Button */}
+        <button 
+          onClick={() => navigate('/services')}
+          className={`border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm ${isDark ? 'border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white shadow-purple-400/25' : 'border-white text-white hover:bg-white hover:text-purple-600 shadow-white/20'}`}
+        >
+          {t('about.showcase.exploreButton')}
+        </button>
       </div>
     </ScrollAnimation>
   </div>
@@ -97,8 +103,8 @@ export default function About() {
       >
         {/* Background decorative elements */}
         <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-gray-900 via-black to-gray-800' : 'bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200'}`}></div>
-        <div className={`absolute -top-20 -right-20 w-80 h-80 ${isDark ? 'bg-purple-500/10' : 'bg-purple-500/20'} rounded-full blur-3xl`}></div>
-        <div className={`absolute -bottom-20 -left-20 w-60 h-60 ${isDark ? 'bg-purple-500/5' : 'bg-purple-500/10'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -top-20 -right-20 w-80 h-80 ${isDark ? 'bg-gray-500/10' : 'bg-gray-500/20'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -bottom-20 -left-20 w-60 h-60 ${isDark ? 'bg-gray-500/5' : 'bg-gray-500/10'} rounded-full blur-3xl`}></div>
         
         <div className="relative z-10 mx-auto max-w-7xl px-4 py-24">
           {/* Header */}
@@ -126,15 +132,15 @@ export default function About() {
                 <p className={`${isDark ? 'text-white/90' : 'text-black/80'} leading-relaxed text-lg`}>
                   {t('about.mission.missionStatement')}
                 </p>
-                <a 
-                  href="#about" 
+                <button 
+                  onClick={() => navigate('/services')}
                   className={`inline-flex items-center gap-2 ${isDark ? 'text-purple-400 hover:text-purple-300' : 'text-purple-600 hover:text-purple-700'} transition-colors font-medium`}
                 >
                   {t('about.mission.learnMore')}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </a>
+                </button>
               </div>
             </ScrollAnimation>
 
@@ -160,15 +166,15 @@ export default function About() {
                 <p className={`${isDark ? 'text-white/90' : 'text-black/80'} leading-relaxed text-lg`}>
                   {t('about.mission.visionStatement')}
                 </p>
-                <a 
-                  href="#about" 
+                <button 
+                  onClick={() => navigate('/contact')}
                   className={`inline-flex items-center gap-2 ${isDark ? 'text-purple-400 hover:text-purple-300' : 'text-purple-600 hover:text-purple-700'} transition-colors font-medium`}
                 >
                   {t('about.mission.getStarted')}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </a>
+                </button>
               </div>
             </ScrollAnimation>
           </div>
@@ -200,7 +206,7 @@ export default function About() {
               ].map((stat, index) => (
                 <div key={index} className="text-center group">
                   <div className="flex justify-center mb-3">
-                    <div className={`w-12 h-12 ${isDark ? 'bg-purple-500/20 group-hover:bg-purple-500/30' : 'bg-purple-500/30 group-hover:bg-purple-500/40'} rounded-full flex items-center justify-center ${isDark ? 'text-purple-400' : 'text-purple-600'} transition-colors`}>
+                    <div className={`w-12 h-12 ${isDark ? 'bg-gray-500/20 group-hover:bg-gray-500/30' : 'bg-gray-500/30 group-hover:bg-gray-500/40'} rounded-full flex items-center justify-center ${isDark ? 'text-gray-400' : 'text-gray-600'} transition-colors`}>
                       {stat.icon}
                     </div>
                   </div>
@@ -245,11 +251,11 @@ export default function About() {
               }
             ].map((value, index) => (
               <ScrollAnimation key={value.title} animation="fade-in" stagger={`scroll-stagger-${index + 9}`}>
-                <div className={`group p-6 rounded-xl ${isDark ? 'bg-white/5 hover:bg-white/10 border-white/10 hover:border-purple-500/30' : 'bg-white/80 hover:bg-white border-gray-200 hover:border-purple-500/50'} transition-all duration-300 border`}>
-                  <div className={`${isDark ? 'text-purple-400 group-hover:text-purple-300' : 'text-purple-600 group-hover:text-purple-700'} mb-4 transition-colors`}>
+                <div className={`group p-6 rounded-xl ${isDark ? 'bg-white/5 hover:bg-white/10 border-white/10 hover:border-gray-500/30' : 'bg-white/80 hover:bg-white border-gray-200 hover:border-gray-500/50'} transition-all duration-300 border`}>
+                  <div className={`${isDark ? 'text-gray-400 group-hover:text-gray-300' : 'text-gray-600 group-hover:text-gray-700'} mb-4 transition-colors`}>
                     {value.icon}
                   </div>
-                  <h4 className={`text-xl font-bold ${isDark ? 'text-white group-hover:text-purple-300' : 'text-black group-hover:text-purple-700'} mb-3 transition-colors`}>
+                  <h4 className={`text-xl font-bold ${isDark ? 'text-white group-hover:text-gray-300' : 'text-black group-hover:text-gray-700'} mb-3 transition-colors`}>
                     {value.title}
                   </h4>
                   <p className={`${isDark ? 'text-white/70' : 'text-black/70'} leading-relaxed`}>
@@ -463,8 +469,8 @@ export default function About() {
       >
         {/* Background decorative elements */}
         <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-gray-900 via-black to-gray-800' : 'bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200'}`}></div>
-        <div className={`absolute -top-20 -right-20 w-80 h-80 ${isDark ? 'bg-purple-500/10' : 'bg-purple-500/20'} rounded-full blur-3xl`}></div>
-        <div className={`absolute -bottom-20 -left-20 w-60 h-60 ${isDark ? 'bg-purple-500/5' : 'bg-purple-500/10'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -top-20 -right-20 w-80 h-80 ${isDark ? 'bg-gray-500/10' : 'bg-gray-500/20'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -bottom-20 -left-20 w-60 h-60 ${isDark ? 'bg-gray-500/5' : 'bg-gray-500/10'} rounded-full blur-3xl`}></div>
         
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           {/* Header */}
@@ -665,13 +671,13 @@ export default function About() {
                 <div className="flex gap-4 justify-center">
                   <a
                     href="/contact"
-                    className="bg-white text-purple-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
+                    className="px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 bg-white text-purple-600 hover:bg-purple-50 shadow-white/20"
                   >
                     {t('about.cta.getStarted')}
                   </a>
                   <a
                     href="/services"
-                    className="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-purple-600 transition-colors"
+                    className="border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm border-white text-white hover:bg-white hover:text-purple-600 shadow-white/20"
                   >
                     {t('about.cta.viewServices')}
                   </a>
