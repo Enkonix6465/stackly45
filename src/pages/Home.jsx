@@ -57,7 +57,7 @@ export default function Home() {
       location: t('home1.featuredEvents.events.designWorkshop.location'),
       attendees: 150,
       price: t('home1.featuredEvents.events.designWorkshop.price'),
-      image: "/images/Design Workshop.jpeg",
+      image: "/images/Design Workshop.jpg",
       category: t('home1.featuredEvents.events.designWorkshop.category'),
       status: "Upcoming"
     }
@@ -245,7 +245,7 @@ export default function Home() {
                   <div className="mt-8">
                     <button 
                       onClick={() => navigate('/about')}
-                      className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-white text-purple-600 hover:bg-purple-50 shadow-white/20'}`}
+                      className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25'}`}
                     >
                       {t('home1.about.knowMoreButton')}
                     </button>
@@ -413,7 +413,7 @@ export default function Home() {
             <div className="flex justify-center">
               <button 
                 onClick={() => navigate('/contact')}
-                className={`px-8 py-4 rounded-lg font-semibold text-lg transition-colors ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700' : 'bg-white text-purple-600 hover:bg-purple-50'}`}
+                className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-white text-purple-600 hover:bg-purple-50 shadow-white/20'}`}
               >
                 {t('home1.cta.connectButton')}
               </button>

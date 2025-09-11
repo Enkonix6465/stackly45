@@ -116,6 +116,16 @@ export default function Blog() {
     navigate(`/blog/${blogId}`)
   }
 
+  const scrollToFeaturedArticles = () => {
+    const featuredSection = document.getElementById('featured-articles')
+    if (featuredSection) {
+      featuredSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+
   return (
 <div
       className={`transition-colors duration-500 ${
@@ -178,7 +188,7 @@ export default function Blog() {
       
 
       {/* Section 1: Featured Blog Posts */}
-      <section className="py-20 border-b border-gray-200 dark:border-gray-700">
+      <section id="featured-articles" className="py-20 border-b border-gray-200 dark:border-gray-700">
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center mb-16">
             <ScrollAnimation animation="fade-in" stagger="scroll-stagger-1">
@@ -402,10 +412,9 @@ export default function Blog() {
               return (
                 <ScrollAnimation key={post.id} animation="fade-in" stagger={staggerClass}>
                   <article 
-                    className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-all duration-300 ${
+                    className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 ${
                       viewMode === 'list' ? 'flex' : ''
                     }`}
-                    onClick={() => handleBlogClick(post.id)}
                   >
                     {/* Image */}
                     <div className={`${
@@ -430,7 +439,7 @@ export default function Blog() {
                       </div>
                       
                       {/* Title */}
-                      <h3 className="text-xl font-bold mb-3 line-clamp-2 text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+                      <h3 className="text-xl font-bold mb-3 line-clamp-1 text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
                         {post.title}
                       </h3>
                       
@@ -467,7 +476,13 @@ export default function Blog() {
                       
                       {/* Read More Button */}
                       <div className="mt-4">
-                        <span className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 font-medium text-sm transition-colors">
+                        <span 
+                          className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 font-medium text-sm transition-colors cursor-pointer"
+                          onClick={(e) => {
+                            e.stopPropagation()
+                            scrollToFeaturedArticles()
+                          }}
+                        >
                           {t('blogPage.latestPosts.readMore')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
