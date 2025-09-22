@@ -121,7 +121,7 @@ export default function WeddingPlanning() {
         {/* Content */}
         <div className="relative z-10 px-6 max-w-4xl">
           <motion.h1 
-            className="text-5xl md:text-6xl font-extrabold leading-tight text-white mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-white mb-6"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -137,7 +137,7 @@ export default function WeddingPlanning() {
             {t('weddingPlanning.hero.description')}
           </motion.p>
           <motion.div 
-            className="flex gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -200,7 +200,7 @@ export default function WeddingPlanning() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className={`text-4xl md:text-5xl font-bold mb-6 whitespace-nowrap ${isDark ? "text-white" : "text-gray-900"}`}>
+              <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${isDark ? "text-white" : "text-gray-900"}`}>
                 {t('weddingPlanning.about.title')}
               </h2>
               
@@ -289,7 +289,7 @@ export default function WeddingPlanning() {
           </motion.div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {weddingServices.map((service, index) => (
               <motion.div 
                 key={index}

@@ -115,10 +115,10 @@ export default function Services() {
 
         {/* Content */}
         <div className="relative z-10 px-6 max-w-4xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-none text-white whitespace-nowrap">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-none text-white">
             {t('services.showcase.title')}
           </h1>
-          <p className="mt-6 text-xl text-white/80 max-w-3xl mx-auto whitespace-nowrap">
+          <p className="mt-6 text-xl text-white/80 max-w-3xl mx-auto">
             {t('services.showcase.subtitle')}
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
@@ -154,7 +154,7 @@ export default function Services() {
             <h2 className={`text-4xl md:text-5xl font-extrabold mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>
               {t('services.howItWorks.title')}
             </h2>
-            <p className={`text-xl max-w-3xl mx-auto whitespace-nowrap ${isDark ? "text-gray-300" : "text-gray-600"}`}>
+            <p className={`text-xl max-w-3xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
               {t('services.howItWorks.subtitle')}
             </p>
           </div>
@@ -285,13 +285,13 @@ export default function Services() {
             <h2 className={`text-4xl md:text-5xl font-extrabold mb-4 ${isDark ? "text-white" : "text-black"}`}>
               {t('services.eventCategories.title')}
       </h2>
-            <p className={`text-xl max-w-3xl mx-auto whitespace-nowrap ${isDark ? "text-gray-300" : "text-gray-600"}`}>
+            <p className={`text-xl max-w-3xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
               {t('services.eventCategories.subtitle')}
       </p>
             </div>
 
           {/* Service Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Wedding Planning */}
             <div className="service-card group relative overflow-hidden rounded-2xl service-card-black shadow-lg animate-service-card animate-service-delay-100">
               <div className="aspect-square">
@@ -478,7 +478,7 @@ export default function Services() {
           </div>
 
           {/* Packages Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Birthday Parties */}
             <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
               <div className="p-6 text-center">
@@ -769,7 +769,7 @@ export default function Services() {
         <div className="absolute inset-0 bg-black/60"></div>
         
         <div className="relative z-10 mx-auto max-w-6xl px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left Side - Text Content */}
             <div className="text-white">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">

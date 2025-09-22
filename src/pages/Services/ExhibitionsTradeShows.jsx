@@ -97,7 +97,7 @@ export default function ExhibitionsTradeShows() {
         {/* Content */}
         <div className="relative z-10 px-6 max-w-4xl">
           <motion.h1 
-            className="text-5xl md:text-6xl font-extrabold text-white mb-6 whitespace-nowrap"
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -105,7 +105,7 @@ export default function ExhibitionsTradeShows() {
             Showcasing Innovation Ideas
           </motion.h1>
           <motion.p 
-            className="text-xl text-white/90 mb-8 whitespace-nowrap"
+            className="text-xl text-white/90 mb-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -113,7 +113,7 @@ export default function ExhibitionsTradeShows() {
             Professional exhibition and trade show services that maximize your brand visibility
           </motion.p>
           <motion.div 
-            className="flex gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -272,7 +272,7 @@ export default function ExhibitionsTradeShows() {
           </motion.div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {exhibitionServices.map((service, index) => (
               <motion.div 
                 key={index}

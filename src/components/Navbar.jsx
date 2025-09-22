@@ -10,12 +10,13 @@ import {
   DropdownMenuTrigger,
 } from './dropdown-menu'
 import { logoutUser } from '../utils/auth'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, LogIn } from 'lucide-react'
 
 
 export default function Navbar({ user }) {
   const { t } = useTranslation()
   const [isDark, setIsDark] = useState(false)
+  const [isMobileOpen, setIsMobileOpen] = useState(false)
 
   useEffect(() => {
     // Check if 'dark' class is present on <html>
@@ -42,8 +43,8 @@ export default function Navbar({ user }) {
     <header
       className={`sticky top-0 z-50 border-b border-black/10 dark:border-white/10 transition-colors ${isDark ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}
     >
-      <nav className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-        {/* Logo - Fixed Left */}
+      <nav className="w-full max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        {/* Logo - Far Left */}
         <div className="flex-shrink-0">
           <a href="#hero" className="flex items-center gap-3">
             <img src="/Logo.jpg" alt="Logo" className="h-8 w-auto" />
@@ -51,6 +52,7 @@ export default function Navbar({ user }) {
           </a>
         </div>
 
+        {/* Navigation Menu - Center */}
         <ul className="hidden md:flex items-center gap-8">
           <li>
             <DropdownMenu>
@@ -128,16 +130,27 @@ export default function Navbar({ user }) {
             </button>
           </li>
         </ul>
-        {/* Right Side - Fixed */}
+
+        {/* Right Side Controls - Far Right */}
         <div className="flex items-center gap-4">
-          {/* Language Selector - Fixed Right */}
+          {/* Language Selector */}
           <LanguageSelector />
           
           {/* Theme Toggle */}
           <ThemeToggle />
+
+          {/* Login Icon */}
+          <button
+            onClick={() => navigate('/login')}
+            className="inline-flex items-center justify-center rounded-md border border-black/10 dark:border-white/10 p-2 hover:bg-black/5 dark:hover:bg-white/5"
+            aria-label="Login"
+            title={t('nav.login') || 'Login'}
+          >
+            <LogIn className="h-5 w-5" />
+          </button>
           
           {/* Mobile Menu Button */}
-          <button className="md:hidden inline-flex items-center justify-center rounded-md border border-black/10 dark:border-white/10 px-3 py-2 hover:bg-black/5 dark:hover:bg-white/5" aria-label="Menu">
+          <button onClick={() => setIsMobileOpen((v) => !v)} className="md:hidden inline-flex items-center justify-center rounded-md border border-black/10 dark:border-white/10 px-3 py-2 hover:bg-black/5 dark:hover:bg-white/5" aria-label="Menu" aria-expanded={isMobileOpen} aria-controls="mobile-nav">
             <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="3" y1="12" x2="21" y2="12"></line>
               <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -146,16 +159,42 @@ export default function Navbar({ user }) {
           </button>
 
           {/* User Avatar */}
-          <div className="h-9 w-9 rounded-full bg-purple-500 dark:bg-purple-600 text-white grid place-items-center font-semibold select-none">
+          <div className="hidden md:grid h-9 w-9 rounded-full bg-purple-500 dark:bg-purple-600 text-white place-items-center font-semibold select-none">
             {initials}
           </div>
           
-          {/* Logout Button - Right Corner */}
-          <button onClick={handleLogout} className="hover:text-purple-500 dark:hover:text-purple-400 transition-colors">
+          {/* Logout Button */}
+          <button onClick={handleLogout} className="hidden md:inline-flex hover:text-purple-500 dark:hover:text-purple-400 transition-colors">
             {t('nav.logout')}
           </button>
         </div>
       </nav>
+
+      {/* Mobile Navigation Panel */}
+      {isMobileOpen && (
+        <div id="mobile-nav" className="md:hidden border-t border-black/10 dark:border-white/10">
+          <div className="max-w-7xl mx-auto px-4 py-3 grid gap-3">
+            <button onClick={() => { navigate('/home'); setIsMobileOpen(false) }} className="text-left hover:text-purple-500 dark:hover:text-purple-400 transition-colors">
+              {t('nav.home1')}
+            </button>
+            <button onClick={() => { navigate('/home2'); setIsMobileOpen(false) }} className="text-left hover:text-purple-500 dark:hover:text-purple-400 transition-colors">
+              {t('nav.home2')}
+            </button>
+            <button onClick={() => { navigate('/about'); setIsMobileOpen(false) }} className="text-left hover:text-purple-500 dark:hover:text-purple-400 transition-colors">
+              {t('nav.about')}
+            </button>
+            <button onClick={() => { navigate('/services'); setIsMobileOpen(false) }} className="text-left hover:text-purple-500 dark:hover:text-purple-400 transition-colors">
+              {t('nav.services')}
+            </button>
+            <button onClick={() => { navigate('/blog'); setIsMobileOpen(false) }} className="text-left hover:text-purple-500 dark:hover:text-purple-400 transition-colors">
+              {t('nav.blog')}
+            </button>
+            <button onClick={() => { navigate('/contact'); setIsMobileOpen(false) }} className="text-left hover:text-purple-500 dark:hover:text-purple-400 transition-colors">
+              {t('nav.contact')}
+            </button>
+          </div>
+        </div>
+      )}
     </header>
   )
 }

@@ -53,7 +53,7 @@ export default function Home2() {
         <div className="relative z-10 mx-auto max-w-7xl px-4 h-full flex items-center justify-center">
           <div className="text-center">
             <motion.h1 
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white whitespace-nowrap"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -115,14 +115,16 @@ export default function Home2() {
             </motion.p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
             <motion.div
+              className="h-full"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="space-y-8">
+              <div className={`p-8 rounded-2xl shadow-xl h-full ${isDark ? 'bg-gray-700' : 'bg-white'}`}>
+                <div className="space-y-8">
                 <div className={`p-6 rounded-xl shadow-lg ${isDark ? 'bg-gray-700' : 'bg-white'}`}>
                   <h3 className="text-xl font-bold mb-3">{t('home2.showcase.features.comprehensive.title')}</h3>
                   <p className={isDark ? 'text-white' : 'text-gray-600'}>{t('home2.showcase.features.comprehensive.description')}</p>
@@ -137,40 +139,41 @@ export default function Home2() {
                   <h3 className="text-xl font-bold mb-3">{t('home2.showcase.features.scalability.title')}</h3>
                   <p className={isDark ? 'text-white' : 'text-gray-600'}>{t('home2.showcase.features.scalability.description')}</p>
                 </div>
+                </div>
               </div>
             </motion.div>
 
             <motion.div
-              className="relative"
+              className="relative h-full"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className={`p-8 rounded-2xl shadow-xl ${isDark ? 'bg-gray-700' : 'bg-white'}`}>
+              <div className={`p-8 rounded-2xl shadow-xl h-full ${isDark ? 'bg-gray-700' : 'bg-white'}`}>
                 <h3 className={`text-2xl font-bold mb-6 text-center ${isDark ? 'text-white' : 'text-black'}`}>{t('home2.showcase.highlights.title')}</h3>
                 <div className="space-y-4">
                   {[
-                    { 
-                      icon: <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></path><path fill="#000" d="M12 2c.896 0 1.764.118 2.59.339l-2.126 2.125A3 3 0 0 0 12.04 5H12a7 7 0 1 0 7 7v-.04q.29-.18.535-.425l2.126-2.125c.221.826.339 1.694.339 2.59c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m-.414 5.017c0 .851-.042 1.714.004 2.564l-.54.54a2 2 0 1 0 2.829 2.829l.54-.54c.85.046 1.712.004 2.564.004a5 5 0 1 1-5.397-5.397m6.918-4.89a1 1 0 0 1 .617.923v1.83h1.829a1 1 0 0 1 .707 1.707L18.12 10.12a1 1 0 0 1-.707.293H15l-1.828 1.829a1 1 0 0 1-1.415-1.415L13.586 9V6.586a1 1 0 0 1 .293-.708l3.535-3.535a1 1 0 0 1 1.09-.217"></path></g></svg>, 
-                      text: t('home2.showcase.highlights.precision') 
-                    },
-                    { icon: "⚡", text: t('home2.showcase.highlights.speed') },
-                    { icon: "🔒", text: t('home2.showcase.highlights.security') },
-                    { icon: "📊", text: t('home2.showcase.highlights.analytics') },
-                    { icon: "🌐", text: t('home2.showcase.highlights.global') },
-                    { icon: "💡", text: t('home2.showcase.highlights.innovation') }
-                  ].map((highlight, idx) => (
+                    t('home2.showcase.highlights.precision'),
+                    t('home2.showcase.highlights.speed'),
+                    t('home2.showcase.highlights.security'),
+                    t('home2.showcase.highlights.analytics'),
+                    t('home2.showcase.highlights.global'),
+                    t('home2.showcase.highlights.innovation'),
+                    t('home2.platform.features.reliability.title'),
+                    t('home2.platform.features.customization.title'),
+                    t('home2.platform.features.mobile.title')
+                  ].map((text, idx) => (
                     <motion.div
                       key={idx}
-                      className="flex items-center space-x-3"
+                      className="flex items-start space-x-3"
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.4, delay: idx * 0.1 }}
                       viewport={{ once: true }}
                     >
-                      <span className="text-2xl">{highlight.icon}</span>
-                      <span className={isDark ? 'text-white' : 'text-gray-700'}>{highlight.text}</span>
+                      <span className={`mt-2 w-2.5 h-2.5 rounded-full ${isDark ? 'bg-purple-400' : 'bg-purple-600'} ring-4 ${isDark ? 'ring-purple-400/10' : 'ring-purple-600/10'}`}></span>
+                      <span className={isDark ? 'text-white' : 'text-gray-700'}>{text}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -178,35 +181,17 @@ export default function Home2() {
             </motion.div>
           </div>
 
-          <motion.div 
-            className="text-center mt-12"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button 
-                onClick={() => navigate('/services')}
-                className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25'}`}
-              >
-                {t('home2.showcase.exploreButton')}
-              </button>
-              <button 
-                onClick={() => navigate('/contact')}
-                className={`border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm ${isDark ? 'border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white shadow-purple-400/25' : 'border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white shadow-purple-400/25'}`}
-              >
-                {t('home2.showcase.learnMoreButton')}
-              </button>
-            </div>
-          </motion.div>
+          
         </div>
       </section>
 
 
       {/* Event Management Platform Section */}
-      <section className={`py-24 ${isDark ? 'bg-gray-900' : 'bg-white'}`}>
-        <div className="mx-auto max-w-7xl px-4">
+      <section className={`relative overflow-hidden py-24 ${isDark ? 'bg-black text-white' : 'bg-purple-50 text-black'}`}>
+        <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-purple-900' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
+        <div className={`absolute -top-24 -right-24 w-96 h-96 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -bottom-24 -left-24 w-72 h-72 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl`}></div>
+        <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="text-center mb-16">
             <motion.h2 
               className={`text-4xl font-bold mb-4 ${isDark ? 'text-white' : 'text-black'}`}
@@ -218,7 +203,7 @@ export default function Home2() {
               {t('home2.platform.title')}
             </motion.h2>
             <motion.p 
-              className={`text-lg max-w-3xl mx-auto ${isDark ? 'text-white' : 'text-gray-600'}`}
+              className={`text-lg max-w-3xl mx-auto whitespace-nowrap ${isDark ? 'text-white' : 'text-gray-600'}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -240,21 +225,21 @@ export default function Home2() {
               
               <div className="space-y-4">
                 {[
-                  { icon: "🎯", text: t('home2.platform.comprehensive.features.eventPlanning') },
-                  { icon: "📊", text: t('home2.platform.comprehensive.features.analytics') },
-                  { icon: "🔒", text: t('home2.platform.comprehensive.features.security') },
-                  { icon: "🌐", text: t('home2.platform.comprehensive.features.integration') }
-                ].map((feature, idx) => (
+                  t('home2.platform.comprehensive.features.eventPlanning'),
+                  t('home2.platform.comprehensive.features.analytics'),
+                  t('home2.platform.comprehensive.features.security'),
+                  t('home2.platform.comprehensive.features.integration')
+                ].map((text, idx) => (
                   <motion.div
                     key={idx}
-                    className="flex items-center space-x-3"
+                    className="flex items-start space-x-3"
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.4, delay: idx * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    <span className="text-2xl">{feature.icon}</span>
-                    <span className={isDark ? 'text-white' : 'text-gray-700'}>{feature.text}</span>
+                    <span className={`mt-2 w-2.5 h-2.5 rounded-full ${isDark ? 'bg-purple-400' : 'bg-purple-600'} ring-4 ${isDark ? 'ring-purple-400/10' : 'ring-purple-600/10'}`}></span>
+                    <span className={isDark ? 'text-white' : 'text-gray-700'}>{text}</span>
                   </motion.div>
                 ))}
               </div>
@@ -268,12 +253,12 @@ export default function Home2() {
               viewport={{ once: true }}
             >
               <div className={`p-8 rounded-2xl shadow-xl ${isDark ? 'bg-gray-800' : 'bg-gray-50'}`}>
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {[
-                    { icon: "📱", title: t('home2.platform.features.mobile.title'), desc: t('home2.platform.features.mobile.desc') },
-                    { icon: "⚡", title: t('home2.platform.features.speed.title'), desc: t('home2.platform.features.speed.desc') },
-                    { icon: "🛡️", title: t('home2.platform.features.reliability.title'), desc: t('home2.platform.features.reliability.desc') },
-                    { icon: "🔧", title: t('home2.platform.features.customization.title'), desc: t('home2.platform.features.customization.desc') }
+                    { title: t('home2.platform.features.mobile.title'), desc: t('home2.platform.features.mobile.desc') },
+                    { title: t('home2.platform.features.speed.title'), desc: t('home2.platform.features.speed.desc') },
+                    { title: t('home2.platform.features.reliability.title'), desc: t('home2.platform.features.reliability.desc') },
+                    { title: t('home2.platform.features.customization.title'), desc: t('home2.platform.features.customization.desc') }
                   ].map((feature, idx) => (
                     <motion.div
                       key={idx}
@@ -283,7 +268,7 @@ export default function Home2() {
                       transition={{ duration: 0.4, delay: idx * 0.1 }}
                       viewport={{ once: true }}
                     >
-                      <div className="text-3xl mb-2">{feature.icon}</div>
+                      <div className="mx-auto mb-3 w-2.5 h-2.5 rounded-full bg-purple-600/80 dark:bg-purple-400/80 ring-4 ring-purple-600/10 dark:ring-purple-400/10"></div>
                       <h4 className={`font-semibold mb-1 ${isDark ? 'text-white' : 'text-black'}`}>{feature.title}</h4>
                       <p className={`text-sm ${isDark ? 'text-white' : 'text-gray-600'}`}>{feature.desc}</p>
                     </motion.div>
@@ -302,7 +287,7 @@ export default function Home2() {
             viewport={{ once: true }}
           >
             <h3 className={`text-2xl font-bold mb-8 ${isDark ? 'text-white' : 'text-black'}`}>{t('home2.platform.benefits.title')}</h3>
-            <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 { 
                   icon: "📈", 
@@ -340,14 +325,17 @@ export default function Home2() {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-24 bg-gradient-to-r from-purple-900 via-black to-purple-800 text-white">
-        <div className="mx-auto max-w-7xl px-4">
+      <section className={`relative overflow-hidden py-24 ${isDark ? 'bg-black text-white' : 'bg-purple-50 text-black'}`}>
+        <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-purple-900' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
+        <div className={`absolute -top-20 -right-20 w-80 h-80 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -bottom-20 -left-20 w-60 h-60 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl`}></div>
+        <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">{t('home2.statistics.title')}</h2>
-            <p className="text-lg text-gray-300">{t('home2.statistics.subtitle')}</p>
+            <h2 className={`text-4xl font-bold mb-4 ${isDark ? 'text-white' : 'text-black'}`}>{t('home2.statistics.title')}</h2>
+            <p className={`text-lg ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>{t('home2.statistics.subtitle')}</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { number: "50K+", label: t('home2.statistics.eventsCreated') },
               { number: "2M+", label: t('home2.statistics.ticketsSold') },
@@ -362,10 +350,10 @@ export default function Home2() {
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
                 viewport={{ once: true }}
               >
-                <div className="text-4xl md:text-5xl font-bold text-purple-400 mb-2">
+                <div className={`text-4xl md:text-5xl font-bold mb-2 ${isDark ? 'text-purple-400' : 'text-purple-600'}`}>
                   <Counter target={parseInt(stat.number.replace(/[^\d]/g, ''))} suffix={stat.number.replace(/\d/g, '')} />
                 </div>
-                <div className="text-lg text-gray-300">{stat.label}</div>
+                <div className={`${isDark ? 'text-gray-300' : 'text-gray-700'} text-lg`}>{stat.label}</div>
               </motion.div>
             ))}
           </div>

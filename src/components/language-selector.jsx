@@ -20,18 +20,15 @@ export function LanguageSelector({ variant = 'default' }) {
 
   const currentLanguageData = languages.find(lang => lang.code === currentLanguage) || languages[0];
   
-  // Different styles for different variants
-  const buttonStyles = variant === 'login' 
-    ? "inline-flex items-center gap-2 hover:text-white text-white/80 transition-colors px-3 py-2 rounded-md hover:bg-white/20"
-    : "inline-flex items-center gap-2 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors px-3 py-2 rounded-md hover:bg-black/5 dark:hover:bg-white/5";
+  // Icon-only outlined button to match ThemeToggle styling
+  const iconButtonClasses = "inline-flex items-center justify-center rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 dark:hover:text-gray-50 h-10 w-10 relative border border-gray-200 dark:border-gray-600 hover:border-gray-300 dark:hover:border-gray-500 hover:shadow-md";
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <button className={buttonStyles}>
-          <Globe className="h-4 w-4" />
-          <span className="hidden sm:inline">{currentLanguageData.flag}</span>
-          <span className="hidden md:inline">{t('common.language')}</span>
+        <button className={iconButtonClasses} title={t('common.language')}>
+          <Globe className="h-5 w-5" />
+          <span className="sr-only">{t('common.language')}</span>
         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-48">

@@ -25,7 +25,7 @@
     "viewDetails": "View Details"
   },
   "footer": {
-    "companyDescription": "Connecting businesses with top talent worldwide to get projects done efficiently and effectively.",
+    "companyDescription": "Connecting businesses with top talent worldwide to get projects done.",
     "quickLinks": "Quick Links",
     "forFreelancers": "For Freelancers",
     "contactUs": "Contact Us",
@@ -42,8 +42,8 @@
     "exhibitionsTradeShows": "Exhibitions & Trade Shows",
     "phone": "+192 123 4567",
     "email": "info@enkonix.in",
-    "address": "123 Enkonix Street, City, Country",
-    "copyright": "© 2025 FreelancerHub. All rights reserved."
+  "address": "123 Enkonix Street, City, Country",
+  "copyright": "© 2025 Stackly. All rights reserved."
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -280,7 +280,7 @@
     },
     "hero": {
       "title": "Event Management Platform",
-      "subtitle": "Discover, create, and manage extraordinary events with our comprehensive platform",
+      "subtitle": "Create and manage extraordinary events with our comprehensive platform",
       "createEvent": "Create Event",
       "browseEvents": "Browse Events"
     },
@@ -391,7 +391,7 @@
     },
     "cta": {
       "title": "Ready to Create Amazing Events?",
-      "subtitle": "Join thousands of event organizers who trust our platform to deliver exceptional experiences.",
+    "subtitle": "Join thousands of event organizers who trust our platform.",
       "getStarted": "Get Started Free",
       "scheduleDemo": "Schedule Demo"
     }
@@ -417,7 +417,7 @@
         "subtitle": "The principles that guide everything we do and shape our commitment to excellence",
         "innovation": {
           "title": "Innovation",
-          "description": "Continuously evolving our platform with cutting-edge technology to enhance event experiences and streamline event management processes."
+          "description": "Continuously evolving our platform with cutting-edge technology to enhance event experiences."
         },
         "excellence": {
           "title": "Excellence",
@@ -480,27 +480,27 @@
         "coordinator": {
           "role": "Event Coordinator",
           "name": "Sarah Johnson",
-          "description": "Sarah specializes in coordinating corporate events, weddings, and conferences. With 8+ years of experience, she ensures every detail is perfectly executed from planning to execution, delivering memorable experiences for all clients."
+          "description": "Sarah specializes in coordinating corporate events,\nweddings, and conferences. With 8+ years of experience,\nshe ensures every detail is perfectly executed."
         },
         "venue": {
           "role": "Venue Specialist",
           "name": "Michael Chen",
-          "description": "Michael manages venue selection and logistics for events of all sizes. He has established partnerships with 200+ premium venues and handles all contract negotiations and setup requirements with precision and expertise."
+          "description": "Michael manages venue selection and logistics\nfor events of all sizes. He has established partnerships\nwith 200+ premium venues worldwide."
         },
         "catering": {
           "role": "Catering Manager",
           "name": "David Rodriguez",
-          "description": "David oversees all catering operations and menu planning. He works with top chefs to create custom menus for dietary restrictions and cultural preferences, ensuring exceptional dining experiences for every occasion."
+          "description": "David oversees all catering operations and\nmenu planning. He works with top chefs to create\ncustom menus for every dietary preference."
         },
         "technical": {
           "role": "Technical Director",
           "name": "Emily Watson",
-          "description": "Emily handles all technical aspects including sound, lighting, AV equipment, and live streaming. She ensures flawless technical execution for both in-person and hybrid events, creating seamless experiences for all attendees."
+          "description": "Emily handles all technical aspects including\nsound, lighting, AV equipment, and live streaming.\nShe ensures flawless technical execution."
         },
         "marketing": {
           "role": "Marketing Specialist",
           "name": "Alex Thompson",
-          "description": "Alex develops comprehensive marketing strategies for events, managing social media campaigns, email marketing, and promotional materials. He increases event attendance by 40% on average through innovative marketing tactics."
+          "description": "Alex develops comprehensive marketing strategies\nfor events, managing social media campaigns and\nemail marketing. He increases attendance by 40%."
         }
       }
     },
@@ -3500,17 +3500,23 @@
       "exploreButton": "Explore",
       "watchDemo": "Watch Demo"
     },
+    
     "about": {
       "label": "About",
       "title": "Crafting Memorable Events, Every Time",
       "description1": "We are a passionate team of event planners dedicated to turning your vision into reality. From intimate gatherings to large-scale celebrations, we deliver seamless planning, creative designs, and unforgettable experiences.",
       "description2": "Our attention to detail and commitment to excellence ensures that every event we create becomes a cherished memory for you and your guests.",
       "learnMore": "Learn More",
-      "knowMoreButton": "Know More"
+      "knowMoreButton": "Know More",
+      "stats": {
+        "eventsManaged": "Events Managed",
+        "clientSatisfaction": "Client Satisfaction",
+        "citiesCovered": "Cities Covered"
+      }
     },
     "features": {
       "title": "Everything You Need to Manage Events",
-      "subtitle": "From planning to execution, our platform provides all the tools need to create successful events",
+      "subtitle": "Our platform provides all the tools you need to create successful events",
       "eventCreation": {
         "title": "Event Creation",
         "description": "Create and customize events with our intuitive drag-and-drop builder"
@@ -3568,7 +3574,7 @@
     },
     "testimonials": {
       "title": "What Our Customers Say",
-      "subtitle": "Join thousands of event organizers who trust our platform to deliver exceptional experiences",
+      "subtitle": "Join thousands of event organizers who trust our platform",
       "testimonial1": {
         "content": "This platform has revolutionized how we manage our events. The features are intuitive and the support is outstanding.",
         "name": "Sarah Johnson",
@@ -3590,10 +3596,12 @@
     },
     "cta": {
       "title": "Ready to Create Your Next Event?",
-      "subtitle": "Join thousands of event organizers who trust our platform to deliver exceptional experiences",
+    "subtitle": "Join thousands of event organizers who trust our platform",
       "startFreeTrial": "Start Free Trial",
       "scheduleDemo": "Schedule Demo",
-      "connectButton": "Connect"
+      "connectButton": "Connect",
+      "primaryButton": "Get Started Today",
+      "secondaryButton": "Contact Us"
     }
   },
   "blogPost1": {

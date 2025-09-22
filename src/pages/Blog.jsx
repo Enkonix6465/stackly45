@@ -156,7 +156,7 @@ export default function Blog() {
   {/* Content */}
   <div className="relative z-10 px-6 max-w-4xl">
     <ScrollAnimation animation="fade-in" stagger="scroll-stagger-1">
-      <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-white">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-white">
         {t('blogPage.showcase.title')}
       </h1>
     </ScrollAnimation>
@@ -168,7 +168,7 @@ export default function Blog() {
     </ScrollAnimation>
     
     <ScrollAnimation animation="fade-in" stagger="scroll-stagger-4">
-      <div className="mt-8 flex gap-4 justify-center">
+      <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
         {/* Primary Button */}
         <a
           href="/contact"
@@ -207,7 +207,7 @@ export default function Blog() {
             </ScrollAnimation>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => {
               // Create staggered delays for each blog card
               const staggerClasses = ['scroll-stagger-3', 'scroll-stagger-4', 'scroll-stagger-5'];
@@ -253,7 +253,7 @@ export default function Blog() {
         isDark ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}>
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left Column - Text Content */}
             <div className="space-y-8 h-full flex flex-col justify-between">
               <div className="space-y-8">
@@ -410,7 +410,7 @@ export default function Blog() {
           {/* Posts Grid/List */}
           <div className={`${
             viewMode === 'grid' 
-              ? 'grid md:grid-cols-2 lg:grid-cols-3 gap-8' 
+              ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8' 
               : 'space-y-6'
           }`}>
             {latestPosts.map((post, index) => {
