@@ -360,26 +360,62 @@ export default function Home2() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-white text-black">
-        <div className="mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">{t('home2.cta.title')}</h2>
-          <p className="text-xl text-gray-600 mb-8">
-            {t('home2.cta.subtitle')}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
-              onClick={() => navigate('/contact')}
-              className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25'}`}
+      {/* CTA Section (Alternate Template) */}
+      <section className={`relative overflow-hidden py-24 ${isDark ? 'bg-gradient-to-br from-gray-900 via-gray-950 to-black text-white' : 'bg-gradient-to-br from-purple-50 via-white to-pink-50 text-black'}`}>
+        {/* Skewed band */}
+        <div className={`absolute inset-x-0 top-1/2 -translate-y-1/2 h-64 -skew-y-3 ${isDark ? 'bg-purple-500/5' : 'bg-purple-200/20'}`}></div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Copy + Buttons + Perks */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
             >
-              {t('home2.cta.getStarted')}
-            </button>
-            <button 
-              onClick={() => navigate('/contact')}
-              className={`border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm ${isDark ? 'border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white shadow-purple-400/25' : 'border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white shadow-purple-400/25'}`}
+              <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${isDark ? 'text-white' : 'text-black'}`}>{t('home2.cta.title')}</h2>
+              <p className={`text-lg md:text-xl mb-8 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>{t('home2.cta.subtitle')}</p>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button
+                  onClick={() => navigate('/contact')}
+                  className={`px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 ${isDark ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25' : 'bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25'}`}
+                >
+                  {t('home2.cta.getStarted')}
+                </button>
+                <button
+                  onClick={() => navigate('/contact')}
+                  className={`px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 border backdrop-blur-sm hover:-translate-y-1 hover:scale-105 ${isDark ? 'border-purple-400 text-purple-300 hover:bg-purple-400/10' : 'border-purple-400 text-purple-600 hover:bg-purple-50'}`}
+                >
+                  {t('home2.cta.scheduleDemo')}
+                </button>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-3">
+                <span className={`px-3 py-1 rounded-full text-xs ${isDark ? 'bg-white/10 text-white/80' : 'bg-purple-100 text-purple-700'}`}>No credit card required</span>
+                <span className={`px-3 py-1 rounded-full text-xs ${isDark ? 'bg-white/10 text-white/80' : 'bg-purple-100 text-purple-700'}`}>Free onboarding</span>
+                <span className={`px-3 py-1 rounded-full text-xs ${isDark ? 'bg-white/10 text-white/80' : 'bg-purple-100 text-purple-700'}`}>24/7 support</span>
+              </div>
+            </motion.div>
+
+            {/* Right: Image Illustration */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
             >
-              {t('home2.cta.scheduleDemo')}
-            </button>
+              <div className={`relative overflow-hidden rounded-2xl shadow-2xl ${isDark ? 'ring-1 ring-white/10 bg-white/5' : 'ring-1 ring-black/5 bg-white'}`}>
+                <img
+                  src="/images/hero.jpg"
+                  alt="Event showcase"
+                  className="w-full h-full object-cover max-h-[360px]"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
