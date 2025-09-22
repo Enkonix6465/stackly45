@@ -30,6 +30,7 @@ export default function Footer() {
             <div className="flex gap-3">
               <a 
                 href="https://www.facebook.com/" 
+                target="_blank" rel="noopener noreferrer"
                 className={`w-10 h-10 rounded-full flex items-center justify-center ${isDark ? 'bg-gray-800' : 'bg-gray-100'} transition-all duration-300 hover:scale-105`}
                 aria-label="Facebook"
               >
@@ -39,6 +40,7 @@ export default function Footer() {
               </a>
               <a 
                 href="https://x.com/" 
+                target="_blank" rel="noopener noreferrer"
                 className={`w-10 h-10 rounded-full flex items-center justify-center ${isDark ? 'bg-gray-800' : 'bg-gray-100'} transition-all duration-300 hover:scale-105`}
                 aria-label="Twitter"
               >
@@ -48,6 +50,7 @@ export default function Footer() {
               </a>
               <a 
                 href="https://www.linkedin.com/" 
+                target="_blank" rel="noopener noreferrer"
                 className={`w-10 h-10 rounded-full flex items-center justify-center ${isDark ? 'bg-gray-800' : 'bg-gray-100'} transition-all duration-300 hover:scale-105`}
                 aria-label="LinkedIn"
               >
