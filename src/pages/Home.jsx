@@ -240,7 +240,7 @@ export default function Home() {
       <Navbar user={user} />
 
       {/* Showcase Section */}
-      <section className="relative overflow-hidden h-screen flex items-center justify-center text-center">
+      <section className="relative overflow-hidden h-[100vh] min-h-[600px] flex items-center justify-center text-center">
         {/* Background Video */}
         <video
           autoPlay
@@ -259,7 +259,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 px-6 max-w-4xl">
           <ScrollAnimation animation="fade-in-up" stagger="scroll-stagger-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white whitespace-nowrap leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               {t('home1.showcase.mainTitle')}
             </h1>
           </ScrollAnimation>
@@ -280,7 +280,7 @@ export default function Home() {
               </button>
               <button 
                 onClick={() => navigate('/services')}
-                className={`border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm ${isDark ? 'border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white shadow-purple-400/25' : 'border-white text-white hover:bg-white hover:text-purple-600 shadow-white/20'}`}
+                className={`border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm ${isDark ? 'border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white shadow-purple-400/25' : 'border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white shadow-purple-400/25'}`}
               >
                 {t('home1.showcase.exploreButton')}
               </button>
@@ -291,9 +291,9 @@ export default function Home() {
 
       {/* About Us Section */}
       <section className={`relative ${isDark ? 'bg-black text-white' : 'bg-purple-50 text-black'} overflow-hidden py-20`}>
-        <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-indigo-950' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
-        <div className={`absolute -top-20 -right-20 w-80 h-80 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl`}></div>
-        <div className={`absolute -bottom-20 -left-20 w-60 h-60 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl`}></div>
+        <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-purple-900' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
+        <div className={`absolute -top-10 -right-10 sm:-top-20 sm:-right-20 w-40 h-40 sm:w-80 sm:h-80 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -bottom-10 -left-10 sm:-bottom-20 sm:-left-20 w-30 h-30 sm:w-60 sm:h-60 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl`}></div>
         <div className="relative z-10 container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
@@ -325,7 +325,7 @@ export default function Home() {
                   </button>
                   <button
                     onClick={() => navigate('/contact')}
-                    className={`px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:-translate-y-1 hover:scale-105 border ${isDark ? 'border-gray-700 text-gray-200 hover:bg-gray-800' : 'border-gray-300 text-gray-800 hover:bg-white'}`}
+                    className={`border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm ${isDark ? 'border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white shadow-purple-400/25' : 'border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white shadow-purple-400/25'}`}
                   >
                     {t('home1.showcase.exploreButton')}
                   </button>
@@ -352,7 +352,7 @@ export default function Home() {
             {/* Visual */}
             <ScrollAnimation animation="fade-left" stagger="scroll-stagger-2">
               <div className="relative">
-                <div className="relative h-[480px]">
+                <div className="relative h-[300px] sm:h-[400px] lg:h-[480px]">
                   <div className={`absolute inset-0 rounded-2xl overflow-hidden shadow-2xl ${isDark ? 'ring-1 ring-white/10' : 'ring-1 ring-black/10'}`}>
                     <img
                       src="/images/Home1.jpg"
@@ -360,14 +360,14 @@ export default function Home() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="absolute -bottom-8 -right-6 w-40 h-40 rounded-xl overflow-hidden shadow-xl">
+                  <div className="absolute -bottom-4 -right-3 sm:-bottom-8 sm:-right-6 w-20 h-20 sm:w-40 sm:h-40 rounded-xl overflow-hidden shadow-xl">
                     <img
                       src="/images/CorporateEvents.jpg"
                       alt="Corporate event"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="absolute -top-6 -left-6 w-32 h-32 rounded-xl overflow-hidden shadow-xl">
+                  <div className="absolute -top-3 -left-3 sm:-top-6 sm:-left-6 w-16 h-16 sm:w-32 sm:h-32 rounded-xl overflow-hidden shadow-xl">
                     <img
                       src="/images/Garden Wedding.jpg"
                       alt="Wedding event"
@@ -395,7 +395,7 @@ export default function Home() {
               </h2>
             </ScrollAnimation>
             <ScrollAnimation animation="fade-in" stagger="scroll-stagger-2">
-              <p className={`text-xl mx-auto whitespace-nowrap ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+              <p className={`text-xl mx-auto ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                 {t('home1.features.subtitle')}
               </p>
             </ScrollAnimation>
@@ -478,9 +478,9 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <section className={`relative ${isDark ? 'bg-black text-white' : 'bg-purple-50 text-black'} overflow-hidden py-20`}>
-        <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-indigo-950' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
-        <div className={`absolute -top-24 -right-24 w-96 h-96 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl animate-pulse`}></div>
-        <div className={`absolute -bottom-24 -left-24 w-72 h-72 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl animate-pulse`}></div>
+        <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-purple-900' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
+        <div className={`absolute -top-12 -right-12 sm:-top-24 sm:-right-24 w-48 h-48 sm:w-96 sm:h-96 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl animate-pulse`}></div>
+        <div className={`absolute -bottom-12 -left-12 sm:-bottom-24 sm:-left-24 w-36 h-36 sm:w-72 sm:h-72 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl animate-pulse`}></div>
         <div className="relative z-10 container mx-auto px-6">
           <ScrollAnimation animation="fade-in" stagger="scroll-stagger-1">
           <div className="text-center mb-16">
@@ -548,13 +548,13 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <button
                     onClick={() => navigate('/services')}
-                    className="px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 bg-purple-600 hover:bg-purple-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105"
+                    className="px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25"
                   >
                     {t('home1.cta.primaryButton')}
                   </button>
                   <button
                     onClick={() => navigate('/contact')}
-                    className="px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-sm shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105"
+                    className="border-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 backdrop-blur-sm border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white shadow-purple-400/25"
                   >
                     {t('home1.cta.secondaryButton')}
                   </button>
@@ -565,7 +565,7 @@ export default function Home() {
         </div>
 
         {/* Dots navigation */}
-        <div className="absolute bottom-4 left-0 right-0 z-10 flex items-center justify-center gap-2 px-6">
+        <div className="absolute bottom-6 left-0 right-0 z-10 flex items-center justify-center gap-2 px-6">
           {ctaImages.map((_, idx) => (
             <button
               key={idx}

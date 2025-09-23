@@ -587,7 +587,7 @@ export default function About() {
         className={`relative ${isDark ? 'bg-black text-white' : 'bg-purple-50 text-black'} overflow-hidden py-24`}
       >
         {/* Background decorative elements */}
-        <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-indigo-950' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
+        <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-purple-900' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
         <div className={`absolute -top-20 -right-20 w-80 h-80 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl`}></div>
         <div className={`absolute -bottom-20 -left-20 w-60 h-60 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl`}></div>
         

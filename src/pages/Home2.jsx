@@ -37,7 +37,7 @@ export default function Home2() {
       <Navbar user={user} />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden h-screen text-white">
+      <section className="relative overflow-hidden h-[100vh] min-h-[600px] text-white">
         {/* Video Background */}
         <video
           autoPlay
@@ -61,7 +61,7 @@ export default function Home2() {
               {t('home2.hero.title')}
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto whitespace-nowrap"
+              className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -105,7 +105,7 @@ export default function Home2() {
               {t('home2.showcase.title')}
             </motion.h2>
             <motion.p 
-              className={`text-lg max-w-3xl mx-auto whitespace-nowrap ${isDark ? 'text-white' : 'text-gray-600'}`}
+              className={`text-lg max-w-3xl mx-auto ${isDark ? 'text-white' : 'text-gray-600'}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -189,8 +189,8 @@ export default function Home2() {
       {/* Event Management Platform Section */}
       <section className={`relative overflow-hidden py-24 ${isDark ? 'bg-black text-white' : 'bg-purple-50 text-black'}`}>
         <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-purple-900' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
-        <div className={`absolute -top-24 -right-24 w-96 h-96 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl`}></div>
-        <div className={`absolute -bottom-24 -left-24 w-72 h-72 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -top-12 -right-12 sm:-top-24 sm:-right-24 w-48 h-48 sm:w-96 sm:h-96 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -bottom-12 -left-12 sm:-bottom-24 sm:-left-24 w-36 h-36 sm:w-72 sm:h-72 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl`}></div>
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="text-center mb-16">
             <motion.h2 
@@ -203,7 +203,7 @@ export default function Home2() {
               {t('home2.platform.title')}
             </motion.h2>
             <motion.p 
-              className={`text-lg max-w-3xl mx-auto whitespace-nowrap ${isDark ? 'text-white' : 'text-gray-600'}`}
+              className={`text-lg max-w-3xl mx-auto ${isDark ? 'text-white' : 'text-gray-600'}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -327,8 +327,8 @@ export default function Home2() {
       {/* Statistics Section */}
       <section className={`relative overflow-hidden py-24 ${isDark ? 'bg-black text-white' : 'bg-purple-50 text-black'}`}>
         <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-purple-900' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
-        <div className={`absolute -top-20 -right-20 w-80 h-80 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl`}></div>
-        <div className={`absolute -bottom-20 -left-20 w-60 h-60 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -top-10 -right-10 sm:-top-20 sm:-right-20 w-40 h-40 sm:w-80 sm:h-80 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -bottom-10 -left-10 sm:-bottom-20 sm:-left-20 w-30 h-30 sm:w-60 sm:h-60 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl`}></div>
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="text-center mb-16">
             <h2 className={`text-4xl font-bold mb-4 ${isDark ? 'text-white' : 'text-black'}`}>{t('home2.statistics.title')}</h2>

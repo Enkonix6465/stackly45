@@ -462,17 +462,21 @@ export default function Services() {
       {/* Event Packages Section */}
  <section
         id="packages"
-      className={`py-20 transition-colors duration-300 ${
-          isDark ? "bg-gray-900 text-white" : "bg-white text-black"
+        className={`relative overflow-hidden py-20 transition-colors duration-300 ${
+          isDark ? "bg-black text-white" : "bg-purple-50 text-black"
         }`}
       >
+        <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-purple-900' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
+        <div className={`absolute -top-10 -right-10 sm:-top-20 sm:-right-20 w-40 h-40 sm:w-80 sm:h-80 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -bottom-10 -left-10 sm:-bottom-20 sm:-left-20 w-30 h-30 sm:w-60 sm:h-60 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl`}></div>
+        <div className="relative z-10">
         <div className="mx-auto max-w-7xl px-4">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className={`text-4xl md:text-5xl font-extrabold mb-4 ${isDark ? "text-white" : "text-black"}`}>
+            <h2 className={`text-4xl font-bold mb-4 ${isDark ? "text-white" : "text-black"}`}>
               {t('services.eventPackages.title')}
             </h2>
-            <p className={`text-xl max-w-3xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
+            <p className={`text-lg ${isDark ? "text-gray-300" : "text-gray-600"}`}>
               {t('services.eventPackages.subtitle')}
             </p>
           </div>
@@ -566,6 +570,7 @@ export default function Services() {
               </div>
               </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -780,7 +785,7 @@ export default function Services() {
               </p>
               <button
                 onClick={() => navigate('/contact')}
-                className="bg-white text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-300"
+                className="px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 bg-purple-600 text-white hover:bg-purple-700 shadow-purple-500/25"
               >
                 {t('services.servicesCta.button')}
               </button>

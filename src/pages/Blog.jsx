@@ -196,14 +196,20 @@ export default function Blog() {
       
 
       {/* Section 1: Featured Blog Posts */}
-      <section id="featured-articles" className="py-20 border-b border-gray-200 dark:border-gray-700">
+      <section id="featured-articles" className={`relative overflow-hidden py-20 transition-colors duration-300 ${
+        isDark ? "bg-black text-white" : "bg-purple-50 text-black"
+      }`}>
+        <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-purple-900' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
+        <div className={`absolute -top-10 -right-10 sm:-top-20 sm:-right-20 w-40 h-40 sm:w-80 sm:h-80 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -bottom-10 -left-10 sm:-bottom-20 sm:-left-20 w-30 h-30 sm:w-60 sm:h-60 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl`}></div>
+        <div className="relative z-10">
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center mb-16">
             <ScrollAnimation animation="fade-in" stagger="scroll-stagger-1">
-              <h2 className="text-3xl font-bold mb-4">{t('blogPage.featuredArticles.title')}</h2>
+              <h2 className={`text-4xl font-bold mb-4 ${isDark ? "text-white" : "text-black"}`}>{t('blogPage.featuredArticles.title')}</h2>
             </ScrollAnimation>
             <ScrollAnimation animation="fade-in" stagger="scroll-stagger-2">
-              <p className={`${isDark ? 'text-white' : 'text-black'}`}>{t('blogPage.featuredArticles.subtitle')}</p>
+              <p className={`text-lg ${isDark ? "text-gray-300" : "text-gray-600"}`}>{t('blogPage.featuredArticles.subtitle')}</p>
             </ScrollAnimation>
           </div>
           
@@ -245,6 +251,7 @@ export default function Blog() {
               );
             })}
           </div>
+        </div>
         </div>
       </section>
 
@@ -514,19 +521,23 @@ export default function Blog() {
 
 
       {/* Section 5: Awesome Team */}
-      <section className={`py-20 transition-colors duration-500 ${
-        isDark ? 'bg-gray-100 text-gray-900' : 'bg-gray-100 text-gray-900'
+      <section className={`relative overflow-hidden py-20 transition-colors duration-300 ${
+        isDark ? "bg-black text-white" : "bg-purple-50 text-black"
       }`}>
+        <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-purple-900' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
+        <div className={`absolute -top-10 -right-10 sm:-top-20 sm:-right-20 w-40 h-40 sm:w-80 sm:h-80 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -bottom-10 -left-10 sm:-bottom-20 sm:-left-20 w-30 h-30 sm:w-60 sm:h-60 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl`}></div>
+        <div className="relative z-10">
         <div className="mx-auto max-w-7xl px-6">
           {/* Heading */}
-          <div className="mb-16">
+          <div className="text-center mb-16">
             <ScrollAnimation animation="fade-in" stagger="scroll-stagger-1">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className={`text-4xl font-bold mb-4 ${isDark ? "text-white" : "text-black"}`}>
                 {t('blogPage.awesomeAuthors.title')}
               </h2>
             </ScrollAnimation>
             <ScrollAnimation animation="fade-in" stagger="scroll-stagger-2">
-              <p className="text-lg text-gray-600 max-w-2xl">
+              <p className={`text-lg ${isDark ? "text-gray-300" : "text-gray-600"}`}>
                 {t('blogPage.awesomeAuthors.subtitle')}
               </p>
             </ScrollAnimation>
@@ -576,12 +587,12 @@ export default function Blog() {
                     </div>
                     
                     {/* Name */}
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    <h3 className={`text-xl font-bold mb-2 ${isDark ? "text-white" : "text-black"}`}>
                       {member.name}
                     </h3>
                     
                     {/* Separator Line */}
-                    <div className="w-12 h-0.5 bg-gray-300 mx-auto mb-3"></div>
+                    <div className={`w-12 h-0.5 mx-auto mb-3 ${isDark ? "bg-gray-400" : "bg-gray-300"}`}></div>
                     
                     {/* Role Tag */}
                     <div className="mb-4">
@@ -591,7 +602,7 @@ export default function Blog() {
                     </div>
                     
                     {/* Bio */}
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className={`text-sm leading-relaxed ${isDark ? "text-gray-300" : "text-gray-600"}`}>
                       {member.bio}
                     </p>
                   </div>
@@ -599,6 +610,7 @@ export default function Blog() {
               );
             })}
           </div>
+        </div>
         </div>
       </section>
 

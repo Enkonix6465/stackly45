@@ -9,7 +9,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from './dropdown-menu'
-import { logoutUser } from '../utils/auth'
 import { ChevronDown, LogIn } from 'lucide-react'
 
 
@@ -28,12 +27,6 @@ export default function Navbar({ user }) {
     return () => observer.disconnect()
   }, [])
 
-  const handleLogout = () => {
-    // Clear user session from localStorage
-    logoutUser()
-    // Navigate to login page using React Router
-    navigate('/login')
-  }
 
   const navigate = useNavigate()
   const initials = user ? `${user.firstName?.[0] || ''}${user.lastName?.[0] || ''}`.toUpperCase() : 'U'
@@ -158,15 +151,21 @@ export default function Navbar({ user }) {
             </svg>
           </button>
 
-          {/* User Avatar */}
+          {/* Mobile User Avatar - Login Button */}
+          <button
+            onClick={() => navigate('/login')}
+            className="md:hidden grid h-9 w-9 rounded-full bg-purple-500 dark:bg-purple-600 text-white place-items-center font-semibold select-none hover:bg-purple-600 dark:hover:bg-purple-700 transition-colors"
+            aria-label="Login"
+            title={t('nav.login') || 'Login'}
+          >
+            JM
+          </button>
+
+          {/* Desktop User Avatar */}
           <div className="hidden md:grid h-9 w-9 rounded-full bg-purple-500 dark:bg-purple-600 text-white place-items-center font-semibold select-none">
             {initials}
           </div>
           
-          {/* Logout Button */}
-          <button onClick={handleLogout} className="hidden md:inline-flex hover:text-purple-500 dark:hover:text-purple-400 transition-colors">
-            {t('nav.logout')}
-          </button>
         </div>
       </nav>
 

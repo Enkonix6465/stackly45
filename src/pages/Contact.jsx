@@ -358,17 +358,23 @@ export default function Contact() {
       </section>
 
       {/* FAQ Section */}
-      <section className={`py-20 ${isDark ? 'bg-gray-800' : 'bg-white'}`}>
+      <section className={`relative overflow-hidden py-20 transition-colors duration-300 ${
+        isDark ? "bg-black text-white" : "bg-purple-50 text-black"
+      }`}>
+        <div className={`absolute inset-0 ${isDark ? 'bg-gradient-to-br from-purple-950 via-black to-purple-900' : 'bg-gradient-to-br from-purple-100 via-purple-50 to-purple-200'}`}></div>
+        <div className={`absolute -top-10 -right-10 sm:-top-20 sm:-right-20 w-40 h-40 sm:w-80 sm:h-80 ${isDark ? 'bg-purple-500/10' : 'bg-purple-400/20'} rounded-full blur-3xl`}></div>
+        <div className={`absolute -bottom-10 -left-10 sm:-bottom-20 sm:-left-20 w-30 h-30 sm:w-60 sm:h-60 ${isDark ? 'bg-purple-500/5' : 'bg-purple-400/10'} rounded-full blur-3xl`}></div>
+        <div className="relative z-10">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <ScrollAnimation animation="fade-in" stagger="scroll-stagger-1">
-                <h2 className={`text-4xl md:text-5xl font-bold mb-4 ${isDark ? 'text-white' : 'text-black'}`}>
+                <h2 className={`text-4xl font-bold mb-4 ${isDark ? 'text-white' : 'text-black'}`}>
                   {t('contact.faq.title')}
                 </h2>
               </ScrollAnimation>
               <ScrollAnimation animation="fade-in" stagger="scroll-stagger-2">
-                <p className={`text-xl max-w-3xl mx-auto ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                <p className={`text-lg ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                   {t('contact.faq.subtitle')}
                 </p>
               </ScrollAnimation>
@@ -420,6 +426,7 @@ export default function Contact() {
             </div>
 
           </div>
+        </div>
         </div>
       </section>
 
