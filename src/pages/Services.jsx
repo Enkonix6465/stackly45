@@ -171,8 +171,17 @@ export default function Services() {
                   
                   {/* Icon */}
                   <div className="w-16 h-16 mx-auto mb-6 bg-purple-100 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 24 24">
+                      <g fill="none">
+                        <path fill="#66e1ff" d="M12.556 11.333a6.54 6.54 0 0 0 2.79 1.08v2.936c.479-.478 3.348-2.869 3.826-3.31a5.75 5.75 0 0 0 3.825-5.297a5.99 5.99 0 0 0-6.216-5.738c-5.02 0-8.634 5.5-4.225 10.329"></path>
+                        <path fill="#c2f3ff" d="M16.782 2.917a6.095 6.095 0 0 1 6.13 4.782a5.4 5.4 0 0 0 .086-.957a5.99 5.99 0 0 0-6.216-5.738c-3.777 0-6.756 3.111-6.12 6.706a6.09 6.09 0 0 1 6.12-4.793"></path>
+                        <path fill="#e3e3e3" d="M1.002 23a6.695 6.695 0 0 1 13.388 0z"></path>
+                        <path fill="#fff" d="M7.696 16.306A6.694 6.694 0 0 0 1.002 23h6.694z"></path>
+                        <path fill="#e3e3e3" d="M7.696 14.871a4.064 4.064 0 1 0 0-8.128a4.064 4.064 0 0 0 0 8.128"></path>
+                        <path fill="#fff" d="M7.696 14.871a4.065 4.065 0 0 1 0-8.129z"></path>
+                        <path stroke="#191919" strokeLinecap="round" strokeLinejoin="round" d="M7.696 14.871a4.064 4.064 0 1 0 0-8.128a4.064 4.064 0 0 0 0 8.128M1.002 23a6.695 6.695 0 0 1 13.388 0zm12.89-10.965c.469.183.957.311 1.455.382v2.936c.478-.478 3.347-2.869 3.825-3.31a5.75 5.75 0 0 0 3.826-5.297a5.99 5.99 0 0 0-6.216-5.742a6.2 6.2 0 0 0-5.855 3.826" strokeWidth={1}></path>
+                        <path stroke="#191919" d="M13.677 7.55a.24.24 0 0 1 0-.479m0 .479a.24.24 0 0 0 0-.479m3.108.479a.24.24 0 0 1 0-.479m0 .479a.24.24 0 0 0 0-.479m3.108.479a.24.24 0 0 1 0-.479m0 .479a.24.24 0 0 0 0-.479" strokeWidth={1}></path>
+                      </g>
                     </svg>
                   </div>
                   
@@ -197,8 +206,15 @@ export default function Services() {
                   
                   {/* Icon */}
                   <div className="w-16 h-16 mx-auto mb-6 bg-purple-100 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 64 64">
+                      <path fill="#93a2aa" d="M36.6 15.1c-1.7 2.6-6.1 5.3-10 7.3c.2.2.6.8.8.8c1.1-.5 2.2-.9 3.3-1.4c2.2-1 4.4-2.3 6.4-3.8c4-3.2 5.5-12.8 8.4-13c1.7 0 3.3 2.5 4.5 3.6l1.7-1.7c.1-.1-1.3-1.4-1.4-1.5c-1.7-1.7-3.7-3.5-6.4-2.5c-3.6 1.4-5.3 9.3-7.3 12.2m9.3-10s.1 0 0 0m-1.3.2q-.15 0 0 0M2.3 60.9c-.3.4-.4.8-.2 1s.7.1 1-.2L5.5 60L4 58.5z"></path>
+                      <g fill="#42ade2">
+                        <path d="m28.3 26.3l9.4 9.4l23.4-25l-7.8-7.8z"></path>
+                        <path d="m9.372 46.795l19.729-19.728l7.778 7.778L17.15 54.573z"></path>
+                      </g>
+                      <path fill="#c7d3d8" d="m3.2 57.7l3.1 3.1l10.9-6.2l-7.8-7.8zm28-34.3l9.4 9.4l-2.9 2.9l-9.4-9.4z"></path>
+                      <path fill="#42ade2" d="m53.8 3.4l6.8 6.8c1.9-1.9 1.9-4.9 0-6.8s-4.9-1.9-6.8 0"></path>
+                      <path fill="#c7d3d8" d="m51.953 3.748l1.414-1.414l8.344 8.344l-1.414 1.414z"></path>
                     </svg>
                   </div>
                   
@@ -223,8 +239,11 @@ export default function Services() {
                   
                   {/* Icon */}
                   <div className="w-16 h-16 mx-auto mb-6 bg-purple-100 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 48 48">
+                      <g fill="#2f88ff" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth={4}>
+                        <path d="M24 20C27.866 20 31 16.866 31 13C31 9.13401 27.866 6 24 6C20.134 6 17 9.13401 17 13C17 16.866 20.134 20 24 20Z"></path>
+                        <path d="M6 40.8V42H42V40.8C42 36.3196 42 34.0794 41.1281 32.3681C40.3611 30.8628 39.1372 29.6389 37.6319 28.8719C35.9206 28 33.6804 28 29.2 28H18.8C14.3196 28 12.0794 28 10.3681 28.8719C8.86278 29.6389 7.63893 30.8628 6.87195 32.3681C6 34.0794 6 36.3196 6 40.8Z"></path>
+                      </g>
                     </svg>
                   </div>
                   
@@ -249,8 +268,11 @@ export default function Services() {
                   
                   {/* Icon */}
                   <div className="w-16 h-16 mx-auto mb-6 bg-purple-100 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 48 48">
+                      <g fill="none" fillRule="evenodd" strokeWidth={3} clipRule="evenodd">
+                        <path fill="#8fbffa" d="M43.696 9.135c.98 1.336.762 3.135-.15 4.518c-8.535 12.93-14.682 20.785-18.083 24.85c-1.687 2.015-4.617 2.163-6.525.354A165 165 0 0 1 4.955 23.794c-1.21-1.483-1.46-3.576-.282-5.085c1.024-1.312 2.193-2.438 3.25-3.33c1.753-1.48 4.284-1.144 5.86.524c4.863 5.152 7.794 8.75 7.794 8.75s4.818-7.04 12.548-17.87c1.197-1.677 3.33-2.458 5.132-1.459c1.447.803 3.129 2.025 4.439 3.81Z"></path>
+                        <path stroke="#2859c5" strokeLinecap="round" strokeLinejoin="round" d="M43.696 9.135c.98 1.336.762 3.135-.15 4.518c-8.535 12.93-14.682 20.785-18.083 24.85c-1.687 2.015-4.617 2.163-6.525.354A165 165 0 0 1 4.955 23.794c-1.21-1.483-1.46-3.576-.282-5.085c1.024-1.312 2.193-2.438 3.25-3.33c1.753-1.48 4.284-1.144 5.86.524c4.863 5.152 7.794 8.75 7.794 8.75s4.818-7.04 12.548-17.87c1.197-1.677 3.33-2.458 5.132-1.459c1.447.803 3.129 2.025 4.439 3.81Z"></path>
+                      </g>
                     </svg>
                   </div>
                   

@@ -42,7 +42,7 @@ export default function BlogPost2() {
           backgroundPosition: "center"
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-purple-900/80"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="relative mx-auto max-w-6xl px-4 py-16">
           <div className="max-w-4xl">
@@ -60,9 +60,11 @@ export default function BlogPost2() {
               {t('blogPost2.hero.subtitle')}
             </p>
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold">
-                EM
-              </div>
+              <img
+                src="/images/B2T.jpg"
+                alt="Author"
+                className="w-12 h-12 rounded-full object-cover"
+              />
               <div>
                 <p className="font-semibold">{t('blogPost2.hero.author')}</p>
                 <p className="text-white/80 text-sm">{t('blogPost2.hero.authorRole')}</p>
@@ -287,9 +289,11 @@ export default function BlogPost2() {
               {/* Author Bio */}
               <div className="mt-12 p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-xl border border-blue-200 dark:border-blue-700">
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xl font-bold">
-                    EM
-                  </div>
+                  <img
+                    src="/images/B2T.jpg"
+                    alt="Author"
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
                   <div>
                     <h3 className="text-xl font-bold mb-2 text-blue-800 dark:text-blue-200">{t('blogPost2.author.name')}</h3>
                     <p className="text-gray-600 dark:text-gray-400 mb-3">

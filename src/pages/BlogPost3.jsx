@@ -43,8 +43,7 @@ export default function BlogPost3() {
           backgroundPosition: "center"
         }}
       >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-900/80 to-purple-900/80"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="relative mx-auto max-w-6xl px-4 py-16">
           <div className="max-w-4xl">
@@ -62,9 +61,11 @@ export default function BlogPost3() {
               {t('blogPost3.hero.subtitle')}
             </p>
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold">
-                EM
-              </div>
+              <img
+                src="/images/B3T.jpg"
+                alt="Author"
+                className="w-12 h-12 rounded-full object-cover"
+              />
               <div>
                 <p className="font-semibold">{t('blogPost3.hero.author')}</p>
                 <p className="text-white/80 text-sm">{t('blogPost3.hero.authorRole')}</p>
@@ -362,9 +363,11 @@ export default function BlogPost3() {
               {/* Author Bio */}
               <div className="mt-12 p-6 bg-gradient-to-r from-pink-50 to-purple-50 dark:from-pink-900/20 dark:to-purple-900/20 rounded-xl border border-pink-200 dark:border-pink-700">
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xl font-bold">
-                    EM
-                  </div>
+                  <img
+                    src="/images/B3T.jpg"
+                    alt="Author"
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
                   <div>
                     <h3 className="text-xl font-bold mb-2 text-pink-800 dark:text-pink-200">{t('blogPost3.author.name')}</h3>
                     <p className="text-gray-600 dark:text-gray-400 mb-3">
