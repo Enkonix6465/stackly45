@@ -54,6 +54,7 @@
     "passwordPlaceholder": "أدخل كلمة المرور",
     "signIn": "تسجيل الدخول",
     "forgotPassword": "نسيت كلمة المرور؟",
+    "reset": "Reset",
     "noAccount": "ليس لديك حساب؟",
     "register": "تسجيل",
     "errorEmailPassword": "يرجى إدخال البريد الإلكتروني وكلمة المرور"
@@ -73,6 +74,7 @@
     "confirmPasswordPlaceholder": "أعد إدخال كلمة المرور",
     "createAccountButton": "إنشاء الحساب",
     "forgotPassword": "نسيت كلمة المرور؟",
+    "reset": "Reset",
     "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
     "login": "تسجيل الدخول",
     "errorFirstNameLastName": "يرجى إدخال اسمك الأول واسم العائلة",

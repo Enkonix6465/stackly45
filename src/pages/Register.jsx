@@ -66,7 +66,7 @@ export default function Register() {
       
       {/* Header with Language Selector */}
       <div className="relative z-20 w-full animate-fade-in">
-        <header className="bg-black/80 backdrop-blur-md border-b border-white/20 shadow-lg">
+        <header className="bg-white backdrop-blur-md border-b border-gray-200 shadow-lg">
           <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
             {/* Logo */}
             <div className="flex-shrink-0">
@@ -163,9 +163,9 @@ export default function Register() {
             </form>
 
             <div className="mt-4 text-center">
-              <Link to="/forgot-password" className="text-sm text-purple-300 hover:text-purple-200 underline">
-                {t('register.forgotPassword')}
-              </Link>
+              <span className="text-sm text-white/80">
+                {t('register.forgotPassword')} <Link to="/forgot-password" className="text-purple-300 hover:text-purple-200 underline">{t('register.reset')}</Link>
+              </span>
             </div>
 
             <p className="mt-6 text-center text-sm text-white/80">

@@ -74,7 +74,7 @@ export default function ForgotPassword() {
       
       {/* Header with Language Selector */}
       <div className="relative z-20 w-full animate-fade-in">
-        <header className="bg-black/80 backdrop-blur-md border-b border-white/20 shadow-lg">
+        <header className="bg-white backdrop-blur-md border-b border-gray-200 shadow-lg">
           <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
             {/* Logo */}
             <div className="flex-shrink-0">

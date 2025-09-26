@@ -54,6 +54,7 @@
     "passwordPlaceholder": "הזן את הסיסמה שלך",
     "signIn": "התחבר",
     "forgotPassword": "שכחת את הסיסמה?",
+    "reset": "Reset",
     "noAccount": "אין לך חשבון?",
     "register": "הירשם",
     "errorEmailPassword": "אנא הזן אימייל וסיסמה"
@@ -73,6 +74,7 @@
     "confirmPasswordPlaceholder": "הזן שוב את הסיסמה",
     "createAccountButton": "צור חשבון",
     "forgotPassword": "שכחת את הסיסמה?",
+    "reset": "Reset",
     "alreadyHaveAccount": "יש לך כבר חשבון?",
     "login": "התחבר",
     "errorFirstNameLastName": "אנא הזן את השם הפרטי ושם המשפחה",
