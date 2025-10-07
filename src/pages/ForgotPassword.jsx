@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { LanguageSelector } from '../components/language-selector'
+import { ThemeToggle } from '../components/theme-toggle'
 import { resetPassword } from '../utils/auth'
 
 export default function ForgotPassword() {
@@ -13,6 +14,15 @@ export default function ForgotPassword() {
   const [confirmPassword, setConfirmPassword] = useState('')
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
+  const [isDark, setIsDark] = useState(false)
+
+  useEffect(() => {
+    const checkDark = () => setIsDark(document.documentElement.classList.contains('dark'))
+    checkDark()
+    const observer = new MutationObserver(checkDark)
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+    return () => observer.disconnect()
+  }, [])
 
   function handleEmailSubmit(e) {
     e.preventDefault()
@@ -70,11 +80,12 @@ export default function ForgotPassword() {
   }
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-gray-900 to-gray-800 relative">
+    <div className={`min-h-screen w-full relative transition-colors duration-500 ${isDark ? 'text-white' : 'text-black'}`}>
+      <div className={`absolute inset-0 -z-10 bg-gradient-to-br ${isDark ? 'from-gray-900 to-gray-800' : 'from-slate-50 via-purple-50 to-purple-50'}`} />
       
-      {/* Header with Language Selector */}
+      {/* Header with Theme Toggle and Language Selector */}
       <div className="relative z-20 w-full animate-fade-in">
-        <header className="bg-white backdrop-blur-md border-b border-gray-200 shadow-lg">
+        <header className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-slate-200/60 dark:border-gray-700/60 shadow-sm sticky top-0 z-50 transition-colors">
           <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
             {/* Logo */}
             <div className="flex-shrink-0">
@@ -83,9 +94,10 @@ export default function ForgotPassword() {
               </Link>
             </div>
             
-            {/* Language Selector */}
+            {/* Right Actions */}
             <div className="flex items-center gap-2">
               <LanguageSelector variant="login" />
+              <ThemeToggle />
             </div>
           </div>
         </header>
@@ -93,12 +105,12 @@ export default function ForgotPassword() {
       
       <div className="relative z-10 flex min-h-screen items-center justify-center p-6">
         <div className="w-full max-w-lg lg:max-w-xl animate-fade-in">
-          <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl shadow-2xl p-8 lg:p-10 text-white animate-slide-up">
+          <div className={`backdrop-blur-xl rounded-2xl shadow-2xl p-8 lg:p-10 animate-slide-up border ${isDark ? 'bg-white/10 border-white/20 text-white' : 'bg-white/80 border-slate-200 text-slate-900'}` }>
             <div className="mb-6 text-center">
               <h2 className="text-3xl lg:text-4xl font-bold tracking-tight">
                 {step === 1 ? t('forgotPassword.resetPassword') : t('forgotPassword.setNewPassword')}
               </h2>
-              <p className="text-white/70 mt-1">
+              <p className={`mt-1 ${isDark ? 'text-white/70' : 'text-slate-600'}`}>
                 {step === 1 ? t('forgotPassword.enterEmailToContinue') : t('forgotPassword.createNewPassword')}
               </p>
             </div>
@@ -106,19 +118,19 @@ export default function ForgotPassword() {
             {step === 1 ? (
               <form onSubmit={handleEmailSubmit} className="space-y-4">
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-white/80">{t('forgotPassword.email')}</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-white/80">{t('forgotPassword.email')}</label>
                   <input
                     id="email"
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder={t('forgotPassword.emailPlaceholder')}
-                    className="mt-1 w-full rounded-lg bg-white/20 border border-white/30 px-3 py-2 text-white placeholder-white/60 outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
+                    className="mt-1 w-full rounded-lg px-3 py-2 outline-none border focus:ring-2 focus:border-transparent bg-white text-slate-900 placeholder-slate-500 border-slate-300 focus:ring-indigo-600 dark:bg-white/20 dark:text-white dark:placeholder-white/60 dark:border-white/30 dark:focus:ring-indigo-400"
                   />
                 </div>
 
                 {error && (
-                  <div className="text-red-300 bg-red-900/40 border border-red-700/50 rounded-md px-3 py-2 text-sm">{error}</div>
+                  <div className="text-red-700 bg-red-50 border border-red-200 rounded-md px-3 py-2 text-sm dark:text-red-300 dark:bg-red-900/40 dark:border-red-700/50">{error}</div>
                 )}
 
                 <button type="submit" className="w-full btn-animate-strong rounded-lg px-8 py-4 font-bold text-lg transition-all duration-300 bg-purple-500 text-white hover:bg-purple-600 shadow-lg hover:shadow-xl">
@@ -128,35 +140,35 @@ export default function ForgotPassword() {
             ) : (
               <form onSubmit={handlePasswordReset} className="space-y-4">
                 <div>
-                  <label htmlFor="newPassword" className="block text-sm font-medium text-white/80">{t('forgotPassword.newPassword')}</label>
+                  <label htmlFor="newPassword" className="block text-sm font-medium text-slate-700 dark:text-white/80">{t('forgotPassword.newPassword')}</label>
                   <input
                     id="newPassword"
                     type="password"
                     value={newPassword}
                     onChange={(e) => setNewPassword(e.target.value)}
                     placeholder={t('forgotPassword.newPasswordPlaceholder')}
-                    className="mt-1 w-full rounded-lg bg-white/20 border border-white/30 px-3 py-2 text-white placeholder-white/60 outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
+                    className="mt-1 w-full rounded-lg px-3 py-2 outline-none border focus:ring-2 focus:border-transparent bg-white text-slate-900 placeholder-slate-500 border-slate-300 focus:ring-indigo-600 dark:bg-white/20 dark:text-white dark:placeholder-white/60 dark:border-white/30 dark:focus:ring-indigo-400"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="confirmPassword" className="block text-sm font-medium text-white/80">{t('forgotPassword.confirmPassword')}</label>
+                  <label htmlFor="confirmPassword" className="block text-sm font-medium text-slate-700 dark:text-white/80">{t('forgotPassword.confirmPassword')}</label>
                   <input
                     id="confirmPassword"
                     type="password"
                     value={confirmPassword}
                     onChange={(e) => setConfirmPassword(e.target.value)}
                     placeholder={t('forgotPassword.confirmPasswordPlaceholder')}
-                    className="mt-1 w-full rounded-lg bg-white/20 border border-white/30 px-3 py-2 text-white placeholder-white/60 outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
+                    className="mt-1 w-full rounded-lg px-3 py-2 outline-none border focus:ring-2 focus:border-transparent bg-white text-slate-900 placeholder-slate-500 border-slate-300 focus:ring-indigo-600 dark:bg-white/20 dark:text-white dark:placeholder-white/60 dark:border-white/30 dark:focus:ring-indigo-400"
                   />
                 </div>
 
                 {error && (
-                  <div className="text-red-300 bg-red-900/40 border border-red-700/50 rounded-md px-3 py-2 text-sm">{error}</div>
+                  <div className="text-red-700 bg-red-50 border border-red-200 rounded-md px-3 py-2 text-sm dark:text-red-300 dark:bg-red-900/40 dark:border-red-700/50">{error}</div>
                 )}
 
                 {success && (
-                  <div className="text-green-300 bg-green-900/40 border border-green-700/50 rounded-md px-3 py-2 text-sm">{success}</div>
+                  <div className="text-green-700 bg-green-50 border border-green-200 rounded-md px-3 py-2 text-sm dark:text-green-300 dark:bg-green-900/40 dark:border-green-700/50">{success}</div>
                 )}
 
                 <div className="flex gap-3">
@@ -174,16 +186,12 @@ export default function ForgotPassword() {
               </form>
             )}
 
-            <p className="mt-6 text-center text-sm text-white/80">
+            <p className={`mt-6 text-center text-sm ${isDark ? 'text-white/80' : 'text-slate-600'}`}>
               {t('forgotPassword.rememberPassword')} <Link to="/login" className="text-purple-300 hover:text-purple-200 underline">{t('forgotPassword.signIn')}</Link>
             </p>
           </div>
 
-          <div className="mt-6 flex items-center justify-center gap-2 text-white/70">
-            <span className="h-2 w-2 bg-white/40 rounded-full animate-float-slow" />
-            <span className="h-2 w-2 bg-white/40 rounded-full animate-float-slow [animation-delay:200ms]" />
-            <span className="h-2 w-2 bg-white/40 rounded-full animate-float-slow [animation-delay:400ms]" />
-          </div>
+          
         </div>
       </div>
     </div>
