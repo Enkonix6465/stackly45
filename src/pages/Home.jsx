@@ -259,7 +259,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 px-6 max-w-4xl">
           <ScrollAnimation animation="fade-in-up" stagger="scroll-stagger-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl font-bold mb-6 text-white leading-tight lg:whitespace-nowrap">
               {t('home1.showcase.mainTitle')}
             </h1>
           </ScrollAnimation>
